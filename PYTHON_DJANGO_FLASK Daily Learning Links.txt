@@ -1,0 +1,416 @@
+FLASK Daily Learning Links
+
+Day 01
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-1-flask-fundamentals-activity-7487507134423814145-nI-A?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 02
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-2-understanding-routing-activity-7487710956437921792-zBGi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 03
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-3-http-methods-in-flask-activity-7488439482417913856-zDV-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 04
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-4-jinja2-templates-activity-7489168052756922368-H0Rm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 05
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-5-jinja2-template-features-activity-7489885263620489216-mQTb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 06
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-6-template-inheritance-activity-7490613811691900928-1Np4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 07
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-7-static-files-in-flask-activity-7490976203969986560-tMsp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 08
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-8-html-forms-in-flask-activity-7491704750145617920-ZBx0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 09
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-9-form-validation-activity-7492422008274849792-8kwn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 10
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-10-sqlite-database-activity-7492784546841640960-0gsI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 11
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-11-crud-operations-activity-7493512908623081472-Qhzi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 12
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-12-flask-sqlalchemy-activity-7494241512424353792-oNZt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 13
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-13-database-relationships-activity-7495154987099029505-djp_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 14
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-14application-structure-activity-7495683542417494017-Dv3U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 15
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-15-sessions-cookies-activity-7496412011606716416-NkjE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 16
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-16-user-registration-activity-7496770798683344896-1rI7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 17
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-17-user-login-authentication-activity-7498227791256199168-hWfZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+Day 18
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-18-authorization-activity-7498582632763564032-9vCD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 19
+https://lnkd.in/p/dnhGUFMW
+
+Day 20
+https://lnkd.in/p/dHFgYm3r
+
+Day 21
+https://lnkd.in/p/dzBcQp4D
+
+Day 22
+https://lnkd.in/p/d2v6_XM5
+
+Day 23
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-23-working-with-api-activity-7501847837954179072-zP1L?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 24
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-24-file-uploads-security-activity-7502931266330222592-7OPg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 25
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-25-error-handling-activity-7503656227936108544-XMHs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 26
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learningday-26configurationenvironment-activity-7504018617420726272-NeXL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 27
+https://lnkd.in/p/dcPRKE5s
+
+Day 28
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-28-flask-blueprints-activity-7505830452469862400-SVtV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 29
+https://lnkd.in/p/eQAvhtCK
+
+Day 30
+https://lnkd.in/p/drHA-Shs
+
+Day 31
+https://lnkd.in/p/dDu7DccB
+
+Day 32
+https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-32-jwt-authentication-activity-7508368337781944320-_qT0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 33
+https://lnkd.in/p/d3WJKEGz
+
+Day 34
+
+
+Day 35
+
+
+Day 36
+
+
+Day 37
+
+
+Day 38
+
+
+Day 39
+
+
+Day 40
+
+
+
+----------------------------------------------------------------------------
+
+DJANGO Daily Learning Links
+
+Day 01
+https://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-django-framework-activity-7445473876391915520-cm0n?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 02
+https://www.linkedin.com/posts/charan-teja-972aa9231_what-is-django-a-beginners-guide-activity-7445836269844086784-9tRq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 03
+https://www.linkedin.com/posts/charan-teja-972aa9231_install-django-step-by-step-for-beginners-activity-7447282096823357440-V1rs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 04
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-django-project-structure-activity-7447863385519652864-Y0-P?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 05
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-5-creating-your-first-django-app-activity-7448588143055777794-JJ3b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 06
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-6-running-django-development-server-activity-7449312964962308096-3O8I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 07
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-7-django-urls-routing-explained-activity-7451487260442624000-e6WX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 08
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-8-django-views-explained-beginner-guide-activity-7454012638692413440-lAe0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 09
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-9-django-templates-html-dynamic-data-activity-7456183192337801216-XfOp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 10
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-10-django-models-database-explained-activity-7458361290063785984-qWCx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 11
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-11-django-orm-explained-simply-activity-7458723678353199104-EQ3_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 12
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-12-django-admin-panel-explained-activity-7460173247884505088-5jO5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 13
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-13-django-forms-explained-simply-activity-7461996521517907968-cyUb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 14
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-14-django-authentication-explained-activity-7463435040908189696-cyYq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 15
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-15-django-static-files-explained-activity-7464521890011717632-kj3l?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 16
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-16-django-template-inheritance-activity-7465609054325858304-TyNr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 17
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-17-django-crud-operations-explained-activity-7465971434545238016-qIzj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 18
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-18-django-class-based-views-explained-activity-7466696210997800960-2HNM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 19
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-19-django-generic-views-explained-activity-7467783392781221889-Usnn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 20
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-django-middleware-explained-activity-7468870539927994368-RSyZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 21
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-21-django-sessions-cookies-explained-activity-7469202731493384192-1J1J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 22
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-messages-framework-explained-activity-7470320093802168320-1wYx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 23
+https://www.linkedin.com/posts/charan-teja-972aa9231_file-uploads-in-django-explained-activity-7471044864760242176-tx6o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 24
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-pagination-explained-simply-activity-7471769642412183552-iC5E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 25
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-signals-explained-simply-activity-7472132033734025216-n6VO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 26
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-custom-user-model-explained-activity-7472494417510047744-ZoYH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 27
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-permissions-authorization-activity-7473219214607048704-MxzY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 28
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-email-system-explained-activity-7473581580142137344-EOUo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 29
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-rest-framework-introduction-activity-7473943971719766016-uwPs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 30
+https://www.linkedin.com/posts/charan-teja-972aa9231_drf-serializers-the-api-data-bridge-activity-7474668740534566912-71Tl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 31
+https://www.linkedin.com/posts/charan-teja-972aa9231_drf-api-views-endpoints-explained-activity-7475031146796425216-rpd3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 32
+https://www.linkedin.com/posts/charan-teja-972aa9231_building-crud-apis-with-django-rest-framework-activity-7475393529452679168-l0fQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 33
+https://www.linkedin.com/posts/charan-teja-972aa9231_jwt-authentication-in-drf-explained-activity-7475755912364933120-MZ2Z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 34
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-static-vs-media-files-explained-activity-7476118295193243648-iHEZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 35
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-caching-for-faster-applications-activity-7476480682710642688-a5zu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 36
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-security-best-practices-explained-activity-7477205479337930752--DCI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 37
+https://www.linkedin.com/posts/charan-teja-972aa9231_why-testing-matters-in-django-development-activity-7477568011072241665-HCre?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 38
+https://www.linkedin.com/posts/charan-teja-972aa9231_from-code-to-product-django-deployment-activity-7478292624773320704-HkSf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 39
+https://www.linkedin.com/posts/charan-teja-972aa9231_django-react-building-modern-full-stack-activity-7478655010013130752-epam?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 40
+https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-my-learning-journey-activity-7479017397815803904-AEje?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+40-day Django Journey
+https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-lessons-beyond-code-activity-7480466960007356416-ddeG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+----------------------------------------------------------------------------
+
+PYTHON 50 DAY CHALLENGE Links
+
+Day 01
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-slicing-forward-reverse-activity-7388794172452978688-OA2K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 02
+https://www.linkedin.com/posts/charan-teja-972aa9231_cracking-python-list-comprehension-in-one-activity-7389160312589127680-au7d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 03
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tuple-comprehension-deep-activity-7389881329955344384-S1hX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 04
+https://www.linkedin.com/posts/charan-teja-972aa9231_solving-problems-with-python-dictionary-comprehension-activity-7391330889705762816-11UP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 05
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-set-comprehension-in-one-activity-7391693277386878977-xoMQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 06
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-type-conversion-like-activity-7392418037737615360-wcbf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 07
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-functions-in-python-code-reuse-activity-7394230023290822657-F4eE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 08
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-problem-solving-using-python-functions-activity-7394592383214202880-VBUH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 09
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-modules-in-python-reuse-code-efficiently-activity-7394954738594762752-Svg6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 10
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-pythons-random-module-for-fun-activity-7396151380429692929-GAbe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 11
+https://www.linkedin.com/posts/charan-teja-972aa9231_solving-python-problems-using-the-random-activity-7396404334659399680-8S1V?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 12
+https://www.linkedin.com/posts/charan-teja-972aa9231_learning-file-handling-in-python-for-real-world-activity-7396766685124411392-46fD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 13
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-advanced-python-file-modes-activity-7397129098029981696-3qKh?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 14
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-datetime-timedelta-pyttsx3-in-activity-7397491460494917633-73db?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 15
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tts-with-pyttsx4-gtts-activity-7397853882183270400-u2sB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 16
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-10-real-tasks-activity-7398581405410156544-8EpK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 17
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-with-beginnerintermediate-activity-7398941013094035456-YJjk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 18
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-essentials-my-day-18-learning-activity-7399303416247857152-uKxX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 19
+https://www.linkedin.com/posts/charan-teja-972aa9231_deep-dive-into-core-python-concepts-day-activity-7399665783087353857-kxBu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 20
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-consistent-learning-toward-becoming-activity-7400028202963763201-I4bR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 21
+https://www.linkedin.com/posts/charan-teja-972aa9231_solving-essential-python-tasks-day-21-learning-activity-7400390607942365184-qLH1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 22
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-oops-concepts-in-python-day-activity-7401462626301624320-TXxU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 23
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-self-constructors-oop-activity-7401840131638558720-vFRN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 24
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-class-variables-methods-in-activity-7402202503418691584-EslN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 25
+https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-static-methods-inheritance-overriding-activity-7402564886213382144-Jcd5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 26
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-inheritance-in-python-oop-activity-7404014483498557440-Tzew?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 27
+https://www.linkedin.com/posts/charan-teja-972aa9231_solving-inheritance-problems-in-python-oop-activity-7404376828293111809-Naon?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 28
+https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-hierarchical-hybrid-inheritance-activity-7404739219606351872-Lyyc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 29
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-hierarchical-hybrid-inheritance-activity-7405101640665722881-X-5U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 30
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-core-inheritance-concepts-in-python-activity-7405463987162824704-o6MV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 31
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-abstraction-in-python-oop-with-activity-7406188816836759552-qqZT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 32
+https://www.linkedin.com/posts/charan-teja-972aa9231_solving-real-world-problems-using-abstraction-activity-7406536052196380672-l3vf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 33
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-decorators-with-real-activity-7406898473205137426-XAVC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 34
+https://www.linkedin.com/posts/charan-teja-972aa9231_learning-encapsulation-in-python-oop-activity-7407260829844176896-BXui?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 35
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-encapsulation-with-real-python-activity-7407623235057598464-ho0b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 36
+https://www.linkedin.com/posts/charan-teja-972aa9231_building-a-banking-application-using-encapsulation-activity-7407985606099836928-duv7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 37
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-string-operations-with-activity-7408348020636811264-LG7q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 38
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-real-problem-activity-7408884126201712641-kYuW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 39
+https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-polymorphism-in-python-oop-activity-7409072934792798208-aLWD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 40
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-duck-typing-method-overloading-activity-7409435239770558464-6AEV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 41
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-pattern-programs-using-activity-7409797646749560832-G8f3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 42
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-file-handling-with-real-activity-7410159958471696384-ybB5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 43
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-even-odd-factorial-logic-in-activity-7410688453962788864-GP3E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 44
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-addition-square-list-logic-activity-7411050831279583232-UZCe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 45
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-string-length-digits-vowel-activity-7411413264598892544-9sxT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 46
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-dictionary-set-tuple-logic-activity-7411624692471590912-ZZxJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 47
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-list-integer-boolean-logic-activity-7411987013094273024-cPmi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 48
+https://www.linkedin.com/posts/charan-teja-972aa9231_starting-the-new-year-with-python-problem-activity-7412319167158231040-IWBQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 49
+https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-armstrong-perfect-numbers-in-activity-7412696685212102656-IXrY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Day 50
+https://www.linkedin.com/posts/charan-teja-972aa9231_day-50-completed-python-learning-challenge-activity-7413051490975641600-AfDC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+hashtag#50Days of consistent Python learning completed
+https://www.linkedin.com/posts/charan-teja-972aa9231_50days-activity-7413587705437220864-6fr3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+
+
+
+
+
+
+
+
+
+
