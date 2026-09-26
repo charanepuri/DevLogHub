@@ -2,11 +2,10 @@
   {
     "id": "python",
     "name": "Python 50-Day Challenge",
-    "shortName": "Python",
+    "shortName": "Python 50D",
     "tagline": "Core Fundamentals, Data Structures, OOP Mastery & Problem Solving",
-    "badge": "50 Days Complete",
+    "badge": "50 Days",
     "accent": "#38bdf8",
-    "gradient": "linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)",
     "icon": "\ud83d\udc0d",
     "count": 51,
     "posts": [
@@ -321,13 +320,12 @@
   {
     "id": "django",
     "name": "Django & DRF 40-Day Series",
-    "shortName": "Django",
+    "shortName": "Django & DRF",
     "tagline": "Enterprise Full-Stack Architecture, ORM, REST APIs & Production Deployment",
-    "badge": "40 Days Complete",
+    "badge": "40 Days",
     "accent": "#10b981",
-    "gradient": "linear-gradient(135deg, #047857 0%, #10b981 100%)",
     "icon": "\u26a1",
-    "count": 41,
+    "count": 43,
     "posts": [
       {
         "id": "django-1",
@@ -574,17 +572,28 @@
         "day": "Series Wrap-up \ud83d\ude80",
         "topic": "40 Days of Django: Lessons Beyond Code & Retrospective",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-lessons-beyond-code-activity-7480466960007356416-ddeG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "django-doc-42",
+        "day": "Core Doc \ud83d\udcd1",
+        "topic": "Django Deep-Dive: \u2013M\u2013V\u2013T\u2013 \u2013A\u2013r\u2013c\u2013h\u2013i\u2013t\u2013e\u2013c\u2013t\u2013u\u2013r\u2013e\u2013 \u2013&\u2013 \u2013R\u2013e\u2013q\u2013u\u2013e\u2013s\u2013t\u2013-\u2013R\u2013e\u2013s\u2013p\u2013o\u2013n\u2013s\u2013e\u2013 \u2013C\u2013y\u2013c\u2013l\u2013e\u2013",
+        "url": "https://lnkd.in/p/dNTmFjUm"
+      },
+      {
+        "id": "django-doc-43",
+        "day": "Core Doc \ud83d\udcd1",
+        "topic": "Django Deep-Dive: \u2013M\u2013o\u2013d\u2013e\u2013l\u2013s\u2013,\u2013 \u2013O\u2013R\u2013M\u2013 \u2013&\u2013 \u2013D\u2013a\u2013t\u2013a\u2013b\u2013a\u2013s\u2013e\u2013 \u2013R\u2013e\u2013l\u2013a\u2013t\u2013i\u2013o\u2013n\u2013s\u2013h\u2013i\u2013p\u2013s\u2013",
+        "url": "https://lnkd.in/p/d55qTseQ"
       }
     ]
   },
   {
     "id": "flask",
     "name": "Flask Daily Learning Series",
-    "shortName": "Flask",
+    "shortName": "Flask Mastery",
     "tagline": "Lightweight Microservices, Dynamic Templating, DB Integration & APIs",
-    "badge": "33 Days Complete",
-    "accent": "#a855f7",
-    "gradient": "linear-gradient(135deg, #7c3aed 0%, #c084fc 100%)",
+    "badge": "33 Days",
+    "accent": "#c084fc",
     "icon": "\ud83e\uddea",
     "count": 33,
     "posts": [
@@ -785,6 +794,180 @@
         "day": "Day 33",
         "topic": "Full-Stack Flask Architecture & WebSockets",
         "url": "https://lnkd.in/p/d3WJKEGz"
+      }
+    ]
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript & Web Fundamentals",
+    "shortName": "JavaScript & Web",
+    "tagline": "Execution Context, Event Loop, DOM Manipulation, ES6+ & TypeScript",
+    "badge": "Core Web",
+    "accent": "#facc15",
+    "icon": "\ud83d\udcdc",
+    "count": 5,
+    "posts": [
+      {
+        "id": "js-1",
+        "day": "Doc #1",
+        "topic": "\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013v\u2013s\u2013 \u2013T\u2013y\u2013p\u2013e\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-vs-typescript-complete-comparison-activity-7480104567439777792-uM6D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "js-2",
+        "day": "Doc #2",
+        "topic": "\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013x\u2013e\u2013c\u2013u\u2013t\u2013i\u2013o\u2013n\u2013 \u2013C\u2013o\u2013n\u2013t\u2013e\u2013x\u2013t\u2013 \u2013&\u2013 \u2013C\u2013a\u2013l\u2013l\u2013 \u2013S\u2013t\u2013a\u2013c\u2013k\u2013 \u2013\u2013\u2013 \u2013B\u2013u\u2013i\u2013l\u2013d\u2013 \u2013a\u2013 \u2013s\u2013t\u2013r\u2013o\u2013n\u2013g\u2013 \u2013f\u2013o\u2013u\u2013n\u2013d\u2013a\u2013t\u2013i\u2013o\u2013n\u2013.\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-execution-context-call-stack-activity-7494596493664796672-ECNy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "js-3",
+        "day": "Doc #3",
+        "topic": "\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013v\u2013e\u2013n\u2013t\u2013 \u2013L\u2013o\u2013o\u2013p\u2013 \u2013(\u2013A\u2013s\u2013y\u2013n\u2013c\u2013/\u2013A\u2013w\u2013a\u2013i\u2013t\u2013,\u2013 \u2013P\u2013r\u2013o\u2013m\u2013i\u2013s\u2013e\u2013s\u2013 \u2013&\u2013 \u2013C\u2013a\u2013l\u2013l\u2013b\u2013a\u2013c\u2013k\u2013s\u2013)\u2013 \u2013\u2013\u2013 \u2013E\u2013x\u2013p\u2013l\u2013a\u2013i\u2013n\u2013 \u2013a\u2013s\u2013y\u2013n\u2013c\u2013h\u2013r\u2013o\u2013n\u2013o\u2013u\u2013s\u2013 \u2013b\u2013e\u2013h\u2013a\u2013v\u2013i\u2013o\u2013r\u2013.\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-event-loop-promises-asyncawait-activity-7497136792152977408-zwFW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "js-4",
+        "day": "Doc #4",
+        "topic": "\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013D\u2013O\u2013M\u2013 \u2013M\u2013a\u2013n\u2013i\u2013p\u2013u\u2013l\u2013a\u2013t\u2013i\u2013o\u2013n\u2013 \u2013\u2013\u2013 \u2013C\u2013o\u2013m\u2013p\u2013l\u2013e\u2013t\u2013e\u2013 \u2013G\u2013u\u2013i\u2013d\u2013e\u2013 \u2013\u2013\u2013 \u2013S\u2013h\u2013o\u2013w\u2013 \u2013p\u2013r\u2013a\u2013c\u2013t\u2013i\u2013c\u2013a\u2013l\u2013 \u2013b\u2013r\u2013o\u2013w\u2013s\u2013e\u2013r\u2013-\u2013s\u2013i\u2013d\u2013e\u2013 \u2013s\u2013k\u2013i\u2013l\u2013l\u2013s\u2013.\u2013",
+        "url": "https://lnkd.in/p/dXncZU3c"
+      },
+      {
+        "id": "js-5",
+        "day": "Doc #5",
+        "topic": "\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013S\u20136\u2013+\u2013 \u2013F\u2013e\u2013a\u2013t\u2013u\u2013r\u2013e\u2013s\u2013 \u2013(\u2013M\u2013o\u2013d\u2013e\u2013r\u2013n\u2013 \u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013)\u2013 \u2013\u2013\u2013 \u2013C\u2013o\u2013v\u2013e\u2013r\u2013 \u2013t\u2013h\u2013e\u2013 \u2013l\u2013a\u2013n\u2013g\u2013u\u2013a\u2013g\u2013e\u2013 \u2013f\u2013e\u2013a\u2013t\u2013u\u2013r\u2013e\u2013s\u2013 \u2013u\u2013s\u2013e\u2013d\u2013 \u2013i\u2013n\u2013 \u2013e\u2013v\u2013e\u2013r\u2013y\u2013d\u2013a\u2013y\u2013 \u2013d\u2013e\u2013v\u2013e\u2013l\u2013o\u2013p\u2013m\u2013e\u2013n\u2013t\u2013.\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-modern-javascript-activity-7502206532265213952-AMCd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      }
+    ]
+  },
+  {
+    "id": "infographics",
+    "name": "Visual Infographics & Tech Breakdowns",
+    "shortName": "Visual Tech & AI",
+    "tagline": "Visual Architectural Guides: AI Agents, System Architecture, Algorithms & Tool Comparisons",
+    "badge": "Infographics",
+    "accent": "#f43f5e",
+    "icon": "\ud83d\udcca",
+    "count": 16,
+    "posts": [
+      {
+        "id": "info-1",
+        "day": "Visual Guide #1",
+        "topic": "\u2013R\u2013e\u2013a\u2013c\u2013t\u2013 \u2013L\u2013i\u2013f\u2013e\u2013c\u2013y\u2013c\u2013l\u2013e\u2013",
+        "url": "https://lnkd.in/p/dwtC7UM7"
+      },
+      {
+        "id": "info-2",
+        "day": "Visual Guide #2",
+        "topic": "\u2013R\u2013e\u2013a\u2013c\u2013t\u2013 \u2013V\u2013i\u2013r\u2013t\u2013u\u2013a\u2013l\u2013 \u2013D\u2013O\u2013M\u2013",
+        "url": "https://lnkd.in/p/dWCQb6fb"
+      },
+      {
+        "id": "info-3",
+        "day": "Visual Guide #3",
+        "topic": "\u2013H\u2013o\u2013w\u2013 \u2013I\u2013n\u2013t\u2013e\u2013r\u2013n\u2013e\u2013t\u2013 \u2013W\u2013o\u2013r\u2013k\u2013s\u2013",
+        "url": "https://lnkd.in/p/dGvC7HUu"
+      },
+      {
+        "id": "info-4",
+        "day": "Visual Guide #4",
+        "topic": "\u2013A\u2013I\u2013 \u2013A\u2013g\u2013e\u2013n\u2013t\u2013s\u2013 \u2013E\u2013x\u2013p\u2013l\u2013a\u2013i\u2013n\u2013e\u2013d\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_aiagents-artificialintelligence-generativeai-activity-7496049633438289920-ZrLa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-5",
+        "day": "Visual Guide #5",
+        "topic": "\u2013C\u2013h\u2013a\u2013t\u2013 \u2013G\u2013P\u2013T\u2013 \u2013F\u2013o\u2013r\u2013 \u2013D\u2013e\u2013v\u2013e\u2013l\u2013o\u2013p\u2013e\u2013r\u2013s\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_chatgpt-ai-artificialintelligence-activity-7493871543559692288-KU5f?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-6",
+        "day": "Visual Guide #6",
+        "topic": "\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013T\u2013S\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-typescript-webdevelopment-activity-7492203304618278912-WAsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-7",
+        "day": "Visual Guide #7",
+        "topic": "\u2013E\u2013x\u2013p\u2013r\u2013e\u2013s\u2013s\u2013 \u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013N\u2013o\u2013d\u2013e\u2013 \u2013J\u2013S\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_nodejs-expressjs-javascript-activity-7490391105692278784-JNO8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-8",
+        "day": "Visual Guide #8",
+        "topic": "\u2013S\u2013n\u2013a\u2013p\u2013c\u2013h\u2013a\u2013t\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_snapchat-snapchatalgorithm-socialmedia-activity-7488077139230130176-ZzaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-9",
+        "day": "Visual Guide #9",
+        "topic": "\u2013G\u2013i\u2013t\u2013 \u2013v\u2013s\u2013 \u2013G\u2013i\u2013t\u2013H\u2013u\u2013b\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7486638884647530497--9jL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-10",
+        "day": "Visual Guide #10",
+        "topic": "\u2013I\u2013n\u2013s\u2013t\u2013a\u2013g\u2013r\u2013a\u2013m\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_instagram-instagramalgorithm-socialmedia-activity-7486253837285146624-sC3g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-11",
+        "day": "Visual Guide #11",
+        "topic": "\u2013D\u2013j\u2013a\u2013n\u2013g\u2013o\u2013 \u2013v\u2013s\u2013 \u2013F\u2013l\u2013a\u2013s\u2013k\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-django-flask-activity-7485891440158498816-xOEm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-12",
+        "day": "Visual Guide #12",
+        "topic": "\u2013L\u2013i\u2013n\u2013k\u2013e\u2013d\u2013I\u2013n\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_linkedin-linkedintips-linkedinalgorithm-activity-7485166663726907392-wOJP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-13",
+        "day": "Visual Guide #13",
+        "topic": "\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013R\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013N\u2013J\u2013S\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-reactjs-nodejs-activity-7484804377531129856-lzjF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-14",
+        "day": "Visual Guide #14",
+        "topic": "\u2013G\u2013i\u2013t\u2013 \u2013&\u2013 \u2013G\u2013i\u2013t\u2013H\u2013u\u2013b\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7484241830558162944-6fRI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-15",
+        "day": "Visual Guide #15",
+        "topic": "\u2013Y\u2013o\u2013u\u2013t\u2013u\u2013b\u2013e\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_youtube-youtubealgorithm-contentcreator-activity-7483585012274024448-ixc4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "info-16",
+        "day": "Visual Guide #16",
+        "topic": "\u2013W\u2013h\u2013a\u2013t\u2013s\u2013A\u2013p\u2013p\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappalgorithm-activity-7481765506312663040-70YI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      }
+    ]
+  },
+  {
+    "id": "console-projects",
+    "name": "Console & System Projects",
+    "shortName": "Console Projects",
+    "tagline": "In-depth Documentation of Complete C & Python Console-based Real-world Applications",
+    "badge": "Project Docs",
+    "accent": "#fb923c",
+    "icon": "\ud83d\udcbb",
+    "count": 2,
+    "posts": [
+      {
+        "id": "proj-1",
+        "day": "Full Project \ud83d\udcbc",
+        "topic": "\u2013C\u2013 \u2013C\u2013o\u2013n\u2013s\u2013o\u2013l\u2013e\u2013 \u2013P\u2013r\u2013o\u2013j\u2013e\u2013c\u2013t\u2013s\u2013 \u2013D\u2013o\u2013c\u2013u\u2013m\u2013e\u2013n\u2013t\u2013a\u2013t\u2013i\u2013o\u2013n\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
+      },
+      {
+        "id": "proj-2",
+        "day": "Full Project \ud83d\udcbc",
+        "topic": "\u2013P\u2013y\u2013t\u2013h\u2013o\u2013n\u2013 \u2013C\u2013o\u2013n\u2013s\u2013o\u2013l\u2013e\u2013 \u2013P\u2013r\u2013o\u2013j\u2013e\u2013c\u2013t\u2013s\u2013 \u2013D\u2013o\u2013c\u2013u\u2013m\u2013e\u2013n\u2013t\u2013a\u2013t\u2013i\u2013o\u2013n\u2013",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"
       }
     ]
   }

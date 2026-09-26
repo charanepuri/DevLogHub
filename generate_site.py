@@ -3,13 +3,15 @@ import json
 with open('data.json', 'r', encoding='utf-8') as f:
     categories = json.load(f)
 
+total_count = sum(c['count'] for c in categories)
+
 html_template = '''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PyPulse | Charan Teja's Python, Django & Flask Journey</title>
-  <meta name="description" content="Explore Charan Teja's 125-day hands-on mastery roadmap across Python, Django, DRF, and Flask with daily LinkedIn posts and code milestones.">
+  <title>PyPulse Hub | Charan Teja's Engineering & Learning Portfolio</title>
+  <meta name="description" content="Explore Charan Teja's complete 150+ milestone engineering archive covering Python, Django, DRF, Flask, JavaScript, Visual Infographics, and Console Projects.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -17,8 +19,8 @@ html_template = '''<!DOCTYPE html>
     :root {
       --bg-primary: #090d16;
       --bg-secondary: #0f172a;
-      --bg-card: rgba(17, 24, 39, 0.75);
-      --bg-card-hover: rgba(30, 41, 59, 0.85);
+      --bg-card: rgba(17, 24, 39, 0.78);
+      --bg-card-hover: rgba(30, 41, 59, 0.9);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --text-sub: #cbd5e1;
@@ -27,6 +29,9 @@ html_template = '''<!DOCTYPE html>
       --python-color: #38bdf8;
       --django-color: #10b981;
       --flask-color: #c084fc;
+      --js-color: #facc15;
+      --info-color: #f43f5e;
+      --proj-color: #fb923c;
       --accent: #38bdf8;
       --accent-glow: rgba(56, 189, 248, 0.25);
       --card-radius: 16px;
@@ -36,7 +41,7 @@ html_template = '''<!DOCTYPE html>
     [data-theme="light"] {
       --bg-primary: #f8fafc;
       --bg-secondary: #ffffff;
-      --bg-card: rgba(255, 255, 255, 0.85);
+      --bg-card: rgba(255, 255, 255, 0.9);
       --bg-card-hover: #ffffff;
       --text-main: #0f172a;
       --text-muted: #64748b;
@@ -46,6 +51,9 @@ html_template = '''<!DOCTYPE html>
       --python-color: #0284c7;
       --django-color: #059669;
       --flask-color: #7c3aed;
+      --js-color: #ca8a04;
+      --info-color: #e11d48;
+      --proj-color: #ea580c;
       --accent: #0284c7;
       --accent-glow: rgba(2, 132, 199, 0.15);
     }
@@ -72,7 +80,6 @@ html_template = '''<!DOCTYPE html>
       background-attachment: fixed;
     }
 
-    /* Ambient background grid */
     .bg-grid {
       position: fixed;
       inset: 0;
@@ -92,17 +99,17 @@ html_template = '''<!DOCTYPE html>
       z-index: 100;
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      background: rgba(9, 13, 22, 0.75);
+      background: rgba(9, 13, 22, 0.82);
       border-bottom: 1px solid var(--border-color);
       transition: var(--transition);
     }
 
     [data-theme="light"] header {
-      background: rgba(248, 250, 252, 0.85);
+      background: rgba(248, 250, 252, 0.88);
     }
 
     .nav-container {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
       padding: 0.9rem 1.5rem;
       display: flex;
@@ -196,9 +203,9 @@ html_template = '''<!DOCTYPE html>
     .hero {
       position: relative;
       z-index: 1;
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
-      padding: 3.5rem 1.5rem 2rem;
+      padding: 3.2rem 1.5rem 1.8rem;
       text-align: center;
     }
 
@@ -235,39 +242,39 @@ html_template = '''<!DOCTYPE html>
     .hero-title {
       font-size: clamp(2.2rem, 5vw, 3.6rem);
       font-weight: 800;
-      line-height: 1.15;
+      line-height: 1.18;
       letter-spacing: -0.03em;
       margin-bottom: 1.1rem;
     }
 
     .hero-title span.grad {
-      background: linear-gradient(135deg, #38bdf8 0%, #10b981 50%, #c084fc 100%);
+      background: linear-gradient(135deg, #38bdf8 0%, #10b981 40%, #c084fc 70%, #facc15 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .hero-desc {
-      max-width: 720px;
-      margin: 0 auto 2.5rem;
+      max-width: 760px;
+      margin: 0 auto 2.25rem;
       color: var(--text-muted);
-      font-size: 1.08rem;
+      font-size: 1.05rem;
       line-height: 1.65;
     }
 
     /* Stats Ribbon */
     .stats-ribbon {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.25rem;
-      max-width: 1040px;
-      margin: 0 auto 3rem;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto 2.75rem;
     }
 
     .stat-card {
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--card-radius);
-      padding: 1.35rem;
+      padding: 1.15rem;
       backdrop-filter: blur(10px);
       text-align: left;
       position: relative;
@@ -287,33 +294,36 @@ html_template = '''<!DOCTYPE html>
       left: 0;
       width: 100%;
       height: 3px;
-      background: linear-gradient(90deg, var(--accent), transparent);
     }
 
+    .stat-card.stat-total::before { background: linear-gradient(90deg, #38bdf8, #10b981); }
     .stat-card.stat-python::before { background: linear-gradient(90deg, var(--python-color), transparent); }
     .stat-card.stat-django::before { background: linear-gradient(90deg, var(--django-color), transparent); }
     .stat-card.stat-flask::before { background: linear-gradient(90deg, var(--flask-color), transparent); }
+    .stat-card.stat-js::before { background: linear-gradient(90deg, var(--js-color), transparent); }
+    .stat-card.stat-info::before { background: linear-gradient(90deg, var(--info-color), transparent); }
+    .stat-card.stat-proj::before { background: linear-gradient(90deg, var(--proj-color), transparent); }
 
     .stat-number {
-      font-size: 2.2rem;
+      font-size: 1.95rem;
       font-weight: 800;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-main);
       display: flex;
       align-items: baseline;
-      gap: 0.35rem;
+      gap: 0.3rem;
     }
 
     .stat-number small {
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
       font-weight: 400;
     }
 
     .stat-label {
       color: var(--text-muted);
-      font-size: 0.85rem;
-      font-weight: 500;
+      font-size: 0.8rem;
+      font-weight: 600;
       margin-top: 0.2rem;
     }
 
@@ -321,31 +331,31 @@ html_template = '''<!DOCTYPE html>
     main {
       position: relative;
       z-index: 1;
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
       padding: 0 1.5rem 5rem;
     }
 
-    /* Sticky Control Toolbar */
+    /* Controls Toolbar */
     .controls-wrapper {
       position: sticky;
       top: 68px;
       z-index: 90;
-      background: rgba(9, 13, 22, 0.85);
+      background: rgba(9, 13, 22, 0.88);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
       padding: 1rem;
       margin-bottom: 2rem;
       border-radius: var(--card-radius);
       border: 1px solid var(--border-color);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
 
     [data-theme="light"] .controls-wrapper {
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
 
@@ -354,7 +364,8 @@ html_template = '''<!DOCTYPE html>
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
-      flex-wrap: wrap;
+      overflow-x: auto;
+      padding-bottom: 0.25rem;
     }
 
     .filter-tabs {
@@ -367,15 +378,16 @@ html_template = '''<!DOCTYPE html>
       background: transparent;
       border: 1px solid var(--border-color);
       color: var(--text-muted);
-      padding: 0.55rem 1.1rem;
+      padding: 0.5rem 0.95rem;
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.45rem;
       transition: var(--transition);
+      white-space: nowrap;
     }
 
     .filter-tab:hover {
@@ -400,7 +412,7 @@ html_template = '''<!DOCTYPE html>
       background: rgba(0, 0, 0, 0.15);
       padding: 0.15rem 0.5rem;
       border-radius: 999px;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-family: 'JetBrains Mono', monospace;
     }
 
@@ -472,7 +484,7 @@ html_template = '''<!DOCTYPE html>
       border-color: var(--accent);
     }
 
-    /* Results Bar */
+    /* Results Info */
     .results-info {
       display: flex;
       justify-content: space-between;
@@ -488,10 +500,10 @@ html_template = '''<!DOCTYPE html>
       font-family: 'JetBrains Mono', monospace;
     }
 
-    /* Cards Grid */
+    /* Posts Grid */
     .posts-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
       gap: 1.35rem;
     }
 
@@ -499,7 +511,7 @@ html_template = '''<!DOCTYPE html>
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--card-radius);
-      padding: 1.5rem;
+      padding: 1.45rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -520,7 +532,7 @@ html_template = '''<!DOCTYPE html>
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 1rem;
+      margin-bottom: 0.85rem;
     }
 
     .day-pill {
@@ -546,15 +558,15 @@ html_template = '''<!DOCTYPE html>
     }
 
     .post-title {
-      font-size: 1.12rem;
+      font-size: 1.08rem;
       font-weight: 700;
       line-height: 1.4;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.65rem;
       color: var(--text-main);
     }
 
     .post-desc {
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       color: var(--text-muted);
       line-height: 1.5;
       margin-bottom: 1.25rem;
@@ -630,6 +642,21 @@ html_template = '''<!DOCTYPE html>
       background: rgba(192, 132, 252, 0.12);
       color: var(--flask-color);
       border: 1px solid rgba(192, 132, 252, 0.25);
+    }
+    .card-javascript .day-pill {
+      background: rgba(250, 204, 21, 0.12);
+      color: var(--js-color);
+      border: 1px solid rgba(250, 204, 21, 0.25);
+    }
+    .card-infographics .day-pill {
+      background: rgba(244, 63, 94, 0.12);
+      color: var(--info-color);
+      border: 1px solid rgba(244, 63, 94, 0.25);
+    }
+    .card-console-projects .day-pill {
+      background: rgba(251, 146, 60, 0.12);
+      color: var(--proj-color);
+      border: 1px solid rgba(251, 146, 60, 0.25);
     }
 
     /* Empty state */
@@ -741,7 +768,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     .footer-content {
-      max-width: 1280px;
+      max-width: 1320px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -768,7 +795,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     /* Responsive */
-    @media (max-width: 768px) {
+    @media (max-width: 840px) {
       .controls-wrapper {
         top: 60px;
         padding: 0.85rem;
@@ -782,7 +809,7 @@ html_template = '''<!DOCTYPE html>
         grid-template-columns: 1fr;
       }
       .stats-ribbon {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -794,10 +821,10 @@ html_template = '''<!DOCTYPE html>
         padding: 0.75rem 1rem;
       }
       .hero {
-        padding: 2.5rem 1rem 1.5rem;
+        padding: 2.2rem 1rem 1.4rem;
       }
       .hero-title {
-        font-size: 1.9rem;
+        font-size: 1.95rem;
       }
     }
   </style>
@@ -831,33 +858,45 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      125+ Days of Continuous Engineering
+      150+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
-      Full-Stack Python, Django &amp; Flask <br>
-      <span class="grad">Daily Learning Portfolio</span>
+      Python, Full-Stack Frameworks &amp; <br>
+      <span class="grad">Engineering Knowledge Hub</span>
     </h1>
     <p class="hero-desc">
-      A comprehensive archive of Charan Teja's engineering journey documenting real-world problem solving, backend architectural patterns, ORM mechanics, RESTful APIs, and cloud deployments posted daily to LinkedIn.
+      A unified, interactive archive of Charan Teja's technical journey on LinkedIn &mdash; featuring 50 Days of Python, 40 Days of Django &amp; DRF, Flask Mastery, Core JavaScript Documentation, System Architecture Infographics, and Production Console Projects.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
-      <div class="stat-card">
-        <div class="stat-number" id="totalPostsStat">125<small>posts</small></div>
-        <div class="stat-label">Total Documented Days</div>
+      <div class="stat-card stat-total">
+        <div class="stat-number" id="totalPostsStat">150<small>milestones</small></div>
+        <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-python">
-        <div class="stat-number">50<small>days</small></div>
-        <div class="stat-label">Python Challenge</div>
+        <div class="stat-number">51<small>days</small></div>
+        <div class="stat-label">Python 50D Challenge</div>
       </div>
       <div class="stat-card stat-django">
-        <div class="stat-number">41<small>milestones</small></div>
-        <div class="stat-label">Django &amp; DRF Deep Dive</div>
+        <div class="stat-number">43<small>topics</small></div>
+        <div class="stat-label">Django &amp; DRF Architecture</div>
       </div>
       <div class="stat-card stat-flask">
-        <div class="stat-number">34<small>milestones</small></div>
-        <div class="stat-label">Flask Microframework</div>
+        <div class="stat-number">33<small>days</small></div>
+        <div class="stat-label">Flask Microservices</div>
+      </div>
+      <div class="stat-card stat-js">
+        <div class="stat-number">5<small>guides</small></div>
+        <div class="stat-label">JavaScript &amp; Web Core</div>
+      </div>
+      <div class="stat-card stat-info">
+        <div class="stat-number">16<small>graphics</small></div>
+        <div class="stat-label">Visual Tech &amp; AI Guides</div>
+      </div>
+      <div class="stat-card stat-proj">
+        <div class="stat-number">2<small>projects</small></div>
+        <div class="stat-label">Console Project Docs</div>
       </div>
     </div>
   </section>
@@ -870,19 +909,31 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">125</span>
+            <span class="badge-count" id="countAll">150</span>
           </button>
           <button class="filter-tab" data-category="python">
-            <span>🐍 Python 50 Days</span>
+            <span>🐍 Python</span>
             <span class="badge-count" id="countPython">51</span>
           </button>
           <button class="filter-tab" data-category="django">
             <span>⚡ Django &amp; DRF</span>
-            <span class="badge-count" id="countDjango">41</span>
+            <span class="badge-count" id="countDjango">43</span>
           </button>
           <button class="filter-tab" data-category="flask">
-            <span>🧪 Flask Mastery</span>
+            <span>🧪 Flask</span>
             <span class="badge-count" id="countFlask">33</span>
+          </button>
+          <button class="filter-tab" data-category="javascript">
+            <span>📜 JavaScript &amp; Web</span>
+            <span class="badge-count" id="countJs">5</span>
+          </button>
+          <button class="filter-tab" data-category="infographics">
+            <span>📊 Visual Guides &amp; AI</span>
+            <span class="badge-count" id="countInfo">16</span>
+          </button>
+          <button class="filter-tab" data-category="console-projects">
+            <span>💻 Console Projects</span>
+            <span class="badge-count" id="countProj">2</span>
           </button>
         </div>
       </div>
@@ -890,7 +941,7 @@ html_template = '''<!DOCTYPE html>
       <div class="search-filter-row">
         <div class="search-box">
           <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <input type="text" id="searchInput" placeholder="Search by topic, day (e.g. Day 10), ORM, JWT, Decorators..." aria-label="Search posts">
+          <input type="text" id="searchInput" placeholder="Search by topic, day (e.g. Day 10), ORM, JWT, AI Agents, Algorithm..." aria-label="Search posts">
         </div>
         <div class="sort-box">
           <label for="sortOrder" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Sort:</label>
@@ -905,7 +956,7 @@ html_template = '''<!DOCTYPE html>
 
     <!-- Results Status -->
     <div class="results-info">
-      <div>Showing <strong id="visibleCount">125</strong> learning milestones</div>
+      <div>Showing <strong id="visibleCount">150</strong> learning milestones</div>
       <div id="filterStatusHint"></div>
     </div>
 
@@ -930,7 +981,7 @@ html_template = '''<!DOCTYPE html>
   <footer>
     <div class="footer-content">
       <div>
-        <strong>PyPulse Hub</strong> &bull; Crafted for Charan Teja's Professional Portfolio
+        <strong>PyPulse Hub</strong> &bull; Developed for Charan Teja's Engineering Portfolio
       </div>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
@@ -938,13 +989,13 @@ html_template = '''<!DOCTYPE html>
         <a href="javascript:void(0)" onclick="shareCollection()">Share Collection</a>
       </div>
       <p style="font-size: 0.8rem; color: var(--text-muted); opacity: 0.8;">
-        Built strictly with pure HTML5, Internal CSS &amp; Vanilla JavaScript &bull; Fast, Responsive &amp; Lightweight
+        Pure HTML5, Internal CSS &amp; Vanilla JavaScript &bull; Fast, Fully Responsive &amp; Zero External Dependencies
       </p>
     </div>
   </footer>
 
   <script>
-    // Embedded Data Generated from PYTHON_DJANGO_FLASK Daily Learning Links.txt
+    // Embedded Data Generated from Both Documentation & Daily Learning Files
     const POSTS_DATA = %DATA_PLACEHOLDER%;
 
     // State
@@ -955,7 +1006,7 @@ html_template = '''<!DOCTYPE html>
     // Flatten all items with extra metadata
     const allPosts = [];
     POSTS_DATA.forEach(cat => {
-      cat.posts.forEach((p, idx) => {
+      cat.posts.forEach((p) => {
         allPosts.push({
           ...p,
           categoryId: cat.id,
@@ -981,11 +1032,14 @@ html_template = '''<!DOCTYPE html>
     const toastMessage = document.getElementById('toastMessage');
 
     // Counts Setup
-    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>posts</small>`;
+    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>milestones</small>`;
     document.getElementById('countAll').textContent = allPosts.length;
     document.getElementById('countPython').textContent = allPosts.filter(p => p.categoryId === 'python').length;
     document.getElementById('countDjango').textContent = allPosts.filter(p => p.categoryId === 'django').length;
     document.getElementById('countFlask').textContent = allPosts.filter(p => p.categoryId === 'flask').length;
+    document.getElementById('countJs').textContent = allPosts.filter(p => p.categoryId === 'javascript').length;
+    document.getElementById('countInfo').textContent = allPosts.filter(p => p.categoryId === 'infographics').length;
+    document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'console-projects').length;
 
     // Render Function
     function renderPosts() {
@@ -1060,12 +1114,21 @@ html_template = '''<!DOCTYPE html>
     }
 
     function getPostSummary(post) {
-      if (post.categoryId === 'python') {
-        return `Hands-on Python milestone covering core mechanics, code architecture, problem-solving paradigms, and clean Pythonic idioms.`;
-      } else if (post.categoryId === 'django') {
-        return `Django engineering milestone focusing on backend enterprise architecture, database models, view controllers, and REST APIs.`;
-      } else {
-        return `Flask web development milestone demonstrating lightweight routing, request lifecycles, template rendering, and practical backend APIs.`;
+      switch (post.categoryId) {
+        case 'python':
+          return `Hands-on Python milestone covering core mechanics, code architecture, problem-solving paradigms, and clean Pythonic idioms.`;
+        case 'django':
+          return `Django engineering milestone focusing on backend enterprise architecture, database models, view controllers, and REST APIs.`;
+        case 'flask':
+          return `Flask web development milestone demonstrating lightweight routing, request lifecycles, template rendering, and practical backend APIs.`;
+        case 'javascript':
+          return `Core browser and runtime deep dive detailing JavaScript engine execution context, asynchronous event loop, and modern ES6+ paradigms.`;
+        case 'infographics':
+          return `Visual architectural breakdown comparing modern frameworks, social media recommendation algorithms, and AI agent architectures.`;
+        case 'console-projects':
+          return `Full project documentation and architectural walkthrough of complete production-grade console applications built in C and Python.`;
+        default:
+          return `Technical documentation and practical software engineering milestone.`;
       }
     }
 
@@ -1113,8 +1176,8 @@ html_template = '''<!DOCTYPE html>
     function shareCollection() {
       if (navigator.share) {
         navigator.share({
-          title: "Charan Teja's Python, Django & Flask Learning Hub",
-          text: "Check out this full 125-day roadmap of Python, Django, and Flask learning posts!",
+          title: "Charan Teja's Engineering & Learning Hub",
+          text: "Explore Charan Teja's complete 150+ milestone roadmap across Python, Django, Flask, JavaScript, and System Architecture!",
           url: window.location.href
         }).catch(() => {});
       } else {
@@ -1184,4 +1247,4 @@ full_html = html_template.replace('%DATA_PLACEHOLDER%', data_json_str)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(full_html)
 
-print("Generated index.html successfully! Size:", len(full_html), "bytes")
+print("Updated index.html successfully with all 150 items! Size:", len(full_html), "bytes")

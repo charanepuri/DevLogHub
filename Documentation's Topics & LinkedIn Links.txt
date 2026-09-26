@@ -1,0 +1,141 @@
+JavaScript 
+
+JavaScript vs TypeScript
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-vs-typescript-complete-comparison-activity-7480104567439777792-uM6D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+JavaScript Execution Context & Call Stack – Build a strong foundation.
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-execution-context-call-stack-activity-7494596493664796672-ECNy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+JavaScript Event Loop (Async/Await, Promises & Callbacks) – Explain asynchronous behavior.
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-event-loop-promises-asyncawait-activity-7497136792152977408-zwFW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+JavaScript DOM Manipulation – Complete Guide – Show practical browser-side skills.
+https://lnkd.in/p/dXncZU3c
+
+JavaScript ES6+ Features (Modern JavaScript) – Cover the language features used in everyday development.
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-modern-javascript-activity-7502206532265213952-AMCd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+
+
+🐍 Django
+
+MVT Architecture & Request-Response Cycle
+https://lnkd.in/p/dNTmFjUm
+
+Models, ORM & Database Relationships
+https://lnkd.in/p/d55qTseQ
+
+Forms, Validation & CSRF
+
+
+Authentication & Authorization
+
+
+Django REST Framework & REST APIs
+
+
+
+
+🌶️ Flask
+
+Flask #1 → Architecture, Routing & Request-Response Cycle
+Flask #2 → Jinja2 Templates & Static Files
+Flask #3 → Forms, Sessions & Authentication
+Flask #4 → REST APIs & JSON
+Flask #5 → Application Factory & Blueprints
+
+⚛️ React
+
+React #1 → Components, JSX & Props
+React #2 → State & Event Handling
+React #3 → useEffect & API Calls
+React #4 → Context API & useReducer
+React #5 → Performance Optimization
+
+🅰️ Angular
+
+Angular #1 → Components, Templates & Data Binding
+Angular #2 → Services & Dependency Injection
+Angular #3 → Routing & Route Guards
+Angular #4 → Forms & Reactive Forms
+Angular #5 → HTTP Client, RxJS & API Integration
+
+🟢 Node.js
+
+Node.js #1 → Architecture & Event-Driven Runtime
+Node.js #2 → Event Loop & Non-Blocking I/O
+Node.js #3 → Modules, npm & Package Management
+Node.js #4 → File System, Streams & Buffers
+Node.js #5 → REST API Development & Error Handling
+
+🚂 Express.js
+
+Express #1 → Routing & Request-Response Cycle
+Express #2 → Middleware
+Express #3 → REST API Development
+Express #4 → JWT Authentication & Authorization
+Express #5 → Error Handling, Validation & Production Architecture
+
+
+----------------------------------------------------------------------------
+
+Photo's
+
+React Hooks Explained
+
+React Lifecycle
+https://lnkd.in/p/dwtC7UM7
+
+React Virtual DOM
+https://lnkd.in/p/dWCQb6fb
+
+How Internet Works
+https://lnkd.in/p/dGvC7HUu
+
+AI Agents Explained
+https://www.linkedin.com/posts/charan-teja-972aa9231_aiagents-artificialintelligence-generativeai-activity-7496049633438289920-ZrLa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Chat GPT For Developers
+https://www.linkedin.com/posts/charan-teja-972aa9231_chatgpt-ai-artificialintelligence-activity-7493871543559692288-KU5f?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+JS vs TS
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-typescript-webdevelopment-activity-7492203304618278912-WAsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Express JS vs Node JS
+https://www.linkedin.com/posts/charan-teja-972aa9231_nodejs-expressjs-javascript-activity-7490391105692278784-JNO8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Snapchat Algorithm 
+https://www.linkedin.com/posts/charan-teja-972aa9231_snapchat-snapchatalgorithm-socialmedia-activity-7488077139230130176-ZzaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Git vs GitHub 
+https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7486638884647530497--9jL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Instagram Algorithm 
+https://www.linkedin.com/posts/charan-teja-972aa9231_instagram-instagramalgorithm-socialmedia-activity-7486253837285146624-sC3g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Django vs Flask
+https://www.linkedin.com/posts/charan-teja-972aa9231_python-django-flask-activity-7485891440158498816-xOEm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+LinkedIn Algorithm 
+https://www.linkedin.com/posts/charan-teja-972aa9231_linkedin-linkedintips-linkedinalgorithm-activity-7485166663726907392-wOJP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+JS vs RJS vs NJS
+https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-reactjs-nodejs-activity-7484804377531129856-lzjF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Git & GitHub
+https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7484241830558162944-6fRI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Youtube Algorithm 
+https://www.linkedin.com/posts/charan-teja-972aa9231_youtube-youtubealgorithm-contentcreator-activity-7483585012274024448-ixc4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+WhatsApp Algorithm 
+https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappalgorithm-activity-7481765506312663040-70YI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+--------------------------------------------------------------------
+Other Documentation's
+
+C Console Projects Documentation
+https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Python Console Projects Documentation
+https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs

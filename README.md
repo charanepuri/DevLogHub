@@ -1,6 +1,6 @@
-# PyPulse Hub | Charan Teja's Daily Learning Hub 🚀
+# PyPulse Hub | Charan Teja's Engineering & Learning Hub 🚀
 
-> **A curated showcase of 125+ daily engineering posts covering Core Python, Django, Django REST Framework (DRF), and Flask.**
+> **A curated showcase of 150+ verified engineering posts, documentation guides, and architecture breakdowns covering Core Python, Django, DRF, Flask, JavaScript, Visual Infographics, and Console Applications.**
 
 ---
 
@@ -19,30 +19,35 @@ P_D_F/
 │
 ├── index.html                                  # Standalone web app (HTML5 + Internal CSS + Internal JS)
 ├── README.md                                   # Documentation & setup guide
-├── PYTHON_DJANGO_FLASK Daily Learning Links.txt # Raw daily learning links file
-├── build_data.py                               # Parser script to process raw text into structured JSON
-└── generate_site.py                            # Generator script to inject compiled data into index.html
+├── PYTHON_DJANGO_FLASK Daily Learning Links.txt # Daily learning links file (Python, Django, Flask)
+├── Documentation's Topics & LinkedIn Links.txt # Core web, visual guides, algorithms & project docs
+├── build_all_data.py                           # Parser script combining all links into data.json
+├── generate_site.py                            # Compiler script injecting parsed data into index.html
+└── data.json                                   # Compiled dataset (150 technical milestones)
 ```
 
 ---
 
 ## 🎯 Highlights & Learning Tracks
 
-The learning roadmap spans **125 documented posts and milestones**:
+The learning roadmap spans **150 documented posts, deep dives, and visual guides**:
 
-| Track                          | Days / Milestones                      | Core Focus Areas                                                                                                                                                            |
-| :----------------------------- | :------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 🐍 **Python 50-Day Challenge** | **51 posts** (50 Days + Milestone)     | Slicing, List/Set/Dict Comprehensions, Functions, File Handling, OOP (Inheritance, Abstraction, Encapsulation, Polymorphism), Decorators, Algorithms & Pattern Problems     |
-| ⚡ **Django & DRF Series**     | **41 posts** (40 Days + Retrospective) | Project Architecture, Routing & Views, MVT & ORM, Admin Customization, Middleware, Forms, Signals, DRF Serializers, API Endpoints, JWT Authentication, Caching & Deployment |
-| 🧪 **Flask Daily Learning**    | **33 posts** (33 Days)                 | Microframework setup, Jinja2 Templates & Inheritance, Static Files, SQLite DB, Flask-SQLAlchemy, CRUD, Sessions & Cookies, RESTful APIs, Error Handling & Blueprints        |
+| Track                            | Items / Days   | Core Focus Areas                                                                                                                                                           |
+| :------------------------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 🐍 **Python 50-Day Challenge**   | **51 posts**   | Slicing, List/Set/Dict Comprehensions, Functions, File Handling, OOP (Inheritance, Abstraction, Encapsulation, Polymorphism), Decorators, Algorithms & Pattern Problems    |
+| ⚡ **Django & DRF Series**       | **43 posts**   | Project Architecture, MVT & ORM, Admin Panel, Middleware, Forms & CSRF, Signals, DRF Serializers, API Endpoints, JWT Authentication, Caching & Deployment                  |
+| 🧪 **Flask Mastery Series**      | **33 posts**   | Microframework setup, Jinja2 Templates & Inheritance, Static Files, SQLite DB, Flask-SQLAlchemy, CRUD, Sessions & Cookies, RESTful APIs, Error Handling & Blueprints       |
+| 📜 **JavaScript & Web Core**     | **5 posts**    | JS vs TypeScript, Execution Context & Call Stack, Event Loop & Async/Await, DOM Manipulation, Modern ES6+ Features                                                         |
+| 📊 **Visual Infographics & AI**  | **16 posts**   | AI Agents Explained, ChatGPT for Devs, System Architecture, Social Media Recommendation Algorithms (Instagram, YouTube, LinkedIn, Snapchat, WhatsApp), Framework Face-offs |
+| 💻 **Console & System Projects** | **2 projects** | In-depth documentation of complete production console applications built in C and Python                                                                                   |
 
 ---
 
 ## ⚡ Features
 
-- **100% Pure HTML5, Internal CSS & Vanilla JS**: Single portable file (`index.html`) that works right in any web browser without any local server required.
-- **Track Filtering**: Instantly switch between _All Tracks_, _Python 50 Days_, _Django & DRF_, and _Flask Mastery_.
-- **Instant Search**: Real-time live filtering by keyword, day number (e.g., `Day 10`), concept name (e.g., `JWT`, `ORM`, `Inheritance`), or topic description.
+- **100% Pure HTML5, Internal CSS & Vanilla JS**: Single portable file (`index.html`) that works directly in any web browser without any local server required.
+- **Track Filtering**: Instantly switch between _All Tracks_, _Python_, _Django & DRF_, _Flask_, _JavaScript_, _Visual Guides & AI_, or _Console Projects_.
+- **Instant Search**: Real-time live filtering by keyword, day number (e.g., `Day 10`), concept name (e.g., `JWT`, `ORM`, `AI Agents`, `Event Loop`), or topic description.
 - **Sorting Options**: View posts by roadmap sequence or sort alphabetically (A-Z, Z-A).
 - **Dark / Light Mode**: Seamless theme switcher preserving user preference in `localStorage`.
 - **Direct LinkedIn Links**: Each card features a direct button to read the full original post on LinkedIn.
@@ -51,7 +56,7 @@ The learning roadmap spans **125 documented posts and milestones**:
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
 ### Option 1: Direct File Opening (Simplest)
 
@@ -59,11 +64,8 @@ Double-click `index.html` or drag and drop it into any modern web browser (Chrom
 
 ### Option 2: Local HTTP Server (Optional)
 
-If you prefer running via a local server:
-
 ```powershell
-# Using Python's built-in HTTP server
-python -m http.server 8000
+python -m http.server 8000 --bind 127.0.0.1
 ```
 
 Then visit: `http://localhost:8000` in your web browser.
@@ -72,13 +74,13 @@ Then visit: `http://localhost:8000` in your web browser.
 
 ## 🛠️ Re-generating or Updating Links
 
-If you add new links to `PYTHON_DJANGO_FLASK Daily Learning Links.txt`, update the application by running:
+If you add new links to either `PYTHON_DJANGO_FLASK Daily Learning Links.txt` or `Documentation's Topics & LinkedIn Links.txt`:
 
 ```powershell
 python generate_site.py
 ```
 
-This parses the file and updates `index.html` with the latest data and counts.
+This re-parses both files and updates `index.html` with the latest counts and cards.
 
 ---
 
