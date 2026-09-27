@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PyPulse Hub | Charan Teja's Engineering & Learning Portfolio</title>
-  <meta name="description" content="Explore Charan Teja's complete 150+ milestone engineering archive covering Python, Django, DRF, Flask, JavaScript, Visual Infographics, and Console Projects.">
+  <title>DevLog Hub | Charan Teja's Engineering & Learning Portfolio</title>
+  <meta name="description" content="Explore Charan Teja's 200+ milestone engineering archive covering Technical Documentation, Python 50D, Django 40D, Flask Mastery, SQL, Projects, and Career Milestones.">
+  <link rel="icon" type="image/png" href="DevLog%20Hub.png">
+  <link rel="apple-touch-icon" href="DevLog%20Hub.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,12 +21,14 @@
       --text-sub: #cbd5e1;
       --border-color: rgba(255, 255, 255, 0.08);
       --border-hover: rgba(56, 189, 248, 0.4);
+      --docs-color: #f59e0b;
       --python-color: #38bdf8;
       --django-color: #10b981;
       --flask-color: #c084fc;
-      --js-color: #facc15;
-      --info-color: #f43f5e;
-      --proj-color: #fb923c;
+      --sql-color: #06b6d4;
+      --projects-color: #f97316;
+      --advpy-color: #a3e635;
+      --intern-color: #ec4899;
       --accent: #38bdf8;
       --accent-glow: rgba(56, 189, 248, 0.25);
       --card-radius: 16px;
@@ -41,12 +45,14 @@
       --text-sub: #334155;
       --border-color: rgba(0, 0, 0, 0.08);
       --border-hover: rgba(14, 165, 233, 0.4);
+      --docs-color: #d97706;
       --python-color: #0284c7;
       --django-color: #059669;
       --flask-color: #7c3aed;
-      --js-color: #ca8a04;
-      --info-color: #e11d48;
-      --proj-color: #ea580c;
+      --sql-color: #0891b2;
+      --projects-color: #ea580c;
+      --advpy-color: #65a30d;
+      --intern-color: #db2777;
       --accent: #0284c7;
       --accent-glow: rgba(2, 132, 199, 0.15);
     }
@@ -69,7 +75,7 @@
       background-image: 
         radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 85% 25%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(192, 132, 252, 0.06) 0%, transparent 50%);
+        radial-gradient(circle at 50% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
       background-attachment: fixed;
     }
 
@@ -102,7 +108,7 @@
     }
 
     .nav-container {
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 0.9rem 1.5rem;
       display: flex;
@@ -119,22 +125,29 @@
     }
 
     .brand-icon {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #0284c7, #10b981);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
+      overflow: hidden;
       box-shadow: 0 4px 14px var(--accent-glow);
+      flex-shrink: 0;
+    }
+
+    .brand-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .brand-title {
       font-weight: 800;
       font-size: 1.3rem;
       letter-spacing: -0.02em;
-      background: linear-gradient(120deg, #38bdf8, #10b981, #c084fc);
+      background: linear-gradient(120deg, #f59e0b, #38bdf8, #10b981, #c084fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -196,7 +209,7 @@
     .hero {
       position: relative;
       z-index: 1;
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 3.2rem 1.5rem 1.8rem;
       text-align: center;
@@ -207,10 +220,10 @@
       align-items: center;
       gap: 0.5rem;
       padding: 0.35rem 0.95rem;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
       border-radius: 999px;
-      color: var(--accent);
+      color: var(--docs-color);
       font-size: 0.82rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -222,8 +235,8 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 10px var(--accent);
+      background: var(--docs-color);
+      box-shadow: 0 0 10px var(--docs-color);
       animation: pulse-dot 2s infinite;
     }
 
@@ -241,13 +254,13 @@
     }
 
     .hero-title span.grad {
-      background: linear-gradient(135deg, #38bdf8 0%, #10b981 40%, #c084fc 70%, #facc15 100%);
+      background: linear-gradient(135deg, #f59e0b 0%, #38bdf8 35%, #10b981 65%, #c084fc 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .hero-desc {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto 2.25rem;
       color: var(--text-muted);
       font-size: 1.05rem;
@@ -257,9 +270,9 @@
     /* Stats Ribbon */
     .stats-ribbon {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 1rem;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.9rem;
+      max-width: 1300px;
       margin: 0 auto 2.75rem;
     }
 
@@ -267,7 +280,7 @@
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--card-radius);
-      padding: 1.15rem;
+      padding: 1rem 0.85rem;
       backdrop-filter: blur(10px);
       text-align: left;
       position: relative;
@@ -289,42 +302,47 @@
       height: 3px;
     }
 
-    .stat-card.stat-total::before { background: linear-gradient(90deg, #38bdf8, #10b981); }
+    .stat-card.stat-total::before { background: linear-gradient(90deg, #f59e0b, #38bdf8, #10b981); }
+    .stat-card.stat-docs::before { background: linear-gradient(90deg, var(--docs-color), transparent); }
     .stat-card.stat-python::before { background: linear-gradient(90deg, var(--python-color), transparent); }
     .stat-card.stat-django::before { background: linear-gradient(90deg, var(--django-color), transparent); }
     .stat-card.stat-flask::before { background: linear-gradient(90deg, var(--flask-color), transparent); }
-    .stat-card.stat-js::before { background: linear-gradient(90deg, var(--js-color), transparent); }
-    .stat-card.stat-info::before { background: linear-gradient(90deg, var(--info-color), transparent); }
-    .stat-card.stat-proj::before { background: linear-gradient(90deg, var(--proj-color), transparent); }
+    .stat-card.stat-sql::before { background: linear-gradient(90deg, var(--sql-color), transparent); }
+    .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
+    .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
+    .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
 
     .stat-number {
-      font-size: 1.95rem;
+      font-size: 1.75rem;
       font-weight: 800;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-main);
       display: flex;
       align-items: baseline;
-      gap: 0.3rem;
+      gap: 0.25rem;
     }
 
     .stat-number small {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       font-weight: 400;
     }
 
     .stat-label {
       color: var(--text-muted);
-      font-size: 0.8rem;
+      font-size: 0.76rem;
       font-weight: 600;
       margin-top: 0.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     /* Main Container */
     main {
       position: relative;
       z-index: 1;
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 0 1.5rem 5rem;
     }
@@ -371,14 +389,14 @@
       background: transparent;
       border: 1px solid var(--border-color);
       color: var(--text-muted);
-      padding: 0.5rem 0.95rem;
+      padding: 0.45rem 0.85rem;
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.83rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
       transition: var(--transition);
       white-space: nowrap;
     }
@@ -403,9 +421,9 @@
 
     .filter-tab .badge-count {
       background: rgba(0, 0, 0, 0.15);
-      padding: 0.15rem 0.5rem;
+      padding: 0.12rem 0.45rem;
       border-radius: 999px;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-family: 'JetBrains Mono', monospace;
     }
 
@@ -620,7 +638,12 @@
       background: rgba(255, 255, 255, 0.05);
     }
 
-    /* Category Themes */
+    /* Category Specific Themes */
+    .card-tech-docs .day-pill {
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--docs-color);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+    }
     .card-python .day-pill {
       background: rgba(56, 189, 248, 0.12);
       color: var(--python-color);
@@ -636,20 +659,25 @@
       color: var(--flask-color);
       border: 1px solid rgba(192, 132, 252, 0.25);
     }
-    .card-javascript .day-pill {
-      background: rgba(250, 204, 21, 0.12);
-      color: var(--js-color);
-      border: 1px solid rgba(250, 204, 21, 0.25);
+    .card-sql-mysql .day-pill {
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--sql-color);
+      border: 1px solid rgba(6, 182, 212, 0.25);
     }
-    .card-infographics .day-pill {
-      background: rgba(244, 63, 94, 0.12);
-      color: var(--info-color);
-      border: 1px solid rgba(244, 63, 94, 0.25);
+    .card-projects .day-pill {
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--projects-color);
+      border: 1px solid rgba(249, 115, 22, 0.25);
     }
-    .card-console-projects .day-pill {
-      background: rgba(251, 146, 60, 0.12);
-      color: var(--proj-color);
-      border: 1px solid rgba(251, 146, 60, 0.25);
+    .card-advanced-python .day-pill {
+      background: rgba(163, 230, 53, 0.12);
+      color: var(--advpy-color);
+      border: 1px solid rgba(163, 230, 53, 0.25);
+    }
+    .card-internships .day-pill {
+      background: rgba(236, 72, 153, 0.12);
+      color: var(--intern-color);
+      border: 1px solid rgba(236, 72, 153, 0.25);
     }
 
     /* Empty state */
@@ -750,6 +778,173 @@
       transform: translateY(-3px);
     }
 
+    /* Connected Ecosystem & Footer Styling */
+    .ecosystem-section {
+      max-width: 1360px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .ecosystem-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--card-radius);
+      padding: 2.2rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ecosystem-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #f59e0b, #38bdf8, #10b981, #ec4899);
+    }
+
+    .ecosystem-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .ecosystem-header h2 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      background: linear-gradient(120deg, #f59e0b, #38bdf8, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ecosystem-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .ecosystem-col {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.4rem;
+    }
+
+    .ecosystem-col-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .links-chip-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .eco-link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .eco-link-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    .eco-link-btn .eco-label {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .eco-badge {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+
+    /* Social Bar */
+    .socials-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.86rem;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      background: var(--bg-secondary);
+    }
+
+    .social-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-pill.social-linkedin:hover {
+      background: #0a66c2;
+      border-color: #0a66c2;
+      color: #ffffff;
+    }
+
+    .social-pill.social-github:hover {
+      background: #24292e;
+      border-color: #6e5494;
+      color: #ffffff;
+    }
+
+    .social-pill.social-instagram:hover {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      border-color: #dc2743;
+      color: #ffffff;
+    }
+
+    .social-pill.social-snapchat:hover {
+      background: #fffc00;
+      border-color: #fffc00;
+      color: #000000;
+    }
+
     /* Footer */
     footer {
       border-top: 1px solid var(--border-color);
@@ -761,7 +956,7 @@
     }
 
     .footer-content {
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -788,7 +983,7 @@
     }
 
     /* Responsive */
-    @media (max-width: 840px) {
+    @media (max-width: 900px) {
       .controls-wrapper {
         top: 60px;
         padding: 0.85rem;
@@ -802,13 +997,13 @@
         grid-template-columns: 1fr;
       }
       .stats-ribbon {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
       .stats-ribbon {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
       .nav-container {
         padding: 0.75rem 1rem;
@@ -829,9 +1024,11 @@
   <header>
     <div class="nav-container">
       <a href="#" class="brand">
-        <div class="brand-icon">⚡</div>
+        <div class="brand-icon">
+          <img src="DevLog%20Hub.png" alt="DevLog Hub Logo" width="42" height="42">
+        </div>
         <div>
-          <span class="brand-title">PyPulse Hub</span>
+          <span class="brand-title">DevLog Hub</span>
           <span class="brand-author">by Charan Teja</span>
         </div>
       </a>
@@ -839,6 +1036,9 @@
         <button id="themeToggle" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
           <span id="themeIcon">☀️</span>
         </button>
+        <a href="#ecosystem" class="theme-toggle-btn" style="text-decoration: none; font-size: 0.85rem; font-weight: 600;" title="View Live Portfolios & Projects">
+          <span>🌐 Portfolios</span>
+        </a>
         <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           LinkedIn Profile
@@ -851,45 +1051,53 @@
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      150+ Verified Technical Milestones
+      200+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
-      Python, Full-Stack Frameworks &amp; <br>
-      <span class="grad">Engineering Knowledge Hub</span>
+      Full-Stack Engineering, Data &amp; <br>
+      <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive archive of Charan Teja's technical journey on LinkedIn &mdash; featuring 50 Days of Python, 40 Days of Django &amp; DRF, Flask Mastery, Core JavaScript Documentation, System Architecture Infographics, and Production Console Projects.
+      A unified, interactive knowledge hub indexing 200+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">150<small>milestones</small></div>
+        <div class="stat-number" id="totalPostsStat">202<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
+      </div>
+      <div class="stat-card stat-docs">
+        <div class="stat-number">26<small>guides</small></div>
+        <div class="stat-label">Technical Documentation</div>
       </div>
       <div class="stat-card stat-python">
         <div class="stat-number">51<small>days</small></div>
         <div class="stat-label">Python 50D Challenge</div>
       </div>
       <div class="stat-card stat-django">
-        <div class="stat-number">43<small>topics</small></div>
-        <div class="stat-label">Django &amp; DRF Architecture</div>
+        <div class="stat-number">41<small>days</small></div>
+        <div class="stat-label">Django 40D Series</div>
       </div>
       <div class="stat-card stat-flask">
         <div class="stat-number">33<small>days</small></div>
         <div class="stat-label">Flask Microservices</div>
       </div>
-      <div class="stat-card stat-js">
-        <div class="stat-number">5<small>guides</small></div>
-        <div class="stat-label">JavaScript &amp; Web Core</div>
+      <div class="stat-card stat-sql">
+        <div class="stat-number">18<small>queries</small></div>
+        <div class="stat-label">SQL &amp; MySQL Databases</div>
       </div>
-      <div class="stat-card stat-info">
-        <div class="stat-number">16<small>graphics</small></div>
-        <div class="stat-label">Visual Tech &amp; AI Guides</div>
+      <div class="stat-card stat-projects">
+        <div class="stat-number">8<small>apps</small></div>
+        <div class="stat-label">Projects &amp; AI Apps</div>
       </div>
-      <div class="stat-card stat-proj">
-        <div class="stat-number">2<small>projects</small></div>
-        <div class="stat-label">Console Project Docs</div>
+      <div class="stat-card stat-advpy">
+        <div class="stat-number">15<small>topics</small></div>
+        <div class="stat-label">Advanced Python &amp; Data</div>
+      </div>
+      <div class="stat-card stat-intern">
+        <div class="stat-number">10<small>milestones</small></div>
+        <div class="stat-label">Career Milestones</div>
       </div>
     </div>
   </section>
@@ -902,31 +1110,39 @@
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">150</span>
+            <span class="badge-count" id="countAll">202</span>
+          </button>
+          <button class="filter-tab" data-category="tech-docs">
+            <span>📚 Technical Docs</span>
+            <span class="badge-count" id="countDocs">26</span>
           </button>
           <button class="filter-tab" data-category="python">
-            <span>🐍 Python</span>
+            <span>🐍 Python 50D</span>
             <span class="badge-count" id="countPython">51</span>
           </button>
           <button class="filter-tab" data-category="django">
-            <span>⚡ Django &amp; DRF</span>
-            <span class="badge-count" id="countDjango">43</span>
+            <span>⚡ Django 40D</span>
+            <span class="badge-count" id="countDjango">41</span>
           </button>
           <button class="filter-tab" data-category="flask">
             <span>🧪 Flask</span>
             <span class="badge-count" id="countFlask">33</span>
           </button>
-          <button class="filter-tab" data-category="javascript">
-            <span>📜 JavaScript &amp; Web</span>
-            <span class="badge-count" id="countJs">5</span>
+          <button class="filter-tab" data-category="sql-mysql">
+            <span>🗄️ SQL &amp; MySQL</span>
+            <span class="badge-count" id="countSql">18</span>
           </button>
-          <button class="filter-tab" data-category="infographics">
-            <span>📊 Visual Guides &amp; AI</span>
-            <span class="badge-count" id="countInfo">16</span>
+          <button class="filter-tab" data-category="projects">
+            <span>🚀 Projects &amp; AI</span>
+            <span class="badge-count" id="countProj">8</span>
           </button>
-          <button class="filter-tab" data-category="console-projects">
-            <span>💻 Console Projects</span>
-            <span class="badge-count" id="countProj">2</span>
+          <button class="filter-tab" data-category="advanced-python">
+            <span>⚙️ Advanced Python</span>
+            <span class="badge-count" id="countAdvPy">15</span>
+          </button>
+          <button class="filter-tab" data-category="internships">
+            <span>🎓 Career Milestones</span>
+            <span class="badge-count" id="countIntern">10</span>
           </button>
         </div>
       </div>
@@ -934,7 +1150,7 @@
       <div class="search-filter-row">
         <div class="search-box">
           <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <input type="text" id="searchInput" placeholder="Search by topic, day (e.g. Day 10), ORM, JWT, AI Agents, Algorithm..." aria-label="Search posts">
+          <input type="text" id="searchInput" placeholder="Search by documentation topic, day, keyword (e.g. DOM, Event Loop, JOIN, LLM, MVT)..." aria-label="Search posts">
         </div>
         <div class="sort-box">
           <label for="sortOrder" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Sort:</label>
@@ -949,7 +1165,7 @@
 
     <!-- Results Status -->
     <div class="results-info">
-      <div>Showing <strong id="visibleCount">150</strong> learning milestones</div>
+      <div>Showing <strong id="visibleCount">202</strong> technical milestones</div>
       <div id="filterStatusHint"></div>
     </div>
 
@@ -970,11 +1186,97 @@
     <span id="toastMessage">Link copied to clipboard!</span>
   </div>
 
+  <!-- Connect & Portfolios Ecosystem Section -->
+  <section class="ecosystem-section" id="ecosystem">
+    <div class="ecosystem-card">
+      <div class="ecosystem-header">
+        <h2>🌐 Connect &amp; Explore Portfolios</h2>
+        <p>Discover Charan Teja's live framework portals, project hubs, and professional social profiles</p>
+      </div>
+
+      <div class="ecosystem-grid">
+        <!-- Portfolios Column -->
+        <div class="ecosystem-col">
+          <div class="ecosystem-col-title">
+            <span>💼</span> View Live Portfolios
+          </div>
+          <div class="links-chip-group">
+            <a href="https://charanepuri.github.io/PORTFOLIO-USING-HTML-CSS-JS" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🌐</span> Basic Portfolio</span>
+              <span class="eco-badge">HTML/CSS/JS</span>
+            </a>
+            <a href="https://portfolio-site-django.onrender.com" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚡</span> Django Portfolio</span>
+              <span class="eco-badge">Render</span>
+            </a>
+            <a href="https://charan-react-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚛️</span> React Portfolio</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+            <a href="https://flask-developer-dashboard-portfolio.onrender.com/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🧪</span> Flask Dashboard</span>
+              <span class="eco-badge">Render</span>
+            </a>
+            <a href="https://angular-portfolio-sigma-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🅰️</span> Angular Portfolio</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+            <a href="https://profile-card-angular.vercel.app/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🪪</span> Angular Profile Card</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Hubs Column -->
+        <div class="ecosystem-col">
+          <div class="ecosystem-col-title">
+            <span>🚀</span> Dedicated Project Hubs
+          </div>
+          <div class="links-chip-group">
+            <a href="https://charanepuri.github.io/javascript-projects-portfolio/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>📜</span> JavaScript Projects Website</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+            <a href="https://charanepuri.github.io/django-projects-hub/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚡</span> Django Projects Hub</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+            <a href="https://charanepuri.github.io/react-projects-hub/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚛️</span> React Projects Hub</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Connections Row -->
+      <div class="socials-row">
+        <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer" class="social-pill social-linkedin">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/charanepuri" target="_blank" rel="noopener noreferrer" class="social-pill social-github">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/_just_call_me_charan_tej" target="_blank" rel="noopener noreferrer" class="social-pill social-instagram">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.snapchat.com/add/justcalltej2003?share_id=o3MYfXqlpYE&locale=en-IN" target="_blank" rel="noopener noreferrer" class="social-pill social-snapchat">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.001 2c-3.834 0-6.223 2.654-6.223 5.485 0 1.442.668 2.636 1.488 3.491.137.143.208.33.208.52 0 .428-.43.766-.991 1.15-.494.338-1.096.75-1.096 1.427 0 .543.435.98 1.13 1.14.364.084.774.137 1.206.182.261.027.424.238.384.499-.085.551-.309 1.48-1.706 1.839-.415.106-.728.375-.728.742 0 .684 1.106 1.246 2.64 1.414.288.031.503.267.498.556-.019 1.094.757 1.555 1.455 1.555.515 0 1.047-.197 1.637-.604.421-.29.967-.29 1.388 0 .59.407 1.122.604 1.637.604.698 0 1.474-.461 1.455-1.555-.005-.289.21-.525.498-.556 1.534-.168 2.64-.73 2.64-1.414 0-.367-.313-.636-.728-.742-1.397-.359-1.621-1.288-1.706-1.839-.04-.261.123-.472.384-.499.432-.045.842-.098 1.206-.182.695-.16 1.13-.597 1.13-1.14 0-.677-.602-1.089-1.096-1.427-.561-.384-.991-.722-.991-1.15 0-.19.071-.377.208-.52.82-.855 1.488-2.049 1.488-3.491 0-2.831-2.389-5.485-6.223-5.485z"/></svg>
+          Snapchat
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div>
-        <strong>PyPulse Hub</strong> &bull; Developed for Charan Teja's Engineering Portfolio
+        <strong>DevLog Hub</strong> &bull; Developed for Charan Teja's Engineering Portfolio
       </div>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
@@ -988,8 +1290,7 @@
   </footer>
 
   <script>
-    // Embedded Data Generated from Both Documentation & Daily Learning Files
-    const POSTS_DATA = [{"id":"python","name":"Python 50-Day Challenge","shortName":"Python 50D","tagline":"Core Fundamentals, Data Structures, OOP Mastery & Problem Solving","badge":"50 Days","accent":"#38bdf8","icon":"\ud83d\udc0d","count":51,"posts":[{"id":"python-1","day":"Day 01","topic":"Mastering Python Slicing Forward Reverse","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-slicing-forward-reverse-activity-7388794172452978688-OA2K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-2","day":"Day 02","topic":"Cracking Python List Comprehension In One","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_cracking-python-list-comprehension-in-one-activity-7389160312589127680-au7d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-3","day":"Day 03","topic":"Exploring Python Tuple Comprehension Deep","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tuple-comprehension-deep-activity-7389881329955344384-S1hX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-4","day":"Day 04","topic":"Solving Problems With Python Dictionary Comprehension","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-problems-with-python-dictionary-comprehension-activity-7391330889705762816-11UP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-5","day":"Day 05","topic":"Mastering Python Set Comprehension In One","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-set-comprehension-in-one-activity-7391693277386878977-xoMQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-6","day":"Day 06","topic":"Understanding Python Type Conversion Like","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-type-conversion-like-activity-7392418037737615360-wcbf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-7","day":"Day 07","topic":"Exploring Functions In Python Code Reuse","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-functions-in-python-code-reuse-activity-7394230023290822657-F4eE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-8","day":"Day 08","topic":"Mastering Problem Solving Using Python Functions","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-problem-solving-using-python-functions-activity-7394592383214202880-VBUH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-9","day":"Day 09","topic":"Exploring Modules In Python Reuse Code Efficiently","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-modules-in-python-reuse-code-efficiently-activity-7394954738594762752-Svg6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-10","day":"Day 10","topic":"Exploring Pythons Random Module For Fun","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-pythons-random-module-for-fun-activity-7396151380429692929-GAbe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-11","day":"Day 11","topic":"Solving Python Problems Using The Random","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-python-problems-using-the-random-activity-7396404334659399680-8S1V?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-12","day":"Day 12","topic":"File Handling In Python For Real World","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_learning-file-handling-in-python-for-real-world-activity-7396766685124411392-46fD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-13","day":"Day 13","topic":"Understanding Advanced Python File Modes","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-advanced-python-file-modes-activity-7397129098029981696-3qKh?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-14","day":"Day 14","topic":"Mastering Datetime Timedelta Pyttsx3 In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-datetime-timedelta-pyttsx3-in-activity-7397491460494917633-73db?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-15","day":"Day 15","topic":"Exploring Python Tts With Pyttsx4 Gtts","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tts-with-pyttsx4-gtts-activity-7397853882183270400-u2sB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-16","day":"Day 16","topic":"Practicing Python Logic With 10 Real Tasks","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-10-real-tasks-activity-7398581405410156544-8EpK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-17","day":"Day 17","topic":"Practicing Python With Beginnerintermediate","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-with-beginnerintermediate-activity-7398941013094035456-YJjk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-18","day":"Day 18","topic":"Mastering Python Essentials My Day 18 Learning","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-essentials-my-day-18-learning-activity-7399303416247857152-uKxX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-19","day":"Day 19","topic":"Deep Dive Into Core Python Concepts Day","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_deep-dive-into-core-python-concepts-day-activity-7399665783087353857-kxBu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-20","day":"Day 20","topic":"Consistent Learning Toward Becoming","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-consistent-learning-toward-becoming-activity-7400028202963763201-I4bR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-21","day":"Day 21","topic":"Solving Essential Python Tasks Day 21 Learning","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-essential-python-tasks-day-21-learning-activity-7400390607942365184-qLH1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-22","day":"Day 22","topic":"Understanding Oops Concepts In Python Day","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-oops-concepts-in-python-day-activity-7401462626301624320-TXxU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-23","day":"Day 23","topic":"Understanding Self Constructors Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-self-constructors-oop-activity-7401840131638558720-vFRN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-24","day":"Day 24","topic":"Understanding Class Variables Methods In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-class-variables-methods-in-activity-7402202503418691584-EslN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-25","day":"Day 25","topic":"Mastering Static Methods Inheritance Overriding","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-static-methods-inheritance-overriding-activity-7402564886213382144-Jcd5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-26","day":"Day 26","topic":"Understanding Inheritance In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-inheritance-in-python-oop-activity-7404014483498557440-Tzew?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-27","day":"Day 27","topic":"Solving Inheritance Problems In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-inheritance-problems-in-python-oop-activity-7404376828293111809-Naon?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-28","day":"Day 28","topic":"Exploring Hierarchical Hybrid Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-hierarchical-hybrid-inheritance-activity-7404739219606351872-Lyyc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-29","day":"Day 29","topic":"Practicing Hierarchical Hybrid Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-hierarchical-hybrid-inheritance-activity-7405101640665722881-X-5U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-30","day":"Day 30","topic":"Practicing Core Inheritance Concepts In Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-core-inheritance-concepts-in-python-activity-7405463987162824704-o6MV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-31","day":"Day 31","topic":"Understanding Abstraction In Python Oop With","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-abstraction-in-python-oop-with-activity-7406188816836759552-qqZT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-32","day":"Day 32","topic":"Solving Real World Problems Using Abstraction","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-real-world-problems-using-abstraction-activity-7406536052196380672-l3vf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-33","day":"Day 33","topic":"Understanding Python Decorators With Real","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-decorators-with-real-activity-7406898473205137426-XAVC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-34","day":"Day 34","topic":"Encapsulation In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_learning-encapsulation-in-python-oop-activity-7407260829844176896-BXui?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-35","day":"Day 35","topic":"Practicing Encapsulation With Real Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-encapsulation-with-real-python-activity-7407623235057598464-ho0b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-36","day":"Day 36","topic":"Building A Banking Application Using Encapsulation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_building-a-banking-application-using-encapsulation-activity-7407985606099836928-duv7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-37","day":"Day 37","topic":"Practicing Python String Operations With","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-string-operations-with-activity-7408348020636811264-LG7q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-38","day":"Day 38","topic":"Practicing Python Logic With Real Problem","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-real-problem-activity-7408884126201712641-kYuW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-39","day":"Day 39","topic":"Understanding Polymorphism In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-polymorphism-in-python-oop-activity-7409072934792798208-aLWD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-40","day":"Day 40","topic":"Practicing Duck Typing Method Overloading","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-duck-typing-method-overloading-activity-7409435239770558464-6AEV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-41","day":"Day 41","topic":"Practicing Python Pattern Programs Using","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-pattern-programs-using-activity-7409797646749560832-G8f3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-42","day":"Day 42","topic":"Practicing Python File Handling With Real","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-file-handling-with-real-activity-7410159958471696384-ybB5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-43","day":"Day 43","topic":"Practicing Even Odd Factorial Logic In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-even-odd-factorial-logic-in-activity-7410688453962788864-GP3E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-44","day":"Day 44","topic":"Practicing Addition Square List Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-addition-square-list-logic-activity-7411050831279583232-UZCe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-45","day":"Day 45","topic":"Practicing String Length Digits Vowel","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-string-length-digits-vowel-activity-7411413264598892544-9sxT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-46","day":"Day 46","topic":"Practicing Dictionary Set Tuple Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-dictionary-set-tuple-logic-activity-7411624692471590912-ZZxJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-47","day":"Day 47","topic":"Practicing List Integer Boolean Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-list-integer-boolean-logic-activity-7411987013094273024-cPmi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-48","day":"Day 48","topic":"Starting The New Year With Python Problem","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_starting-the-new-year-with-python-problem-activity-7412319167158231040-IWBQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-49","day":"Day 49","topic":"Practicing Armstrong Perfect Numbers In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-armstrong-perfect-numbers-in-activity-7412696685212102656-IXrY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-50","day":"Day 50","topic":"Completed Python Learning Challenge","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-50-completed-python-learning-challenge-activity-7413051490975641600-AfDC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-51","day":"Grand Finale \ud83c\udf89","topic":"50 Days of Consistent Python Learning Completed","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_50days-activity-7413587705437220864-6fr3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"django","name":"Django & DRF 40-Day Series","shortName":"Django & DRF","tagline":"Enterprise Full-Stack Architecture, ORM, REST APIs & Production Deployment","badge":"40 Days","accent":"#10b981","icon":"\u26a1","count":43,"posts":[{"id":"django-1","day":"Day 01","topic":"Getting Started With Django Framework","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-django-framework-activity-7445473876391915520-cm0n?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-2","day":"Day 02","topic":"What Is Django A Beginners Guide","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_what-is-django-a-beginners-guide-activity-7445836269844086784-9tRq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-3","day":"Day 03","topic":"Install Django Step By Step For Beginners","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_install-django-step-by-step-for-beginners-activity-7447282096823357440-V1rs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-4","day":"Day 04","topic":"Understanding Django Project Structure","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-django-project-structure-activity-7447863385519652864-Y0-P?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-5","day":"Day 05","topic":"Creating Your First Django App","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-5-creating-your-first-django-app-activity-7448588143055777794-JJ3b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-6","day":"Day 06","topic":"Running Django Development Server","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-6-running-django-development-server-activity-7449312964962308096-3O8I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-7","day":"Day 07","topic":"Django Urls Routing Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-7-django-urls-routing-explained-activity-7451487260442624000-e6WX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-8","day":"Day 08","topic":"Django Views Explained Beginner Guide","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-8-django-views-explained-beginner-guide-activity-7454012638692413440-lAe0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-9","day":"Day 09","topic":"Django Templates Html Dynamic Data","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-9-django-templates-html-dynamic-data-activity-7456183192337801216-XfOp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-10","day":"Day 10","topic":"Django Models Database Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-10-django-models-database-explained-activity-7458361290063785984-qWCx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-11","day":"Day 11","topic":"Django Orm Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-11-django-orm-explained-simply-activity-7458723678353199104-EQ3_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-12","day":"Day 12","topic":"Django Admin Panel Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-12-django-admin-panel-explained-activity-7460173247884505088-5jO5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-13","day":"Day 13","topic":"Django Forms Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-13-django-forms-explained-simply-activity-7461996521517907968-cyUb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-14","day":"Day 14","topic":"Django Authentication Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-14-django-authentication-explained-activity-7463435040908189696-cyYq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-15","day":"Day 15","topic":"Django Static Files Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-15-django-static-files-explained-activity-7464521890011717632-kj3l?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-16","day":"Day 16","topic":"Django Template Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-16-django-template-inheritance-activity-7465609054325858304-TyNr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-17","day":"Day 17","topic":"Django Crud Operations Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-17-django-crud-operations-explained-activity-7465971434545238016-qIzj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-18","day":"Day 18","topic":"Django Class Based Views Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-18-django-class-based-views-explained-activity-7466696210997800960-2HNM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-19","day":"Day 19","topic":"Django Generic Views Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-19-django-generic-views-explained-activity-7467783392781221889-Usnn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-20","day":"Day 20","topic":"Django Middleware Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-django-middleware-explained-activity-7468870539927994368-RSyZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-21","day":"Day 21","topic":"Django Sessions Cookies Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-21-django-sessions-cookies-explained-activity-7469202731493384192-1J1J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-22","day":"Day 22","topic":"Messages Framework Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-messages-framework-explained-activity-7470320093802168320-1wYx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-23","day":"Day 23","topic":"File Uploads In Django Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_file-uploads-in-django-explained-activity-7471044864760242176-tx6o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-24","day":"Day 24","topic":"Pagination Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-pagination-explained-simply-activity-7471769642412183552-iC5E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-25","day":"Day 25","topic":"Signals Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-signals-explained-simply-activity-7472132033734025216-n6VO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-26","day":"Day 26","topic":"Custom User Model Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-custom-user-model-explained-activity-7472494417510047744-ZoYH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-27","day":"Day 27","topic":"Permissions Authorization","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-permissions-authorization-activity-7473219214607048704-MxzY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-28","day":"Day 28","topic":"Email System Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-email-system-explained-activity-7473581580142137344-EOUo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-29","day":"Day 29","topic":"Rest Framework Introduction","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-rest-framework-introduction-activity-7473943971719766016-uwPs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-30","day":"Day 30","topic":"Drf Serializers The Api Data Bridge","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_drf-serializers-the-api-data-bridge-activity-7474668740534566912-71Tl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-31","day":"Day 31","topic":"Drf Api Views Endpoints Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_drf-api-views-endpoints-explained-activity-7475031146796425216-rpd3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-32","day":"Day 32","topic":"Building Crud Apis With Django Rest Framework","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_building-crud-apis-with-django-rest-framework-activity-7475393529452679168-l0fQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-33","day":"Day 33","topic":"Jwt Authentication In Drf Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_jwt-authentication-in-drf-explained-activity-7475755912364933120-MZ2Z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-34","day":"Day 34","topic":"Static Vs Media Files Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-static-vs-media-files-explained-activity-7476118295193243648-iHEZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-35","day":"Day 35","topic":"Caching For Faster Applications","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-caching-for-faster-applications-activity-7476480682710642688-a5zu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-36","day":"Day 36","topic":"Security Best Practices Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-security-best-practices-explained-activity-7477205479337930752--DCI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-37","day":"Day 37","topic":"Why Testing Matters In Django Development","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_why-testing-matters-in-django-development-activity-7477568011072241665-HCre?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-38","day":"Day 38","topic":"From Code To Product Django Deployment","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_from-code-to-product-django-deployment-activity-7478292624773320704-HkSf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-39","day":"Day 39","topic":"React Building Modern Full Stack","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-react-building-modern-full-stack-activity-7478655010013130752-epam?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-40","day":"Day 40","topic":"40 Days Of Django My Learning Journey","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-my-learning-journey-activity-7479017397815803904-AEje?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-41","day":"Series Wrap-up \ud83d\ude80","topic":"40 Days of Django: Lessons Beyond Code & Retrospective","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-lessons-beyond-code-activity-7480466960007356416-ddeG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-doc-42","day":"Core Doc \ud83d\udcd1","topic":"Django Deep-Dive: \u2013M\u2013V\u2013T\u2013 \u2013A\u2013r\u2013c\u2013h\u2013i\u2013t\u2013e\u2013c\u2013t\u2013u\u2013r\u2013e\u2013 \u2013&\u2013 \u2013R\u2013e\u2013q\u2013u\u2013e\u2013s\u2013t\u2013-\u2013R\u2013e\u2013s\u2013p\u2013o\u2013n\u2013s\u2013e\u2013 \u2013C\u2013y\u2013c\u2013l\u2013e\u2013","url":"https://lnkd.in/p/dNTmFjUm"},{"id":"django-doc-43","day":"Core Doc \ud83d\udcd1","topic":"Django Deep-Dive: \u2013M\u2013o\u2013d\u2013e\u2013l\u2013s\u2013,\u2013 \u2013O\u2013R\u2013M\u2013 \u2013&\u2013 \u2013D\u2013a\u2013t\u2013a\u2013b\u2013a\u2013s\u2013e\u2013 \u2013R\u2013e\u2013l\u2013a\u2013t\u2013i\u2013o\u2013n\u2013s\u2013h\u2013i\u2013p\u2013s\u2013","url":"https://lnkd.in/p/d55qTseQ"}]},{"id":"flask","name":"Flask Daily Learning Series","shortName":"Flask Mastery","tagline":"Lightweight Microservices, Dynamic Templating, DB Integration & APIs","badge":"33 Days","accent":"#c084fc","icon":"\ud83e\uddea","count":33,"posts":[{"id":"flask-1","day":"Day 01","topic":"Day 1 Flask Fundamentals","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-1-flask-fundamentals-activity-7487507134423814145-nI-A?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-2","day":"Day 02","topic":"Day 2 Understanding Routing","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-2-understanding-routing-activity-7487710956437921792-zBGi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-3","day":"Day 03","topic":"Day 3 Http Methods In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-3-http-methods-in-flask-activity-7488439482417913856-zDV-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-4","day":"Day 04","topic":"Day 4 Jinja2 Templates","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-4-jinja2-templates-activity-7489168052756922368-H0Rm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-5","day":"Day 05","topic":"Day 5 Jinja2 Template Features","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-5-jinja2-template-features-activity-7489885263620489216-mQTb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-6","day":"Day 06","topic":"Day 6 Template Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-6-template-inheritance-activity-7490613811691900928-1Np4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-7","day":"Day 07","topic":"Day 7 Static Files In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-7-static-files-in-flask-activity-7490976203969986560-tMsp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-8","day":"Day 08","topic":"Day 8 Html Forms In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-8-html-forms-in-flask-activity-7491704750145617920-ZBx0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-9","day":"Day 09","topic":"Day 9 Form Validation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-9-form-validation-activity-7492422008274849792-8kwn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-10","day":"Day 10","topic":"Day 10 Sqlite Database","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-10-sqlite-database-activity-7492784546841640960-0gsI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-11","day":"Day 11","topic":"Day 11 Crud Operations","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-11-crud-operations-activity-7493512908623081472-Qhzi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-12","day":"Day 12","topic":"Day 12 Flask Sqlalchemy","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-12-flask-sqlalchemy-activity-7494241512424353792-oNZt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-13","day":"Day 13","topic":"Day 13 Database Relationships","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-13-database-relationships-activity-7495154987099029505-djp_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-14","day":"Day 14","topic":"Day 14Application Structure","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-14application-structure-activity-7495683542417494017-Dv3U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-15","day":"Day 15","topic":"Day 15 Sessions Cookies","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-15-sessions-cookies-activity-7496412011606716416-NkjE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-16","day":"Day 16","topic":"Day 16 User Registration","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-16-user-registration-activity-7496770798683344896-1rI7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-17","day":"Day 17","topic":"Day 17 User Login Authentication","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-17-user-login-authentication-activity-7498227791256199168-hWfZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-18","day":"Day 18","topic":"Day 18 Authorization","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-18-authorization-activity-7498582632763564032-9vCD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-19","day":"Day 19","topic":"Flask RESTful APIs & Serialization","url":"https://lnkd.in/p/dnhGUFMW"},{"id":"flask-20","day":"Day 20","topic":"Request Data, Headers & JSON Parsing","url":"https://lnkd.in/p/dHFgYm3r"},{"id":"flask-21","day":"Day 21","topic":"User Authentication & Password Hashing","url":"https://lnkd.in/p/dzBcQp4D"},{"id":"flask-22","day":"Day 22","topic":"Flask-Login & Session Security","url":"https://lnkd.in/p/d2v6_XM5"},{"id":"flask-23","day":"Day 23","topic":"Day 23 Working With Api","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-23-working-with-api-activity-7501847837954179072-zP1L?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-24","day":"Day 24","topic":"Day 24 File Uploads Security","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-24-file-uploads-security-activity-7502931266330222592-7OPg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-25","day":"Day 25","topic":"Day 25 Error Handling","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-25-error-handling-activity-7503656227936108544-XMHs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-26","day":"Day 26","topic":"Day 26Configurationenvironment","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learningday-26configurationenvironment-activity-7504018617420726272-NeXL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-27","day":"Day 27","topic":"Email Notifications & Background Tasks","url":"https://lnkd.in/p/dcPRKE5s"},{"id":"flask-28","day":"Day 28","topic":"Day 28 Flask Blueprints","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-28-flask-blueprints-activity-7505830452469862400-SVtV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-29","day":"Day 29","topic":"Flask Caching & Performance Optimization","url":"https://lnkd.in/p/eQAvhtCK"},{"id":"flask-30","day":"Day 30","topic":"Unit Testing Flask Apps with Pytest","url":"https://lnkd.in/p/drHA-Shs"},{"id":"flask-31","day":"Day 31","topic":"Gunicorn & Nginx Production Deployment","url":"https://lnkd.in/p/dDu7DccB"},{"id":"flask-32","day":"Day 32","topic":"Day 32 Jwt Authentication","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-32-jwt-authentication-activity-7508368337781944320-_qT0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-33","day":"Day 33","topic":"Full-Stack Flask Architecture & WebSockets","url":"https://lnkd.in/p/d3WJKEGz"}]},{"id":"javascript","name":"JavaScript & Web Fundamentals","shortName":"JavaScript & Web","tagline":"Execution Context, Event Loop, DOM Manipulation, ES6+ & TypeScript","badge":"Core Web","accent":"#facc15","icon":"\ud83d\udcdc","count":5,"posts":[{"id":"js-1","day":"Doc #1","topic":"\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013v\u2013s\u2013 \u2013T\u2013y\u2013p\u2013e\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-vs-typescript-complete-comparison-activity-7480104567439777792-uM6D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"js-2","day":"Doc #2","topic":"\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013x\u2013e\u2013c\u2013u\u2013t\u2013i\u2013o\u2013n\u2013 \u2013C\u2013o\u2013n\u2013t\u2013e\u2013x\u2013t\u2013 \u2013&\u2013 \u2013C\u2013a\u2013l\u2013l\u2013 \u2013S\u2013t\u2013a\u2013c\u2013k\u2013 \u2013\u2013\u2013 \u2013B\u2013u\u2013i\u2013l\u2013d\u2013 \u2013a\u2013 \u2013s\u2013t\u2013r\u2013o\u2013n\u2013g\u2013 \u2013f\u2013o\u2013u\u2013n\u2013d\u2013a\u2013t\u2013i\u2013o\u2013n\u2013.\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-execution-context-call-stack-activity-7494596493664796672-ECNy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"js-3","day":"Doc #3","topic":"\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013v\u2013e\u2013n\u2013t\u2013 \u2013L\u2013o\u2013o\u2013p\u2013 \u2013(\u2013A\u2013s\u2013y\u2013n\u2013c\u2013/\u2013A\u2013w\u2013a\u2013i\u2013t\u2013,\u2013 \u2013P\u2013r\u2013o\u2013m\u2013i\u2013s\u2013e\u2013s\u2013 \u2013&\u2013 \u2013C\u2013a\u2013l\u2013l\u2013b\u2013a\u2013c\u2013k\u2013s\u2013)\u2013 \u2013\u2013\u2013 \u2013E\u2013x\u2013p\u2013l\u2013a\u2013i\u2013n\u2013 \u2013a\u2013s\u2013y\u2013n\u2013c\u2013h\u2013r\u2013o\u2013n\u2013o\u2013u\u2013s\u2013 \u2013b\u2013e\u2013h\u2013a\u2013v\u2013i\u2013o\u2013r\u2013.\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-event-loop-promises-asyncawait-activity-7497136792152977408-zwFW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"js-4","day":"Doc #4","topic":"\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013D\u2013O\u2013M\u2013 \u2013M\u2013a\u2013n\u2013i\u2013p\u2013u\u2013l\u2013a\u2013t\u2013i\u2013o\u2013n\u2013 \u2013\u2013\u2013 \u2013C\u2013o\u2013m\u2013p\u2013l\u2013e\u2013t\u2013e\u2013 \u2013G\u2013u\u2013i\u2013d\u2013e\u2013 \u2013\u2013\u2013 \u2013S\u2013h\u2013o\u2013w\u2013 \u2013p\u2013r\u2013a\u2013c\u2013t\u2013i\u2013c\u2013a\u2013l\u2013 \u2013b\u2013r\u2013o\u2013w\u2013s\u2013e\u2013r\u2013-\u2013s\u2013i\u2013d\u2013e\u2013 \u2013s\u2013k\u2013i\u2013l\u2013l\u2013s\u2013.\u2013","url":"https://lnkd.in/p/dXncZU3c"},{"id":"js-5","day":"Doc #5","topic":"\u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013 \u2013E\u2013S\u20136\u2013+\u2013 \u2013F\u2013e\u2013a\u2013t\u2013u\u2013r\u2013e\u2013s\u2013 \u2013(\u2013M\u2013o\u2013d\u2013e\u2013r\u2013n\u2013 \u2013J\u2013a\u2013v\u2013a\u2013S\u2013c\u2013r\u2013i\u2013p\u2013t\u2013)\u2013 \u2013\u2013\u2013 \u2013C\u2013o\u2013v\u2013e\u2013r\u2013 \u2013t\u2013h\u2013e\u2013 \u2013l\u2013a\u2013n\u2013g\u2013u\u2013a\u2013g\u2013e\u2013 \u2013f\u2013e\u2013a\u2013t\u2013u\u2013r\u2013e\u2013s\u2013 \u2013u\u2013s\u2013e\u2013d\u2013 \u2013i\u2013n\u2013 \u2013e\u2013v\u2013e\u2013r\u2013y\u2013d\u2013a\u2013y\u2013 \u2013d\u2013e\u2013v\u2013e\u2013l\u2013o\u2013p\u2013m\u2013e\u2013n\u2013t\u2013.\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-modern-javascript-activity-7502206532265213952-AMCd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"infographics","name":"Visual Infographics & Tech Breakdowns","shortName":"Visual Tech & AI","tagline":"Visual Architectural Guides: AI Agents, System Architecture, Algorithms & Tool Comparisons","badge":"Infographics","accent":"#f43f5e","icon":"\ud83d\udcca","count":16,"posts":[{"id":"info-1","day":"Visual Guide #1","topic":"\u2013R\u2013e\u2013a\u2013c\u2013t\u2013 \u2013L\u2013i\u2013f\u2013e\u2013c\u2013y\u2013c\u2013l\u2013e\u2013","url":"https://lnkd.in/p/dwtC7UM7"},{"id":"info-2","day":"Visual Guide #2","topic":"\u2013R\u2013e\u2013a\u2013c\u2013t\u2013 \u2013V\u2013i\u2013r\u2013t\u2013u\u2013a\u2013l\u2013 \u2013D\u2013O\u2013M\u2013","url":"https://lnkd.in/p/dWCQb6fb"},{"id":"info-3","day":"Visual Guide #3","topic":"\u2013H\u2013o\u2013w\u2013 \u2013I\u2013n\u2013t\u2013e\u2013r\u2013n\u2013e\u2013t\u2013 \u2013W\u2013o\u2013r\u2013k\u2013s\u2013","url":"https://lnkd.in/p/dGvC7HUu"},{"id":"info-4","day":"Visual Guide #4","topic":"\u2013A\u2013I\u2013 \u2013A\u2013g\u2013e\u2013n\u2013t\u2013s\u2013 \u2013E\u2013x\u2013p\u2013l\u2013a\u2013i\u2013n\u2013e\u2013d\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_aiagents-artificialintelligence-generativeai-activity-7496049633438289920-ZrLa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-5","day":"Visual Guide #5","topic":"\u2013C\u2013h\u2013a\u2013t\u2013 \u2013G\u2013P\u2013T\u2013 \u2013F\u2013o\u2013r\u2013 \u2013D\u2013e\u2013v\u2013e\u2013l\u2013o\u2013p\u2013e\u2013r\u2013s\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_chatgpt-ai-artificialintelligence-activity-7493871543559692288-KU5f?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-6","day":"Visual Guide #6","topic":"\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013T\u2013S\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-typescript-webdevelopment-activity-7492203304618278912-WAsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-7","day":"Visual Guide #7","topic":"\u2013E\u2013x\u2013p\u2013r\u2013e\u2013s\u2013s\u2013 \u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013N\u2013o\u2013d\u2013e\u2013 \u2013J\u2013S\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_nodejs-expressjs-javascript-activity-7490391105692278784-JNO8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-8","day":"Visual Guide #8","topic":"\u2013S\u2013n\u2013a\u2013p\u2013c\u2013h\u2013a\u2013t\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_snapchat-snapchatalgorithm-socialmedia-activity-7488077139230130176-ZzaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-9","day":"Visual Guide #9","topic":"\u2013G\u2013i\u2013t\u2013 \u2013v\u2013s\u2013 \u2013G\u2013i\u2013t\u2013H\u2013u\u2013b\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7486638884647530497--9jL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-10","day":"Visual Guide #10","topic":"\u2013I\u2013n\u2013s\u2013t\u2013a\u2013g\u2013r\u2013a\u2013m\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_instagram-instagramalgorithm-socialmedia-activity-7486253837285146624-sC3g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-11","day":"Visual Guide #11","topic":"\u2013D\u2013j\u2013a\u2013n\u2013g\u2013o\u2013 \u2013v\u2013s\u2013 \u2013F\u2013l\u2013a\u2013s\u2013k\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-django-flask-activity-7485891440158498816-xOEm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-12","day":"Visual Guide #12","topic":"\u2013L\u2013i\u2013n\u2013k\u2013e\u2013d\u2013I\u2013n\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_linkedin-linkedintips-linkedinalgorithm-activity-7485166663726907392-wOJP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-13","day":"Visual Guide #13","topic":"\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013R\u2013J\u2013S\u2013 \u2013v\u2013s\u2013 \u2013N\u2013J\u2013S\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-reactjs-nodejs-activity-7484804377531129856-lzjF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-14","day":"Visual Guide #14","topic":"\u2013G\u2013i\u2013t\u2013 \u2013&\u2013 \u2013G\u2013i\u2013t\u2013H\u2013u\u2013b\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7484241830558162944-6fRI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-15","day":"Visual Guide #15","topic":"\u2013Y\u2013o\u2013u\u2013t\u2013u\u2013b\u2013e\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_youtube-youtubealgorithm-contentcreator-activity-7483585012274024448-ixc4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"info-16","day":"Visual Guide #16","topic":"\u2013W\u2013h\u2013a\u2013t\u2013s\u2013A\u2013p\u2013p\u2013 \u2013A\u2013l\u2013g\u2013o\u2013r\u2013i\u2013t\u2013h\u2013m\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappalgorithm-activity-7481765506312663040-70YI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"console-projects","name":"Console & System Projects","shortName":"Console Projects","tagline":"In-depth Documentation of Complete C & Python Console-based Real-world Applications","badge":"Project Docs","accent":"#fb923c","icon":"\ud83d\udcbb","count":2,"posts":[{"id":"proj-1","day":"Full Project \ud83d\udcbc","topic":"\u2013C\u2013 \u2013C\u2013o\u2013n\u2013s\u2013o\u2013l\u2013e\u2013 \u2013P\u2013r\u2013o\u2013j\u2013e\u2013c\u2013t\u2013s\u2013 \u2013D\u2013o\u2013c\u2013u\u2013m\u2013e\u2013n\u2013t\u2013a\u2013t\u2013i\u2013o\u2013n\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"proj-2","day":"Full Project \ud83d\udcbc","topic":"\u2013P\u2013y\u2013t\u2013h\u2013o\u2013n\u2013 \u2013C\u2013o\u2013n\u2013s\u2013o\u2013l\u2013e\u2013 \u2013P\u2013r\u2013o\u2013j\u2013e\u2013c\u2013t\u2013s\u2013 \u2013D\u2013o\u2013c\u2013u\u2013m\u2013e\u2013n\u2013t\u2013a\u2013t\u2013i\u2013o\u2013n\u2013","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]}];
+    const POSTS_DATA = [{"id":"tech-docs","name":"Technical Documentation & Concept Guides","shortName":"Technical Docs","tagline":"Deep-dive Guides on JavaScript internals, Django Architecture, Infographics & Project Docs","badge":"Documentation","accent":"#f59e0b","icon":"\ud83d\udcda","count":26,"posts":[{"id":"doc-1","day":"Doc: JavaScript","topic":"JavaScript vs TypeScript","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-vs-typescript-complete-comparison-activity-7480104567439777792-uM6D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"JavaScript"},{"id":"doc-2","day":"Doc: JavaScript","topic":"JavaScript Execution Context & Call Stack - Build a strong foundation.","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-execution-context-call-stack-activity-7494596493664796672-ECNy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"JavaScript"},{"id":"doc-3","day":"Doc: JavaScript","topic":"JavaScript Event Loop (Async/Await, Promises & Callbacks) - Explain asynchronous behavior.","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-event-loop-promises-asyncawait-activity-7497136792152977408-zwFW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"JavaScript"},{"id":"doc-4","day":"Doc: JavaScript","topic":"JavaScript DOM Manipulation - Complete Guide - Show practical browser-side skills.","url":"https://lnkd.in/p/dXncZU3c","subdomain":"JavaScript"},{"id":"doc-5","day":"Doc: JavaScript","topic":"JavaScript ES6+ Features (Modern JavaScript) - Cover the language features used in everyday development.","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-modern-javascript-activity-7502206532265213952-AMCd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"JavaScript"},{"id":"doc-6","day":"Doc: Django","topic":"MVT Architecture & Request-Response Cycle","url":"https://lnkd.in/p/dNTmFjUm","subdomain":"Django"},{"id":"doc-7","day":"Doc: Django","topic":"Models, ORM & Database Relationships","url":"https://lnkd.in/p/d55qTseQ","subdomain":"Django"},{"id":"doc-8","day":"Doc: Django","topic":"Forms, Validation & CSRF","url":"https://lnkd.in/p/djPdypJy","subdomain":"Django"},{"id":"doc-9","day":"Doc: Visual Guides & AI","topic":"React Lifecycle","url":"https://lnkd.in/p/dwtC7UM7","subdomain":"Visual Guides & AI"},{"id":"doc-10","day":"Doc: Visual Guides & AI","topic":"React Virtual DOM","url":"https://lnkd.in/p/dWCQb6fb","subdomain":"Visual Guides & AI"},{"id":"doc-11","day":"Doc: Visual Guides & AI","topic":"How Internet Works","url":"https://lnkd.in/p/dGvC7HUu","subdomain":"Visual Guides & AI"},{"id":"doc-12","day":"Doc: Visual Guides & AI","topic":"AI Agents Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_aiagents-artificialintelligence-generativeai-activity-7496049633438289920-ZrLa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-13","day":"Doc: Visual Guides & AI","topic":"Chat GPT For Developers","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_chatgpt-ai-artificialintelligence-activity-7493871543559692288-KU5f?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-14","day":"Doc: Visual Guides & AI","topic":"JS vs TS","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-typescript-webdevelopment-activity-7492203304618278912-WAsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-15","day":"Doc: Visual Guides & AI","topic":"Express JS vs Node JS","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_nodejs-expressjs-javascript-activity-7490391105692278784-JNO8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-16","day":"Doc: Visual Guides & AI","topic":"Snapchat Algorithm","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_snapchat-snapchatalgorithm-socialmedia-activity-7488077139230130176-ZzaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-17","day":"Doc: Visual Guides & AI","topic":"Git vs GitHub","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7486638884647530497--9jL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-18","day":"Doc: Visual Guides & AI","topic":"Instagram Algorithm","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_instagram-instagramalgorithm-socialmedia-activity-7486253837285146624-sC3g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-19","day":"Doc: Visual Guides & AI","topic":"Django vs Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-django-flask-activity-7485891440158498816-xOEm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-20","day":"Doc: Visual Guides & AI","topic":"LinkedIn Algorithm","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_linkedin-linkedintips-linkedinalgorithm-activity-7485166663726907392-wOJP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-21","day":"Doc: Visual Guides & AI","topic":"JS vs RJS vs NJS","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-reactjs-nodejs-activity-7484804377531129856-lzjF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-22","day":"Doc: Visual Guides & AI","topic":"Git & GitHub","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7484241830558162944-6fRI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-23","day":"Doc: Visual Guides & AI","topic":"Youtube Algorithm","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_youtube-youtubealgorithm-contentcreator-activity-7483585012274024448-ixc4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-24","day":"Doc: Visual Guides & AI","topic":"WhatsApp Algorithm","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappalgorithm-activity-7481765506312663040-70YI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"Visual Guides & AI"},{"id":"doc-25","day":"Doc: System Projects","topic":"C Console Projects Documentation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"System Projects"},{"id":"doc-26","day":"Doc: System Projects","topic":"Python Console Projects Documentation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs","subdomain":"System Projects"}]},{"id":"python","name":"Python 50-Day Challenge","shortName":"Python 50D","tagline":"Core Fundamentals, Slicing, OOP Mastery, Decorators & Problem Solving","badge":"50 Days","accent":"#38bdf8","icon":"\ud83d\udc0d","count":51,"posts":[{"id":"python-1","day":"Day 01","topic":"Mastering Python Slicing Forward Reverse","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-slicing-forward-reverse-activity-7388794172452978688-OA2K?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-2","day":"Day 02","topic":"Cracking Python List Comprehension In One","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_cracking-python-list-comprehension-in-one-activity-7389160312589127680-au7d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-3","day":"Day 03","topic":"Exploring Python Tuple Comprehension Deep","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tuple-comprehension-deep-activity-7389881329955344384-S1hX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-4","day":"Day 04","topic":"Solving Problems With Python Dictionary Comprehension","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-problems-with-python-dictionary-comprehension-activity-7391330889705762816-11UP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-5","day":"Day 05","topic":"Mastering Python Set Comprehension In One","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-set-comprehension-in-one-activity-7391693277386878977-xoMQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-6","day":"Day 06","topic":"Understanding Python Type Conversion Like","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-type-conversion-like-activity-7392418037737615360-wcbf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-7","day":"Day 07","topic":"Exploring Functions In Python Code Reuse","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-functions-in-python-code-reuse-activity-7394230023290822657-F4eE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-8","day":"Day 08","topic":"Mastering Problem Solving Using Python Functions","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-problem-solving-using-python-functions-activity-7394592383214202880-VBUH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-9","day":"Day 09","topic":"Exploring Modules In Python Reuse Code Efficiently","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-modules-in-python-reuse-code-efficiently-activity-7394954738594762752-Svg6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-10","day":"Day 10","topic":"Exploring Pythons Random Module For Fun","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-pythons-random-module-for-fun-activity-7396151380429692929-GAbe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-11","day":"Day 11","topic":"Solving Python Problems Using The Random","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-python-problems-using-the-random-activity-7396404334659399680-8S1V?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-12","day":"Day 12","topic":"File Handling In Python For Real World","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_learning-file-handling-in-python-for-real-world-activity-7396766685124411392-46fD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-13","day":"Day 13","topic":"Understanding Advanced Python File Modes","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-advanced-python-file-modes-activity-7397129098029981696-3qKh?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-14","day":"Day 14","topic":"Mastering Datetime Timedelta Pyttsx3 In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-datetime-timedelta-pyttsx3-in-activity-7397491460494917633-73db?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-15","day":"Day 15","topic":"Exploring Python Tts With Pyttsx4 Gtts","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-python-tts-with-pyttsx4-gtts-activity-7397853882183270400-u2sB?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-16","day":"Day 16","topic":"Practicing Python Logic With 10 Real Tasks","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-10-real-tasks-activity-7398581405410156544-8EpK?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-17","day":"Day 17","topic":"Practicing Python With Beginnerintermediate","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-with-beginnerintermediate-activity-7398941013094035456-YJjk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-18","day":"Day 18","topic":"Mastering Python Essentials My Day 18 Learning","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-python-essentials-my-day-18-learning-activity-7399303416247857152-uKxX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-19","day":"Day 19","topic":"Deep Dive Into Core Python Concepts Day","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_deep-dive-into-core-python-concepts-day-activity-7399665783087353857-kxBu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-20","day":"Day 20","topic":"Consistent Learning Toward Becoming","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-consistent-learning-toward-becoming-activity-7400028202963763201-I4bR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-21","day":"Day 21","topic":"Solving Essential Python Tasks Day 21 Learning","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-essential-python-tasks-day-21-learning-activity-7400390607942365184-qLH1?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-22","day":"Day 22","topic":"Understanding Oops Concepts In Python Day","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-oops-concepts-in-python-day-activity-7401462626301624320-TXxU?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-23","day":"Day 23","topic":"Understanding Self Constructors Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-self-constructors-oop-activity-7401840131638558720-vFRN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-24","day":"Day 24","topic":"Understanding Class Variables Methods In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-class-variables-methods-in-activity-7402202503418691584-EslN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-25","day":"Day 25","topic":"Mastering Static Methods Inheritance Overriding","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_mastering-static-methods-inheritance-overriding-activity-7402564886213382144-Jcd5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-26","day":"Day 26","topic":"Understanding Inheritance In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-inheritance-in-python-oop-activity-7404014483498557440-Tzew?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-27","day":"Day 27","topic":"Solving Inheritance Problems In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-inheritance-problems-in-python-oop-activity-7404376828293111809-Naon?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-28","day":"Day 28","topic":"Exploring Hierarchical Hybrid Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_exploring-hierarchical-hybrid-inheritance-activity-7404739219606351872-Lyyc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-29","day":"Day 29","topic":"Practicing Hierarchical Hybrid Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-hierarchical-hybrid-inheritance-activity-7405101640665722881-X-5U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-30","day":"Day 30","topic":"Practicing Core Inheritance Concepts In Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-core-inheritance-concepts-in-python-activity-7405463987162824704-o6MV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-31","day":"Day 31","topic":"Understanding Abstraction In Python Oop With","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-abstraction-in-python-oop-with-activity-7406188816836759552-qqZT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-32","day":"Day 32","topic":"Solving Real World Problems Using Abstraction","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_solving-real-world-problems-using-abstraction-activity-7406536052196380672-l3vf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-33","day":"Day 33","topic":"Understanding Python Decorators With Real","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-decorators-with-real-activity-7406898473205137426-XAVC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-34","day":"Day 34","topic":"Encapsulation In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_learning-encapsulation-in-python-oop-activity-7407260829844176896-BXui?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-35","day":"Day 35","topic":"Practicing Encapsulation With Real Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-encapsulation-with-real-python-activity-7407623235057598464-ho0b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-36","day":"Day 36","topic":"Building A Banking Application Using Encapsulation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_building-a-banking-application-using-encapsulation-activity-7407985606099836928-duv7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-37","day":"Day 37","topic":"Practicing Python String Operations With","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-string-operations-with-activity-7408348020636811264-LG7q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-38","day":"Day 38","topic":"Practicing Python Logic With Real Problem","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-logic-with-real-problem-activity-7408884126201712641-kYuW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-39","day":"Day 39","topic":"Understanding Polymorphism In Python Oop","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-polymorphism-in-python-oop-activity-7409072934792798208-aLWD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-40","day":"Day 40","topic":"Practicing Duck Typing Method Overloading","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-duck-typing-method-overloading-activity-7409435239770558464-6AEV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-41","day":"Day 41","topic":"Practicing Python Pattern Programs Using","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-pattern-programs-using-activity-7409797646749560832-G8f3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-42","day":"Day 42","topic":"Practicing Python File Handling With Real","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-python-file-handling-with-real-activity-7410159958471696384-ybB5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-43","day":"Day 43","topic":"Practicing Even Odd Factorial Logic In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-even-odd-factorial-logic-in-activity-7410688453962788864-GP3E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-44","day":"Day 44","topic":"Practicing Addition Square List Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-addition-square-list-logic-activity-7411050831279583232-UZCe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-45","day":"Day 45","topic":"Practicing String Length Digits Vowel","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-string-length-digits-vowel-activity-7411413264598892544-9sxT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-46","day":"Day 46","topic":"Practicing Dictionary Set Tuple Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-dictionary-set-tuple-logic-activity-7411624692471590912-ZZxJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-47","day":"Day 47","topic":"Practicing List Integer Boolean Logic","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-list-integer-boolean-logic-activity-7411987013094273024-cPmi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-48","day":"Day 48","topic":"Starting The New Year With Python Problem","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_starting-the-new-year-with-python-problem-activity-7412319167158231040-IWBQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-49","day":"Day 49","topic":"Practicing Armstrong Perfect Numbers In","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-armstrong-perfect-numbers-in-activity-7412696685212102656-IXrY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-50","day":"Day 50","topic":"Completed Python Learning Challenge","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-50-completed-python-learning-challenge-activity-7413051490975641600-AfDC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"python-51","day":"Grand Finale \ud83c\udf89","topic":"50 Days of Consistent Python Learning Completed","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_50days-activity-7413587705437220864-6fr3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"django","name":"Django 40-Day Series","shortName":"Django 40D","tagline":"Enterprise Full-Stack Architecture, ORM, DRF REST APIs & Production Deployment","badge":"40 Days","accent":"#10b981","icon":"\u26a1","count":41,"posts":[{"id":"django-1","day":"Day 01","topic":"Getting Started With Django Framework","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-django-framework-activity-7445473876391915520-cm0n?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-2","day":"Day 02","topic":"What Is Django A Beginners Guide","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_what-is-django-a-beginners-guide-activity-7445836269844086784-9tRq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-3","day":"Day 03","topic":"Install Django Step By Step For Beginners","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_install-django-step-by-step-for-beginners-activity-7447282096823357440-V1rs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-4","day":"Day 04","topic":"Understanding Django Project Structure","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-django-project-structure-activity-7447863385519652864-Y0-P?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-5","day":"Day 05","topic":"Creating Your First Django App","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-5-creating-your-first-django-app-activity-7448588143055777794-JJ3b?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-6","day":"Day 06","topic":"Running Django Development Server","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-6-running-django-development-server-activity-7449312964962308096-3O8I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-7","day":"Day 07","topic":"Django Urls Routing Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-7-django-urls-routing-explained-activity-7451487260442624000-e6WX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-8","day":"Day 08","topic":"Django Views Explained Beginner Guide","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-8-django-views-explained-beginner-guide-activity-7454012638692413440-lAe0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-9","day":"Day 09","topic":"Django Templates Html Dynamic Data","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-9-django-templates-html-dynamic-data-activity-7456183192337801216-XfOp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-10","day":"Day 10","topic":"Django Models Database Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-10-django-models-database-explained-activity-7458361290063785984-qWCx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-11","day":"Day 11","topic":"Django Orm Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-11-django-orm-explained-simply-activity-7458723678353199104-EQ3_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-12","day":"Day 12","topic":"Django Admin Panel Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-12-django-admin-panel-explained-activity-7460173247884505088-5jO5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-13","day":"Day 13","topic":"Django Forms Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-13-django-forms-explained-simply-activity-7461996521517907968-cyUb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-14","day":"Day 14","topic":"Django Authentication Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-14-django-authentication-explained-activity-7463435040908189696-cyYq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-15","day":"Day 15","topic":"Django Static Files Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-15-django-static-files-explained-activity-7464521890011717632-kj3l?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-16","day":"Day 16","topic":"Django Template Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-16-django-template-inheritance-activity-7465609054325858304-TyNr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-17","day":"Day 17","topic":"Django Crud Operations Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-17-django-crud-operations-explained-activity-7465971434545238016-qIzj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-18","day":"Day 18","topic":"Django Class Based Views Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-18-django-class-based-views-explained-activity-7466696210997800960-2HNM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-19","day":"Day 19","topic":"Django Generic Views Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-19-django-generic-views-explained-activity-7467783392781221889-Usnn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-20","day":"Day 20","topic":"Django Middleware Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-20-django-middleware-explained-activity-7468870539927994368-RSyZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-21","day":"Day 21","topic":"Django Sessions Cookies Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_day-21-django-sessions-cookies-explained-activity-7469202731493384192-1J1J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-22","day":"Day 22","topic":"Messages Framework Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-messages-framework-explained-activity-7470320093802168320-1wYx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-23","day":"Day 23","topic":"File Uploads In Django Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_file-uploads-in-django-explained-activity-7471044864760242176-tx6o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-24","day":"Day 24","topic":"Pagination Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-pagination-explained-simply-activity-7471769642412183552-iC5E?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-25","day":"Day 25","topic":"Signals Explained Simply","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-signals-explained-simply-activity-7472132033734025216-n6VO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-26","day":"Day 26","topic":"Custom User Model Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-custom-user-model-explained-activity-7472494417510047744-ZoYH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-27","day":"Day 27","topic":"Permissions Authorization","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-permissions-authorization-activity-7473219214607048704-MxzY?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-28","day":"Day 28","topic":"Email System Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-email-system-explained-activity-7473581580142137344-EOUo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-29","day":"Day 29","topic":"Rest Framework Introduction","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-rest-framework-introduction-activity-7473943971719766016-uwPs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-30","day":"Day 30","topic":"Drf Serializers The Api Data Bridge","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_drf-serializers-the-api-data-bridge-activity-7474668740534566912-71Tl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-31","day":"Day 31","topic":"Drf Api Views Endpoints Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_drf-api-views-endpoints-explained-activity-7475031146796425216-rpd3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-32","day":"Day 32","topic":"Building Crud Apis With Django Rest Framework","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_building-crud-apis-with-django-rest-framework-activity-7475393529452679168-l0fQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-33","day":"Day 33","topic":"Jwt Authentication In Drf Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_jwt-authentication-in-drf-explained-activity-7475755912364933120-MZ2Z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-34","day":"Day 34","topic":"Static Vs Media Files Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-static-vs-media-files-explained-activity-7476118295193243648-iHEZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-35","day":"Day 35","topic":"Caching For Faster Applications","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-caching-for-faster-applications-activity-7476480682710642688-a5zu?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-36","day":"Day 36","topic":"Security Best Practices Explained","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-security-best-practices-explained-activity-7477205479337930752--DCI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-37","day":"Day 37","topic":"Why Testing Matters In Django Development","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_why-testing-matters-in-django-development-activity-7477568011072241665-HCre?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-38","day":"Day 38","topic":"From Code To Product Django Deployment","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_from-code-to-product-django-deployment-activity-7478292624773320704-HkSf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-39","day":"Day 39","topic":"React Building Modern Full Stack","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_django-react-building-modern-full-stack-activity-7478655010013130752-epam?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-40","day":"Day 40","topic":"40 Days Of Django My Learning Journey","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-my-learning-journey-activity-7479017397815803904-AEje?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"django-41","day":"Series Wrap-up \ud83d\ude80","topic":"40 Days of Django: Lessons Beyond Code & Retrospective","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_40-days-of-django-lessons-beyond-code-activity-7480466960007356416-ddeG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"flask","name":"Flask Daily Learning Series","shortName":"Flask Mastery","tagline":"Lightweight Microservices, Dynamic Templating, DB Integration & APIs","badge":"33 Days","accent":"#c084fc","icon":"\ud83e\uddea","count":33,"posts":[{"id":"flask-1","day":"Day 01","topic":"Day 1 Flask Fundamentals","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-1-flask-fundamentals-activity-7487507134423814145-nI-A?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-2","day":"Day 02","topic":"Day 2 Understanding Routing","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-2-understanding-routing-activity-7487710956437921792-zBGi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-3","day":"Day 03","topic":"Day 3 Http Methods In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-3-http-methods-in-flask-activity-7488439482417913856-zDV-?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-4","day":"Day 04","topic":"Day 4 Jinja2 Templates","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-4-jinja2-templates-activity-7489168052756922368-H0Rm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-5","day":"Day 05","topic":"Day 5 Jinja2 Template Features","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-5-jinja2-template-features-activity-7489885263620489216-mQTb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-6","day":"Day 06","topic":"Day 6 Template Inheritance","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-6-template-inheritance-activity-7490613811691900928-1Np4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-7","day":"Day 07","topic":"Day 7 Static Files In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-7-static-files-in-flask-activity-7490976203969986560-tMsp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-8","day":"Day 08","topic":"Day 8 Html Forms In Flask","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-8-html-forms-in-flask-activity-7491704750145617920-ZBx0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-9","day":"Day 09","topic":"Day 9 Form Validation","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-9-form-validation-activity-7492422008274849792-8kwn?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-10","day":"Day 10","topic":"Day 10 Sqlite Database","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-10-sqlite-database-activity-7492784546841640960-0gsI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-11","day":"Day 11","topic":"Day 11 Crud Operations","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-11-crud-operations-activity-7493512908623081472-Qhzi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-12","day":"Day 12","topic":"Day 12 Flask Sqlalchemy","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-12-flask-sqlalchemy-activity-7494241512424353792-oNZt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-13","day":"Day 13","topic":"Day 13 Database Relationships","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-13-database-relationships-activity-7495154987099029505-djp_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-14","day":"Day 14","topic":"Day 14Application Structure","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-14application-structure-activity-7495683542417494017-Dv3U?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-15","day":"Day 15","topic":"Day 15 Sessions Cookies","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-15-sessions-cookies-activity-7496412011606716416-NkjE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-16","day":"Day 16","topic":"Day 16 User Registration","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-16-user-registration-activity-7496770798683344896-1rI7?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-17","day":"Day 17","topic":"Day 17 User Login Authentication","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-17-user-login-authentication-activity-7498227791256199168-hWfZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-18","day":"Day 18","topic":"Day 18 Authorization","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-18-authorization-activity-7498582632763564032-9vCD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-19","day":"Day 19","topic":"Flask RESTful APIs & Serialization","url":"https://lnkd.in/p/dnhGUFMW"},{"id":"flask-20","day":"Day 20","topic":"Request Data, Headers & JSON Parsing","url":"https://lnkd.in/p/dHFgYm3r"},{"id":"flask-21","day":"Day 21","topic":"User Authentication & Password Hashing","url":"https://lnkd.in/p/dzBcQp4D"},{"id":"flask-22","day":"Day 22","topic":"Flask-Login & Session Security","url":"https://lnkd.in/p/d2v6_XM5"},{"id":"flask-23","day":"Day 23","topic":"Day 23 Working With Api","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-23-working-with-api-activity-7501847837954179072-zP1L?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-24","day":"Day 24","topic":"Day 24 File Uploads Security","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-24-file-uploads-security-activity-7502931266330222592-7OPg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-25","day":"Day 25","topic":"Day 25 Error Handling","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-25-error-handling-activity-7503656227936108544-XMHs?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-26","day":"Day 26","topic":"Day 26Configurationenvironment","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learningday-26configurationenvironment-activity-7504018617420726272-NeXL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-27","day":"Day 27","topic":"Email Notifications & Background Tasks","url":"https://lnkd.in/p/dcPRKE5s"},{"id":"flask-28","day":"Day 28","topic":"Day 28 Flask Blueprints","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-28-flask-blueprints-activity-7505830452469862400-SVtV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-29","day":"Day 29","topic":"Flask Caching & Performance Optimization","url":"https://lnkd.in/p/eQAvhtCK"},{"id":"flask-30","day":"Day 30","topic":"Unit Testing Flask Apps with Pytest","url":"https://lnkd.in/p/drHA-Shs"},{"id":"flask-31","day":"Day 31","topic":"Gunicorn & Nginx Production Deployment","url":"https://lnkd.in/p/dDu7DccB"},{"id":"flask-32","day":"Day 32","topic":"Day 32 Jwt Authentication","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_flask-learning-day-32-jwt-authentication-activity-7508368337781944320-_qT0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"flask-33","day":"Day 33","topic":"Full-Stack Flask Architecture & WebSockets","url":"https://lnkd.in/p/d3WJKEGz"}]},{"id":"sql-mysql","name":"SQL & Database Engineering","shortName":"SQL & MySQL","tagline":"Advanced JOINs, Window Functions, Subqueries, Triggers, Views & PDBC","badge":"Databases","accent":"#06b6d4","icon":"\ud83d\uddc4\ufe0f","count":18,"posts":[{"id":"sql-1","day":"SQL Day #1","topic":"Built A Banking Application Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_built-a-banking-application-using-python-activity-7430253604235771905-4zXx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-2","day":"SQL Day #2","topic":"about Python Database Connection (PDBC)","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-python-database-connection-activity-7429891206626648064-Npo3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-3","day":"SQL Day #3","topic":"VIEWS and TRIGGERS in MySQL","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-views-triggers-in-mysql-activity-7429166422779645953-hISk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-4","day":"SQL Day #4","topic":"SQL Window Functions","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-sql-window-functions-with-examples-activity-7428079264484364290-97DX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-5","day":"SQL Day #5","topic":"SQL Subqueries","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-subqueries-in-sql-with-examples-activity-7427354490741338113-OvGW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-6","day":"SQL Day #6","topic":"SQL JOIN concepts","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-outer-cross-self-join-in-activity-7426629709339189248-uoMG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-7","day":"SQL Day #7","topic":"SQL clauses using an E-Commerce orders dataset","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-sql-clauses-with-e-commerce-data-activity-7424092993520910337-6tl8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-8","day":"SQL Day #8","topic":"SQL JOINs","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-sql-joins-inner-vs-left-vs-activity-7423368216820957184-1gil?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-9","day":"SQL Day #9","topic":"Practicing Mysql Left Join With Real Queries","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-left-join-with-real-queries-activity-7423005837352353793-ULoR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-10","day":"SQL Day #10","topic":"MySQL LEFT JOIN","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-mysql-left-join-with-practical-activity-7422643458848493568-kTFI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-11","day":"SQL Day #11","topic":"MySQL RIGHT JOIN","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-right-join-with-real-scenarios-activity-7422281053332987904-p2xb?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-12","day":"SQL Day #12","topic":"Understanding Mysql Right Join With Practical","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-mysql-right-join-with-practical-activity-7421918689886900224-TWic?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-13","day":"SQL Day #13","topic":"Practicing Mysql Inner Join With Employee","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-inner-join-with-employee-activity-7421556279770423296-1eVH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-14","day":"SQL Day #14","topic":"Practicing Mysql Inner Join With Real Queries","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-inner-join-with-real-queries-activity-7420846604422692865-k6Us?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-15","day":"SQL Day #15","topic":"Practicing Mysql Operators Group By Queries","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-operators-group-by-queries-activity-7420321997676597248-WBhm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-16","day":"SQL Day #16","topic":"Practicing Mysql Ddl Dml Group By Queries","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-mysql-ddl-dml-group-by-queries-activity-7419744341704904704-Fc7J?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-17","day":"SQL Day #17","topic":"Practicing Core Mysql Queries And Database","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-core-mysql-queries-and-database-activity-7419381984780640256-6-Ke?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"sql-18","day":"SQL Day #18","topic":"core SQL concepts","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_sankranthi-holiday-sql-practice-task-activity-7417932400053301249-AoaH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"projects","name":"Projects & AI Applications","shortName":"Projects & AI","tagline":"LLM Document Chat, Telegram Bots, Translator Apps, Automation & Dashboards","badge":"Projects","accent":"#f97316","icon":"\ud83d\ude80","count":8,"posts":[{"id":"app-1","day":"App Build \ud83d\udee0\ufe0f","topic":"Document Chantting Using LLM","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_chat-with-multiple-pdfs-using-gemini-ai-activity-7470682476957417472-XXu_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-2","day":"App Build \ud83d\udee0\ufe0f","topic":"Ms Dhoni Legacy Dashboard Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_ms-dhoni-legacy-dashboard-using-python-activity-7459958075333120000-L-pf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-3","day":"App Build \ud83d\udee0\ufe0f","topic":"Automated My Downloads Folder Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-file-organizer-for-downloads-folder-activity-7444756644917305345-it0M?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-4","day":"App Build \ud83d\udee0\ufe0f","topic":"Built a Simple Password Strength Checker Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-password-strength-checker-activity-7443514763290021889-V7S0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-5","day":"App Build \ud83d\udee0\ufe0f","topic":"Python Program To Print Names Using Patterns","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-program-to-print-names-using-patterns-activity-7442427610652975104-RiJT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-6","day":"App Build \ud83d\udee0\ufe0f","topic":"AI-powered Telegram Bot using n8n","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_ai-telegrambot-n8n-activity-7432427913540534272-C4oM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-7","day":"App Build \ud83d\udee0\ufe0f","topic":"Built A Multi Language Translator Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_built-a-multi-language-translator-using-python-activity-7432065559476887552-nZHi?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"app-8","day":"App Build \ud83d\udee0\ufe0f","topic":"Built A Google Translator Using Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_built-a-google-translator-using-python-activity-7431703156499136514-5Z5I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"advanced-python","name":"Advanced Python & Concurrency","shortName":"Advanced Python","tagline":"Multithreading, Regex (re), Generators, NumPy, Pandas, Pickling & Exception Handling","badge":"Deep Dive","accent":"#a3e635","icon":"\u2699\ufe0f","count":15,"posts":[{"id":"advpy-1","day":"Core & Libs \u2699\ufe0f","topic":"Generator","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-generator-problem-solving-in-python-activity-7438588503111909376-p7jQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-2","day":"Core & Libs \u2699\ufe0f","topic":"Multithreading problem solving in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-multithreading-problem-solving-activity-7438226110867324928-2mNO?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-3","day":"Core & Libs \u2699\ufe0f","topic":"explored Multithreading in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-multithreading-in-python-activity-7437863734460456960-nrX3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-4","day":"Core & Libs \u2699\ufe0f","topic":"Regex Module (re) in Python problem solving","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-regex-module-problem-solving-in-activity-7437501341142495232-vltx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-5","day":"Core & Libs \u2699\ufe0f","topic":"Regex Module in Python (re)","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-the-regex-module-in-python-activity-7437138973342187521-QXTH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-6","day":"Core & Libs \u2699\ufe0f","topic":"Regular Expression problem-solving","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_practicing-regular-expression-problem-solving-activity-7436776562391306240-rboG?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-7","day":"Core & Libs \u2699\ufe0f","topic":"Regular Expressions (Regex)","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-regular-expressions-in-python-activity-7436051786995548160-Yqaf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-8","day":"Core & Libs \u2699\ufe0f","topic":"practiced Generators in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-generators-in-python-activity-7435689398932873216-3ucZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-9","day":"Core & Libs \u2699\ufe0f","topic":"Pickling and Unpickling in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-pickling-unpickling-in-python-activity-7435327011826388992-GHxv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-10","day":"Core & Libs \u2699\ufe0f","topic":"Packing and Unpacking in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-packing-unpacking-in-python-activity-7434975983004438528-2GLt?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-11","day":"Core & Libs \u2699\ufe0f","topic":"Pandas module in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-pandas-for-data-analysis-activity-7434602259591720960-e7wQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQshttps://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-pandas-for-data-analysis-activity-7434602259591720960-e7wQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQshttps://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-pandas-for-data-analysis-activity-7434602259591720960-e7wQ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-12","day":"Core & Libs \u2699\ufe0f","topic":"NumPy module in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_getting-started-with-numpy-for-numerical-activity-7434239870933311489-ANIA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-13","day":"Core & Libs \u2699\ufe0f","topic":"CSV module in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-csv-module-in-python-with-examples-activity-7430978357745582080-fNyL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-14","day":"Core & Libs \u2699\ufe0f","topic":"Exception Handling in Python","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_understanding-exception-handling-in-python-activity-7430615969426784256-2P8M?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"advpy-15","day":"Core & Libs \u2699\ufe0f","topic":"revising and practicing core Python concepts","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_sankranthi-holiday-python-practice-task-activity-7416679147420278785-6hsk?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]},{"id":"internships","name":"Internships & Career Milestones","shortName":"Career Milestones","tagline":"Industry Internship Milestones, Offer Letters, Certifications & Experiences","badge":"Career","accent":"#ec4899","icon":"\ud83c\udf93","count":10,"posts":[{"id":"intern-1","day":"Certificate \ud83c\udfc6","topic":"Python Internship Completion Certificate","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-internship-completion-certificate-activity-7469595325851152384-0O93?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-2","day":"Certificate \ud83c\udfc6","topic":"CODE ASIRE.","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_codeasire-front-end-internship-completion-activity-7468145771486535680-ZPTN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-3","day":"Offer / Selection \ud83c\udf1f","topic":"Codec Technologies","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_received-ai-internship-offer-from-codec-technologies-activity-7467058618501337088-y6kw?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-4","day":"Internship Log \ud83d\udcbc","topic":"Internship Learning Journey \u2014 Python Development Internship","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_python-development-internship-journey-activity-7465246664866299904-C8hf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-5","day":"Internship Log \ud83d\udcbc","topic":"Internship Learning Journey Completed at CODE ASIRE","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_internship-journey-completed-at-code-asire-activity-7462347557914980352-qTcN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-6","day":"Internship Log \ud83d\udcbc","topic":"Full Stack Development Intern at SaiKet Systems","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_full-stack-development-intern-at-saiket-systems-activity-7461622780598513664-ZB4n?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-7","day":"Internship Log \ud83d\udcbc","topic":"Internship Learning Journey Completed at SaiKet Systems","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_internship-journey-at-saiket-systems-completed-activity-7457647865734012928-w5FR?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-8","day":"Offer / Selection \ud83c\udf1f","topic":"Sysslanitsolutions Sysslan Sysslanprojects","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_sysslanitsolutions-sysslan-sysslanprojects-activity-7454737411357704192-4Z1g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-9","day":"Offer / Selection \ud83c\udf1f","topic":"Internship Frontenddeveloper Webdevelopment","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_internship-frontenddeveloper-webdevelopment-activity-7452563086386843648-3QMW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"},{"id":"intern-10","day":"Offer / Selection \ud83c\udf1f","topic":"Saiketsystemsjourney Saiketexperience Futurewithsaiket","url":"https://www.linkedin.com/posts/charan-teja-972aa9231_saiketsystemsjourney-saiketexperience-futurewithsaiket-activity-7448942984001191936-NA38?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs"}]}];
 
     // State
     let currentCategory = 'all';
@@ -1025,14 +1326,16 @@
     const toastMessage = document.getElementById('toastMessage');
 
     // Counts Setup
-    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>milestones</small>`;
+    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>posts</small>`;
     document.getElementById('countAll').textContent = allPosts.length;
+    document.getElementById('countDocs').textContent = allPosts.filter(p => p.categoryId === 'tech-docs').length;
     document.getElementById('countPython').textContent = allPosts.filter(p => p.categoryId === 'python').length;
     document.getElementById('countDjango').textContent = allPosts.filter(p => p.categoryId === 'django').length;
     document.getElementById('countFlask').textContent = allPosts.filter(p => p.categoryId === 'flask').length;
-    document.getElementById('countJs').textContent = allPosts.filter(p => p.categoryId === 'javascript').length;
-    document.getElementById('countInfo').textContent = allPosts.filter(p => p.categoryId === 'infographics').length;
-    document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'console-projects').length;
+    document.getElementById('countSql').textContent = allPosts.filter(p => p.categoryId === 'sql-mysql').length;
+    document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'projects').length;
+    document.getElementById('countAdvPy').textContent = allPosts.filter(p => p.categoryId === 'advanced-python').length;
+    document.getElementById('countIntern').textContent = allPosts.filter(p => p.categoryId === 'internships').length;
 
     // Render Function
     function renderPosts() {
@@ -1108,18 +1411,22 @@
 
     function getPostSummary(post) {
       switch (post.categoryId) {
+        case 'tech-docs':
+          return `Comprehensive technical documentation and reference guide covering architectural paradigms, runtime execution models, and visual systems.`;
         case 'python':
-          return `Hands-on Python milestone covering core mechanics, code architecture, problem-solving paradigms, and clean Pythonic idioms.`;
+          return `Hands-on Python milestone covering core mechanics, data structures, OOP principles, and clean Pythonic logic.`;
         case 'django':
           return `Django engineering milestone focusing on backend enterprise architecture, database models, view controllers, and REST APIs.`;
         case 'flask':
           return `Flask web development milestone demonstrating lightweight routing, request lifecycles, template rendering, and practical backend APIs.`;
-        case 'javascript':
-          return `Core browser and runtime deep dive detailing JavaScript engine execution context, asynchronous event loop, and modern ES6+ paradigms.`;
-        case 'infographics':
-          return `Visual architectural breakdown comparing modern frameworks, social media recommendation algorithms, and AI agent architectures.`;
-        case 'console-projects':
-          return `Full project documentation and architectural walkthrough of complete production-grade console applications built in C and Python.`;
+        case 'projects':
+          return `Real-world project build featuring end-to-end implementation details, architectural choices, and practical engineering solutions.`;
+        case 'sql-mysql':
+          return `Database engineering milestone focusing on relational data queries, complex joins, aggregation mechanics, views, and triggers.`;
+        case 'advanced-python':
+          return `Advanced Python runtime topics including concurrency, multithreading, regex pattern engines, generators, and data libraries.`;
+        case 'internships':
+          return `Career milestone documenting real-world internship experiences, software engineering contributions, and verified certifications.`;
         default:
           return `Technical documentation and practical software engineering milestone.`;
       }
@@ -1170,7 +1477,7 @@
       if (navigator.share) {
         navigator.share({
           title: "Charan Teja's Engineering & Learning Hub",
-          text: "Explore Charan Teja's complete 150+ milestone roadmap across Python, Django, Flask, JavaScript, and System Architecture!",
+          text: "Explore Charan Teja's complete 200+ milestone roadmap across Technical Documentation, Python, Django, Flask, SQL, and AI Projects!",
           url: window.location.href
         }).catch(() => {});
       } else {
@@ -1205,11 +1512,11 @@
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
       themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-      localStorage.setItem('pypulse-theme', newTheme);
+      localStorage.setItem('devlog-theme', newTheme);
     }
 
     // Initialize Theme
-    const savedTheme = localStorage.getItem('pypulse-theme') || 'dark';
+    const savedTheme = localStorage.getItem('devlog-theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
     themeToggleBtn.addEventListener('click', toggleTheme);

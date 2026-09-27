@@ -26,7 +26,7 @@ Models, ORM & Database Relationships
 https://lnkd.in/p/d55qTseQ
 
 Forms, Validation & CSRF
-
+https://lnkd.in/p/djPdypJy
 
 Authentication & Authorization
 

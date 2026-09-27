@@ -10,8 +10,10 @@ html_template = '''<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PyPulse Hub | Charan Teja's Engineering & Learning Portfolio</title>
-  <meta name="description" content="Explore Charan Teja's complete 150+ milestone engineering archive covering Python, Django, DRF, Flask, JavaScript, Visual Infographics, and Console Projects.">
+  <title>DevLog Hub | Charan Teja's Engineering & Learning Portfolio</title>
+  <meta name="description" content="Explore Charan Teja's 200+ milestone engineering archive covering Technical Documentation, Python 50D, Django 40D, Flask Mastery, SQL, Projects, and Career Milestones.">
+  <link rel="icon" type="image/png" href="DevLog%20Hub.png">
+  <link rel="apple-touch-icon" href="DevLog%20Hub.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -26,12 +28,14 @@ html_template = '''<!DOCTYPE html>
       --text-sub: #cbd5e1;
       --border-color: rgba(255, 255, 255, 0.08);
       --border-hover: rgba(56, 189, 248, 0.4);
+      --docs-color: #f59e0b;
       --python-color: #38bdf8;
       --django-color: #10b981;
       --flask-color: #c084fc;
-      --js-color: #facc15;
-      --info-color: #f43f5e;
-      --proj-color: #fb923c;
+      --sql-color: #06b6d4;
+      --projects-color: #f97316;
+      --advpy-color: #a3e635;
+      --intern-color: #ec4899;
       --accent: #38bdf8;
       --accent-glow: rgba(56, 189, 248, 0.25);
       --card-radius: 16px;
@@ -48,12 +52,14 @@ html_template = '''<!DOCTYPE html>
       --text-sub: #334155;
       --border-color: rgba(0, 0, 0, 0.08);
       --border-hover: rgba(14, 165, 233, 0.4);
+      --docs-color: #d97706;
       --python-color: #0284c7;
       --django-color: #059669;
       --flask-color: #7c3aed;
-      --js-color: #ca8a04;
-      --info-color: #e11d48;
-      --proj-color: #ea580c;
+      --sql-color: #0891b2;
+      --projects-color: #ea580c;
+      --advpy-color: #65a30d;
+      --intern-color: #db2777;
       --accent: #0284c7;
       --accent-glow: rgba(2, 132, 199, 0.15);
     }
@@ -76,7 +82,7 @@ html_template = '''<!DOCTYPE html>
       background-image: 
         radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 85% 25%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 50% 80%, rgba(192, 132, 252, 0.06) 0%, transparent 50%);
+        radial-gradient(circle at 50% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
       background-attachment: fixed;
     }
 
@@ -109,7 +115,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     .nav-container {
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 0.9rem 1.5rem;
       display: flex;
@@ -126,22 +132,29 @@ html_template = '''<!DOCTYPE html>
     }
 
     .brand-icon {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       border-radius: 12px;
-      background: linear-gradient(135deg, #0284c7, #10b981);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.3rem;
+      overflow: hidden;
       box-shadow: 0 4px 14px var(--accent-glow);
+      flex-shrink: 0;
+    }
+
+    .brand-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     .brand-title {
       font-weight: 800;
       font-size: 1.3rem;
       letter-spacing: -0.02em;
-      background: linear-gradient(120deg, #38bdf8, #10b981, #c084fc);
+      background: linear-gradient(120deg, #f59e0b, #38bdf8, #10b981, #c084fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -203,7 +216,7 @@ html_template = '''<!DOCTYPE html>
     .hero {
       position: relative;
       z-index: 1;
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 3.2rem 1.5rem 1.8rem;
       text-align: center;
@@ -214,10 +227,10 @@ html_template = '''<!DOCTYPE html>
       align-items: center;
       gap: 0.5rem;
       padding: 0.35rem 0.95rem;
-      background: rgba(56, 189, 248, 0.1);
-      border: 1px solid rgba(56, 189, 248, 0.3);
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
       border-radius: 999px;
-      color: var(--accent);
+      color: var(--docs-color);
       font-size: 0.82rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -229,8 +242,8 @@ html_template = '''<!DOCTYPE html>
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 10px var(--accent);
+      background: var(--docs-color);
+      box-shadow: 0 0 10px var(--docs-color);
       animation: pulse-dot 2s infinite;
     }
 
@@ -248,13 +261,13 @@ html_template = '''<!DOCTYPE html>
     }
 
     .hero-title span.grad {
-      background: linear-gradient(135deg, #38bdf8 0%, #10b981 40%, #c084fc 70%, #facc15 100%);
+      background: linear-gradient(135deg, #f59e0b 0%, #38bdf8 35%, #10b981 65%, #c084fc 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     .hero-desc {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto 2.25rem;
       color: var(--text-muted);
       font-size: 1.05rem;
@@ -264,9 +277,9 @@ html_template = '''<!DOCTYPE html>
     /* Stats Ribbon */
     .stats-ribbon {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 1rem;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.9rem;
+      max-width: 1300px;
       margin: 0 auto 2.75rem;
     }
 
@@ -274,7 +287,7 @@ html_template = '''<!DOCTYPE html>
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: var(--card-radius);
-      padding: 1.15rem;
+      padding: 1rem 0.85rem;
       backdrop-filter: blur(10px);
       text-align: left;
       position: relative;
@@ -296,42 +309,47 @@ html_template = '''<!DOCTYPE html>
       height: 3px;
     }
 
-    .stat-card.stat-total::before { background: linear-gradient(90deg, #38bdf8, #10b981); }
+    .stat-card.stat-total::before { background: linear-gradient(90deg, #f59e0b, #38bdf8, #10b981); }
+    .stat-card.stat-docs::before { background: linear-gradient(90deg, var(--docs-color), transparent); }
     .stat-card.stat-python::before { background: linear-gradient(90deg, var(--python-color), transparent); }
     .stat-card.stat-django::before { background: linear-gradient(90deg, var(--django-color), transparent); }
     .stat-card.stat-flask::before { background: linear-gradient(90deg, var(--flask-color), transparent); }
-    .stat-card.stat-js::before { background: linear-gradient(90deg, var(--js-color), transparent); }
-    .stat-card.stat-info::before { background: linear-gradient(90deg, var(--info-color), transparent); }
-    .stat-card.stat-proj::before { background: linear-gradient(90deg, var(--proj-color), transparent); }
+    .stat-card.stat-sql::before { background: linear-gradient(90deg, var(--sql-color), transparent); }
+    .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
+    .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
+    .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
 
     .stat-number {
-      font-size: 1.95rem;
+      font-size: 1.75rem;
       font-weight: 800;
       font-family: 'JetBrains Mono', monospace;
       color: var(--text-main);
       display: flex;
       align-items: baseline;
-      gap: 0.3rem;
+      gap: 0.25rem;
     }
 
     .stat-number small {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
       font-weight: 400;
     }
 
     .stat-label {
       color: var(--text-muted);
-      font-size: 0.8rem;
+      font-size: 0.76rem;
       font-weight: 600;
       margin-top: 0.2rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     /* Main Container */
     main {
       position: relative;
       z-index: 1;
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       padding: 0 1.5rem 5rem;
     }
@@ -378,14 +396,14 @@ html_template = '''<!DOCTYPE html>
       background: transparent;
       border: 1px solid var(--border-color);
       color: var(--text-muted);
-      padding: 0.5rem 0.95rem;
+      padding: 0.45rem 0.85rem;
       border-radius: 10px;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.85rem;
+      font-size: 0.83rem;
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.4rem;
       transition: var(--transition);
       white-space: nowrap;
     }
@@ -410,9 +428,9 @@ html_template = '''<!DOCTYPE html>
 
     .filter-tab .badge-count {
       background: rgba(0, 0, 0, 0.15);
-      padding: 0.15rem 0.5rem;
+      padding: 0.12rem 0.45rem;
       border-radius: 999px;
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-family: 'JetBrains Mono', monospace;
     }
 
@@ -627,7 +645,12 @@ html_template = '''<!DOCTYPE html>
       background: rgba(255, 255, 255, 0.05);
     }
 
-    /* Category Themes */
+    /* Category Specific Themes */
+    .card-tech-docs .day-pill {
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--docs-color);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+    }
     .card-python .day-pill {
       background: rgba(56, 189, 248, 0.12);
       color: var(--python-color);
@@ -643,20 +666,25 @@ html_template = '''<!DOCTYPE html>
       color: var(--flask-color);
       border: 1px solid rgba(192, 132, 252, 0.25);
     }
-    .card-javascript .day-pill {
-      background: rgba(250, 204, 21, 0.12);
-      color: var(--js-color);
-      border: 1px solid rgba(250, 204, 21, 0.25);
+    .card-sql-mysql .day-pill {
+      background: rgba(6, 182, 212, 0.12);
+      color: var(--sql-color);
+      border: 1px solid rgba(6, 182, 212, 0.25);
     }
-    .card-infographics .day-pill {
-      background: rgba(244, 63, 94, 0.12);
-      color: var(--info-color);
-      border: 1px solid rgba(244, 63, 94, 0.25);
+    .card-projects .day-pill {
+      background: rgba(249, 115, 22, 0.12);
+      color: var(--projects-color);
+      border: 1px solid rgba(249, 115, 22, 0.25);
     }
-    .card-console-projects .day-pill {
-      background: rgba(251, 146, 60, 0.12);
-      color: var(--proj-color);
-      border: 1px solid rgba(251, 146, 60, 0.25);
+    .card-advanced-python .day-pill {
+      background: rgba(163, 230, 53, 0.12);
+      color: var(--advpy-color);
+      border: 1px solid rgba(163, 230, 53, 0.25);
+    }
+    .card-internships .day-pill {
+      background: rgba(236, 72, 153, 0.12);
+      color: var(--intern-color);
+      border: 1px solid rgba(236, 72, 153, 0.25);
     }
 
     /* Empty state */
@@ -757,6 +785,173 @@ html_template = '''<!DOCTYPE html>
       transform: translateY(-3px);
     }
 
+    /* Connected Ecosystem & Footer Styling */
+    .ecosystem-section {
+      max-width: 1360px;
+      margin: 0 auto 4rem;
+      padding: 0 1.5rem;
+    }
+
+    .ecosystem-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--card-radius);
+      padding: 2.2rem;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .ecosystem-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #f59e0b, #38bdf8, #10b981, #ec4899);
+    }
+
+    .ecosystem-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .ecosystem-header h2 {
+      font-size: 1.65rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+      background: linear-gradient(120deg, #f59e0b, #38bdf8, #10b981);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .ecosystem-header p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .ecosystem-col {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.4rem;
+    }
+
+    .ecosystem-col-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1.1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .links-chip-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .eco-link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      transition: var(--transition);
+    }
+
+    .eco-link-btn:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+      color: var(--accent);
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    .eco-link-btn .eco-label {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    .eco-badge {
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+    }
+
+    /* Social Bar */
+    .socials-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.85rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .social-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.86rem;
+      text-decoration: none;
+      transition: var(--transition);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      background: var(--bg-secondary);
+    }
+
+    .social-pill:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-pill.social-linkedin:hover {
+      background: #0a66c2;
+      border-color: #0a66c2;
+      color: #ffffff;
+    }
+
+    .social-pill.social-github:hover {
+      background: #24292e;
+      border-color: #6e5494;
+      color: #ffffff;
+    }
+
+    .social-pill.social-instagram:hover {
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      border-color: #dc2743;
+      color: #ffffff;
+    }
+
+    .social-pill.social-snapchat:hover {
+      background: #fffc00;
+      border-color: #fffc00;
+      color: #000000;
+    }
+
     /* Footer */
     footer {
       border-top: 1px solid var(--border-color);
@@ -768,7 +963,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     .footer-content {
-      max-width: 1320px;
+      max-width: 1360px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
@@ -795,7 +990,7 @@ html_template = '''<!DOCTYPE html>
     }
 
     /* Responsive */
-    @media (max-width: 840px) {
+    @media (max-width: 900px) {
       .controls-wrapper {
         top: 60px;
         padding: 0.85rem;
@@ -809,13 +1004,13 @@ html_template = '''<!DOCTYPE html>
         grid-template-columns: 1fr;
       }
       .stats-ribbon {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
       }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 540px) {
       .stats-ribbon {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
       }
       .nav-container {
         padding: 0.75rem 1rem;
@@ -836,9 +1031,11 @@ html_template = '''<!DOCTYPE html>
   <header>
     <div class="nav-container">
       <a href="#" class="brand">
-        <div class="brand-icon">⚡</div>
+        <div class="brand-icon">
+          <img src="DevLog%20Hub.png" alt="DevLog Hub Logo" width="42" height="42">
+        </div>
         <div>
-          <span class="brand-title">PyPulse Hub</span>
+          <span class="brand-title">DevLog Hub</span>
           <span class="brand-author">by Charan Teja</span>
         </div>
       </a>
@@ -846,6 +1043,9 @@ html_template = '''<!DOCTYPE html>
         <button id="themeToggle" class="theme-toggle-btn" title="Toggle Theme" aria-label="Toggle theme">
           <span id="themeIcon">☀️</span>
         </button>
+        <a href="#ecosystem" class="theme-toggle-btn" style="text-decoration: none; font-size: 0.85rem; font-weight: 600;" title="View Live Portfolios & Projects">
+          <span>🌐 Portfolios</span>
+        </a>
         <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer" class="profile-link-btn">
           <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           LinkedIn Profile
@@ -858,45 +1058,53 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      150+ Verified Technical Milestones
+      200+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
-      Python, Full-Stack Frameworks &amp; <br>
-      <span class="grad">Engineering Knowledge Hub</span>
+      Full-Stack Engineering, Data &amp; <br>
+      <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive archive of Charan Teja's technical journey on LinkedIn &mdash; featuring 50 Days of Python, 40 Days of Django &amp; DRF, Flask Mastery, Core JavaScript Documentation, System Architecture Infographics, and Production Console Projects.
+      A unified, interactive knowledge hub indexing 200+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">150<small>milestones</small></div>
+        <div class="stat-number" id="totalPostsStat">202<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
+      </div>
+      <div class="stat-card stat-docs">
+        <div class="stat-number">26<small>guides</small></div>
+        <div class="stat-label">Technical Documentation</div>
       </div>
       <div class="stat-card stat-python">
         <div class="stat-number">51<small>days</small></div>
         <div class="stat-label">Python 50D Challenge</div>
       </div>
       <div class="stat-card stat-django">
-        <div class="stat-number">43<small>topics</small></div>
-        <div class="stat-label">Django &amp; DRF Architecture</div>
+        <div class="stat-number">41<small>days</small></div>
+        <div class="stat-label">Django 40D Series</div>
       </div>
       <div class="stat-card stat-flask">
         <div class="stat-number">33<small>days</small></div>
         <div class="stat-label">Flask Microservices</div>
       </div>
-      <div class="stat-card stat-js">
-        <div class="stat-number">5<small>guides</small></div>
-        <div class="stat-label">JavaScript &amp; Web Core</div>
+      <div class="stat-card stat-sql">
+        <div class="stat-number">18<small>queries</small></div>
+        <div class="stat-label">SQL &amp; MySQL Databases</div>
       </div>
-      <div class="stat-card stat-info">
-        <div class="stat-number">16<small>graphics</small></div>
-        <div class="stat-label">Visual Tech &amp; AI Guides</div>
+      <div class="stat-card stat-projects">
+        <div class="stat-number">8<small>apps</small></div>
+        <div class="stat-label">Projects &amp; AI Apps</div>
       </div>
-      <div class="stat-card stat-proj">
-        <div class="stat-number">2<small>projects</small></div>
-        <div class="stat-label">Console Project Docs</div>
+      <div class="stat-card stat-advpy">
+        <div class="stat-number">15<small>topics</small></div>
+        <div class="stat-label">Advanced Python &amp; Data</div>
+      </div>
+      <div class="stat-card stat-intern">
+        <div class="stat-number">10<small>milestones</small></div>
+        <div class="stat-label">Career Milestones</div>
       </div>
     </div>
   </section>
@@ -909,31 +1117,39 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">150</span>
+            <span class="badge-count" id="countAll">202</span>
+          </button>
+          <button class="filter-tab" data-category="tech-docs">
+            <span>📚 Technical Docs</span>
+            <span class="badge-count" id="countDocs">26</span>
           </button>
           <button class="filter-tab" data-category="python">
-            <span>🐍 Python</span>
+            <span>🐍 Python 50D</span>
             <span class="badge-count" id="countPython">51</span>
           </button>
           <button class="filter-tab" data-category="django">
-            <span>⚡ Django &amp; DRF</span>
-            <span class="badge-count" id="countDjango">43</span>
+            <span>⚡ Django 40D</span>
+            <span class="badge-count" id="countDjango">41</span>
           </button>
           <button class="filter-tab" data-category="flask">
             <span>🧪 Flask</span>
             <span class="badge-count" id="countFlask">33</span>
           </button>
-          <button class="filter-tab" data-category="javascript">
-            <span>📜 JavaScript &amp; Web</span>
-            <span class="badge-count" id="countJs">5</span>
+          <button class="filter-tab" data-category="sql-mysql">
+            <span>🗄️ SQL &amp; MySQL</span>
+            <span class="badge-count" id="countSql">18</span>
           </button>
-          <button class="filter-tab" data-category="infographics">
-            <span>📊 Visual Guides &amp; AI</span>
-            <span class="badge-count" id="countInfo">16</span>
+          <button class="filter-tab" data-category="projects">
+            <span>🚀 Projects &amp; AI</span>
+            <span class="badge-count" id="countProj">8</span>
           </button>
-          <button class="filter-tab" data-category="console-projects">
-            <span>💻 Console Projects</span>
-            <span class="badge-count" id="countProj">2</span>
+          <button class="filter-tab" data-category="advanced-python">
+            <span>⚙️ Advanced Python</span>
+            <span class="badge-count" id="countAdvPy">15</span>
+          </button>
+          <button class="filter-tab" data-category="internships">
+            <span>🎓 Career Milestones</span>
+            <span class="badge-count" id="countIntern">10</span>
           </button>
         </div>
       </div>
@@ -941,7 +1157,7 @@ html_template = '''<!DOCTYPE html>
       <div class="search-filter-row">
         <div class="search-box">
           <svg class="search-icon" width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          <input type="text" id="searchInput" placeholder="Search by topic, day (e.g. Day 10), ORM, JWT, AI Agents, Algorithm..." aria-label="Search posts">
+          <input type="text" id="searchInput" placeholder="Search by documentation topic, day, keyword (e.g. DOM, Event Loop, JOIN, LLM, MVT)..." aria-label="Search posts">
         </div>
         <div class="sort-box">
           <label for="sortOrder" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Sort:</label>
@@ -956,7 +1172,7 @@ html_template = '''<!DOCTYPE html>
 
     <!-- Results Status -->
     <div class="results-info">
-      <div>Showing <strong id="visibleCount">150</strong> learning milestones</div>
+      <div>Showing <strong id="visibleCount">202</strong> technical milestones</div>
       <div id="filterStatusHint"></div>
     </div>
 
@@ -977,11 +1193,97 @@ html_template = '''<!DOCTYPE html>
     <span id="toastMessage">Link copied to clipboard!</span>
   </div>
 
+  <!-- Connect & Portfolios Ecosystem Section -->
+  <section class="ecosystem-section" id="ecosystem">
+    <div class="ecosystem-card">
+      <div class="ecosystem-header">
+        <h2>🌐 Connect &amp; Explore Portfolios</h2>
+        <p>Discover Charan Teja's live framework portals, project hubs, and professional social profiles</p>
+      </div>
+
+      <div class="ecosystem-grid">
+        <!-- Portfolios Column -->
+        <div class="ecosystem-col">
+          <div class="ecosystem-col-title">
+            <span>💼</span> View Live Portfolios
+          </div>
+          <div class="links-chip-group">
+            <a href="https://charanepuri.github.io/PORTFOLIO-USING-HTML-CSS-JS" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🌐</span> Basic Portfolio</span>
+              <span class="eco-badge">HTML/CSS/JS</span>
+            </a>
+            <a href="https://portfolio-site-django.onrender.com" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚡</span> Django Portfolio</span>
+              <span class="eco-badge">Render</span>
+            </a>
+            <a href="https://charan-react-portfolio.vercel.app" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚛️</span> React Portfolio</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+            <a href="https://flask-developer-dashboard-portfolio.onrender.com/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🧪</span> Flask Dashboard</span>
+              <span class="eco-badge">Render</span>
+            </a>
+            <a href="https://angular-portfolio-sigma-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🅰️</span> Angular Portfolio</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+            <a href="https://profile-card-angular.vercel.app/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>🪪</span> Angular Profile Card</span>
+              <span class="eco-badge">Vercel</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Hubs Column -->
+        <div class="ecosystem-col">
+          <div class="ecosystem-col-title">
+            <span>🚀</span> Dedicated Project Hubs
+          </div>
+          <div class="links-chip-group">
+            <a href="https://charanepuri.github.io/javascript-projects-portfolio/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>📜</span> JavaScript Projects Website</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+            <a href="https://charanepuri.github.io/django-projects-hub/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚡</span> Django Projects Hub</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+            <a href="https://charanepuri.github.io/react-projects-hub/" target="_blank" rel="noopener noreferrer" class="eco-link-btn">
+              <span class="eco-label"><span>⚛️</span> React Projects Hub</span>
+              <span class="eco-badge">GitHub Pages</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Connections Row -->
+      <div class="socials-row">
+        <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer" class="social-pill social-linkedin">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/charanepuri" target="_blank" rel="noopener noreferrer" class="social-pill social-github">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.instagram.com/_just_call_me_charan_tej" target="_blank" rel="noopener noreferrer" class="social-pill social-instagram">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://www.snapchat.com/add/justcalltej2003?share_id=o3MYfXqlpYE&locale=en-IN" target="_blank" rel="noopener noreferrer" class="social-pill social-snapchat">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12.001 2c-3.834 0-6.223 2.654-6.223 5.485 0 1.442.668 2.636 1.488 3.491.137.143.208.33.208.52 0 .428-.43.766-.991 1.15-.494.338-1.096.75-1.096 1.427 0 .543.435.98 1.13 1.14.364.084.774.137 1.206.182.261.027.424.238.384.499-.085.551-.309 1.48-1.706 1.839-.415.106-.728.375-.728.742 0 .684 1.106 1.246 2.64 1.414.288.031.503.267.498.556-.019 1.094.757 1.555 1.455 1.555.515 0 1.047-.197 1.637-.604.421-.29.967-.29 1.388 0 .59.407 1.122.604 1.637.604.698 0 1.474-.461 1.455-1.555-.005-.289.21-.525.498-.556 1.534-.168 2.64-.73 2.64-1.414 0-.367-.313-.636-.728-.742-1.397-.359-1.621-1.288-1.706-1.839-.04-.261.123-.472.384-.499.432-.045.842-.098 1.206-.182.695-.16 1.13-.597 1.13-1.14 0-.677-.602-1.089-1.096-1.427-.561-.384-.991-.722-.991-1.15 0-.19.071-.377.208-.52.82-.855 1.488-2.049 1.488-3.491 0-2.831-2.389-5.485-6.223-5.485z"/></svg>
+          Snapchat
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     <div class="footer-content">
       <div>
-        <strong>PyPulse Hub</strong> &bull; Developed for Charan Teja's Engineering Portfolio
+        <strong>DevLog Hub</strong> &bull; Developed for Charan Teja's Engineering Portfolio
       </div>
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/charan-teja-972aa9231" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
@@ -995,7 +1297,6 @@ html_template = '''<!DOCTYPE html>
   </footer>
 
   <script>
-    // Embedded Data Generated from Both Documentation & Daily Learning Files
     const POSTS_DATA = %DATA_PLACEHOLDER%;
 
     // State
@@ -1032,14 +1333,16 @@ html_template = '''<!DOCTYPE html>
     const toastMessage = document.getElementById('toastMessage');
 
     // Counts Setup
-    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>milestones</small>`;
+    document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>posts</small>`;
     document.getElementById('countAll').textContent = allPosts.length;
+    document.getElementById('countDocs').textContent = allPosts.filter(p => p.categoryId === 'tech-docs').length;
     document.getElementById('countPython').textContent = allPosts.filter(p => p.categoryId === 'python').length;
     document.getElementById('countDjango').textContent = allPosts.filter(p => p.categoryId === 'django').length;
     document.getElementById('countFlask').textContent = allPosts.filter(p => p.categoryId === 'flask').length;
-    document.getElementById('countJs').textContent = allPosts.filter(p => p.categoryId === 'javascript').length;
-    document.getElementById('countInfo').textContent = allPosts.filter(p => p.categoryId === 'infographics').length;
-    document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'console-projects').length;
+    document.getElementById('countSql').textContent = allPosts.filter(p => p.categoryId === 'sql-mysql').length;
+    document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'projects').length;
+    document.getElementById('countAdvPy').textContent = allPosts.filter(p => p.categoryId === 'advanced-python').length;
+    document.getElementById('countIntern').textContent = allPosts.filter(p => p.categoryId === 'internships').length;
 
     // Render Function
     function renderPosts() {
@@ -1115,18 +1418,22 @@ html_template = '''<!DOCTYPE html>
 
     function getPostSummary(post) {
       switch (post.categoryId) {
+        case 'tech-docs':
+          return `Comprehensive technical documentation and reference guide covering architectural paradigms, runtime execution models, and visual systems.`;
         case 'python':
-          return `Hands-on Python milestone covering core mechanics, code architecture, problem-solving paradigms, and clean Pythonic idioms.`;
+          return `Hands-on Python milestone covering core mechanics, data structures, OOP principles, and clean Pythonic logic.`;
         case 'django':
           return `Django engineering milestone focusing on backend enterprise architecture, database models, view controllers, and REST APIs.`;
         case 'flask':
           return `Flask web development milestone demonstrating lightweight routing, request lifecycles, template rendering, and practical backend APIs.`;
-        case 'javascript':
-          return `Core browser and runtime deep dive detailing JavaScript engine execution context, asynchronous event loop, and modern ES6+ paradigms.`;
-        case 'infographics':
-          return `Visual architectural breakdown comparing modern frameworks, social media recommendation algorithms, and AI agent architectures.`;
-        case 'console-projects':
-          return `Full project documentation and architectural walkthrough of complete production-grade console applications built in C and Python.`;
+        case 'projects':
+          return `Real-world project build featuring end-to-end implementation details, architectural choices, and practical engineering solutions.`;
+        case 'sql-mysql':
+          return `Database engineering milestone focusing on relational data queries, complex joins, aggregation mechanics, views, and triggers.`;
+        case 'advanced-python':
+          return `Advanced Python runtime topics including concurrency, multithreading, regex pattern engines, generators, and data libraries.`;
+        case 'internships':
+          return `Career milestone documenting real-world internship experiences, software engineering contributions, and verified certifications.`;
         default:
           return `Technical documentation and practical software engineering milestone.`;
       }
@@ -1177,7 +1484,7 @@ html_template = '''<!DOCTYPE html>
       if (navigator.share) {
         navigator.share({
           title: "Charan Teja's Engineering & Learning Hub",
-          text: "Explore Charan Teja's complete 150+ milestone roadmap across Python, Django, Flask, JavaScript, and System Architecture!",
+          text: "Explore Charan Teja's complete 200+ milestone roadmap across Technical Documentation, Python, Django, Flask, SQL, and AI Projects!",
           url: window.location.href
         }).catch(() => {});
       } else {
@@ -1212,11 +1519,11 @@ html_template = '''<!DOCTYPE html>
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
       themeIcon.textContent = newTheme === 'dark' ? '☀️' : '🌙';
-      localStorage.setItem('pypulse-theme', newTheme);
+      localStorage.setItem('devlog-theme', newTheme);
     }
 
     // Initialize Theme
-    const savedTheme = localStorage.getItem('pypulse-theme') || 'dark';
+    const savedTheme = localStorage.getItem('devlog-theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
     themeIcon.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
     themeToggleBtn.addEventListener('click', toggleTheme);
@@ -1247,4 +1554,4 @@ full_html = html_template.replace('%DATA_PLACEHOLDER%', data_json_str)
 with open('index.html', 'w', encoding='utf-8') as f:
     f.write(full_html)
 
-print("Updated index.html successfully with all 150 items! Size:", len(full_html), "bytes")
+print(f"Generated index.html successfully with all {total_count} items! Size: {len(full_html)} bytes")
