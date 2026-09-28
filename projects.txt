@@ -2,7 +2,7 @@ Project's
 
 HTML|CSS|JS Project's
 
-31.India Post Digital Tribute
+India Post Digital Tribute
 https://charanepuri.github.io/india-post-digital-tribute/
 https://github.com/charanepuri/india-post-digital-tribute
 https://drive.google.com/file/d/1B4thlqs3zoRqTtjPTU6-mVNbchZebR9T/view?usp=sharing
@@ -24,6 +24,7 @@ Bible Reference Application
 https://charanepuri.github.io/bible-reference-app/
 https://github.com/charanepuri/bible-reference-app
 https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing
+
 P1 https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-frontenddevelopment-activity-7439166079328788480-cRlp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 P2 https://www.linkedin.com/posts/charan-teja-972aa9231_github-charanepuribible-reference-app-activity-7439528483652878336-L4EC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
@@ -56,6 +57,10 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-html-css-activit
 https://charanepuri.github.io/interactive-404-page/
 https://github.com/charanepuri/interactive-404-page
 https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-frontenddevelopment-javascript-activity-7486989932767588353-RXlS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+
+
+
 
 React Project's
 
@@ -92,6 +97,9 @@ https://smart-error-assistant-react.vercel.app/
 https://github.com/charanepuri/smart-error-assistant-react
 
 
+
+
+
 Django Project's
 
 Tech Glossary Hub -- Django Version
@@ -126,6 +134,9 @@ Developer Productivity Suite -- Django Scalable Platform
 https://github.com/charanepuri/developer-productivity-suite-Django
 
 
+
+
+
 Flask Project's
 
 Quick Link URL Shortener
@@ -147,3 +158,32 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_ai-languagetranslator-webde
 https://github.com/charanepuri/DEEP-TRANSLATOR-WEB-APPLICATION-USING-FLASK
 
 
+
+
+
+AI Integrated Project's
+
+Nexora AI
+https://nexora-ai-c0ih.onrender.com/
+https://github.com/charanepuri/nexora-ai
+https://drive.google.com/file/d/1WpsDO3lMt6kY10tMJy1QuBoP9JZ5Ovwx/view?usp=sharing
+
+AI Resume Bullet Improver
+https://ai-resume-bullet-improver.vercel.app/
+https://github.com/charanepuri/ai-resume-bullet-improver
+https://ai-resume-bullet-improver.vercel.app/assets/files/AI_Resume_Bullet_Improver_Documentation.pdf
+
+AI GitHub Assistant 
+https://ai-github-assistant-react.vercel.app/
+https://github.com/charanepuri/ai-github-assistant-react
+https://ai-github-assistant-react.vercel.app/AIGitHubAssistantDocumentation.pdf
+
+AI Codemorph
+https://codemorph-ai-react.vercel.app/
+https://github.com/charanepuri/codemorph-ai-react
+https://codemorph-ai-react.vercel.app/CodeMorph_AI_Project_Documentation.pdf
+
+AI Interview Coach
+https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/
+https://github.com/charanepuri/ai-interview-coach-react-groq-ai
+https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-BYNDHLpH.pdf

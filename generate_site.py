@@ -35,7 +35,9 @@ html_template = '''<!DOCTYPE html>
       --sql-color: #06b6d4;
       --web-color: #eab308;
       --react-color: #00d8ff;
+      --django-app-color: #10b981;
       --flask-app-color: #c084fc;
+      --ai-color: #a855f7;
       --projects-color: #f97316;
       --advpy-color: #a3e635;
       --intern-color: #ec4899;
@@ -62,7 +64,9 @@ html_template = '''<!DOCTYPE html>
       --sql-color: #0891b2;
       --web-color: #ca8a04;
       --react-color: #0284c7;
+      --django-app-color: #059669;
       --flask-app-color: #7c3aed;
+      --ai-color: #9333ea;
       --projects-color: #ea580c;
       --advpy-color: #65a30d;
       --intern-color: #db2777;
@@ -323,7 +327,9 @@ html_template = '''<!DOCTYPE html>
     .stat-card.stat-sql::before { background: linear-gradient(90deg, var(--sql-color), transparent); }
     .stat-card.stat-web::before { background: linear-gradient(90deg, var(--web-color), transparent); }
     .stat-card.stat-react::before { background: linear-gradient(90deg, var(--react-color), transparent); }
+    .stat-card.stat-django-app::before { background: linear-gradient(90deg, var(--django-app-color), transparent); }
     .stat-card.stat-flask-app::before { background: linear-gradient(90deg, var(--flask-app-color), transparent); }
+    .stat-card.stat-ai-app::before { background: linear-gradient(90deg, var(--ai-color), transparent); }
     .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
     .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
     .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
@@ -679,6 +685,18 @@ html_template = '''<!DOCTYPE html>
       border-color: #d97706;
     }
 
+    .btn-link.btn-drive {
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .btn-link.btn-drive:hover {
+      background: #2563eb;
+      color: #ffffff;
+      border-color: #2563eb;
+    }
+
     .btn-copy {
       background: transparent;
       border: 1px solid var(--border-color);
@@ -736,10 +754,20 @@ html_template = '''<!DOCTYPE html>
       color: var(--react-color);
       border: 1px solid rgba(0, 216, 255, 0.28);
     }
+    .card-django-projects .day-pill {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--django-app-color);
+      border: 1px solid rgba(16, 185, 129, 0.28);
+    }
     .card-flask-projects .day-pill {
       background: rgba(192, 132, 252, 0.12);
       color: var(--flask-app-color);
       border: 1px solid rgba(192, 132, 252, 0.28);
+    }
+    .card-ai-projects .day-pill {
+      background: rgba(168, 85, 247, 0.12);
+      color: var(--ai-color);
+      border: 1px solid rgba(168, 85, 247, 0.28);
     }
     .card-projects .day-pill {
       background: rgba(249, 115, 22, 0.12);
@@ -1128,20 +1156,20 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      228+ Verified Technical Milestones
+      241+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
       Full-Stack Engineering, Data &amp; <br>
       <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive knowledge hub indexing 228+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Flask Web Applications, Projects &amp; AI, and Career Milestones.
+      A unified, interactive knowledge hub indexing 241+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Django Systems, Flask Applications, AI Integrated Apps, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">228<small>posts</small></div>
+        <div class="stat-number" id="totalPostsStat">241<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
@@ -1172,9 +1200,17 @@ html_template = '''<!DOCTYPE html>
         <div class="stat-number">6<small>spas</small></div>
         <div class="stat-label">React Applications</div>
       </div>
+      <div class="stat-card stat-django-app">
+        <div class="stat-number">8<small>apps</small></div>
+        <div class="stat-label">Django Applications</div>
+      </div>
       <div class="stat-card stat-flask-app">
         <div class="stat-number">4<small>apps</small></div>
         <div class="stat-label">Flask Applications</div>
+      </div>
+      <div class="stat-card stat-ai-app">
+        <div class="stat-number">5<small>apps</small></div>
+        <div class="stat-label">AI Integrated Apps</div>
       </div>
       <div class="stat-card stat-projects">
         <div class="stat-number">8<small>apps</small></div>
@@ -1229,9 +1265,17 @@ html_template = '''<!DOCTYPE html>
             <span>⚛️ React Apps</span>
             <span class="badge-count" id="countReact">6</span>
           </button>
+          <button class="filter-tab" data-category="django-projects">
+            <span>⚡ Django Apps</span>
+            <span class="badge-count" id="countDjangoApp">8</span>
+          </button>
           <button class="filter-tab" data-category="flask-projects">
             <span>🧪 Flask Apps</span>
             <span class="badge-count" id="countFlaskApp">4</span>
+          </button>
+          <button class="filter-tab" data-category="ai-projects">
+            <span>🤖 AI Apps</span>
+            <span class="badge-count" id="countAIApp">5</span>
           </button>
           <button class="filter-tab" data-category="projects">
             <span>🚀 Projects &amp; AI</span>
@@ -1436,7 +1480,9 @@ html_template = '''<!DOCTYPE html>
     document.getElementById('countSql').textContent = allPosts.filter(p => p.categoryId === 'sql-mysql').length;
     document.getElementById('countWeb').textContent = allPosts.filter(p => p.categoryId === 'web-projects').length;
     document.getElementById('countReact').textContent = allPosts.filter(p => p.categoryId === 'react-projects').length;
+    document.getElementById('countDjangoApp').textContent = allPosts.filter(p => p.categoryId === 'django-projects').length;
     document.getElementById('countFlaskApp').textContent = allPosts.filter(p => p.categoryId === 'flask-projects').length;
+    document.getElementById('countAIApp').textContent = allPosts.filter(p => p.categoryId === 'ai-projects').length;
     document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'projects').length;
     document.getElementById('countAdvPy').textContent = allPosts.filter(p => p.categoryId === 'advanced-python').length;
     document.getElementById('countIntern').textContent = allPosts.filter(p => p.categoryId === 'internships').length;
@@ -1514,7 +1560,13 @@ html_template = '''<!DOCTYPE html>
           </a>
         ` : '';
 
-        const fallbackBtn = (!isLinkedIn && !liveBtn && !ghBtn) ? `
+        const driveBtn = post.driveUrl ? `
+          <a href="${post.driveUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-drive" title="View Project Demo / Drive Resource">
+            <span>📁 Drive</span>
+          </a>
+        ` : '';
+
+        const fallbackBtn = (!isLinkedIn && !liveBtn && !ghBtn && !driveBtn) ? `
           <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="btn-link" title="Open Resource">
             <span>View Link</span>
           </a>
@@ -1538,6 +1590,7 @@ html_template = '''<!DOCTYPE html>
                 ${liveBtn}
                 ${ghBtn}
                 ${docBtn}
+                ${driveBtn}
                 ${fallbackBtn}
               </div>
               <button class="btn-copy" onclick="copyPostLink('${post.liveUrl || post.url}', this)" title="Copy Post URL" aria-label="Copy post link">
@@ -1567,8 +1620,12 @@ html_template = '''<!DOCTYPE html>
           return `Frontend web application engineered with semantic HTML5, modern CSS3 styling, and modular JavaScript, featuring interactive UI states, responsive layout, and clean client-side logic.`;
         case 'react-projects':
           return `Modern React application engineered with reusable component architecture, client-side routing, state hooks, and high-performance interactive UI.`;
+        case 'django-projects':
+          return `Enterprise Django full-stack web application engineered with modular app architecture, ORM schemas, view controllers, and production deployment.`;
         case 'flask-projects':
           return `Production-ready Flask application featuring lightweight modular routing, WebSocket communications, REST APIs, and responsive UI integration.`;
+        case 'ai-projects':
+          return `AI-integrated generative application leveraging large language models, structured prompt pipelines, real-time inference, and modern web interfaces.`;
         case 'advanced-python':
           return `Advanced Python runtime topics including concurrency, multithreading, regex pattern engines, generators, and data libraries.`;
         case 'internships':

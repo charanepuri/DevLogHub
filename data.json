@@ -1320,6 +1320,84 @@
     ]
   },
   {
+    "id": "django-projects",
+    "name": "Django Web Applications & Systems",
+    "shortName": "Django Apps",
+    "tagline": "Enterprise Full-Stack Architecture, Dynamic ORM Platforms, Translation Engines & Scalable Systems",
+    "badge": "Django Apps",
+    "accent": "#10b981",
+    "icon": "\u26a1",
+    "count": 8,
+    "posts": [
+      {
+        "id": "django-app-1",
+        "day": "Platform Launch \ud83d\ude80",
+        "topic": "Tech Glossary Hub (Full-Stack Django Knowledge System)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
+      },
+      {
+        "id": "django-app-2",
+        "day": "Milestone 2 \u2699\ufe0f",
+        "topic": "Tech Glossary Hub \u2022 Progress Update 2: Architecture & Models",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
+      },
+      {
+        "id": "django-app-3",
+        "day": "Milestone 1 \ud83c\udfd7\ufe0f",
+        "topic": "Tech Glossary Hub \u2022 Progress Update 1: Core Setup & Schemas",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
+      },
+      {
+        "id": "django-app-4",
+        "day": "Translation App \ud83c\udf10",
+        "topic": "Translator Web Application (Django Multi-Language Engine)",
+        "url": "https://lnkd.in/p/dz-vgKPr",
+        "liveUrl": "https://translator-web-application-django.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/translator-web-application-django",
+        "docUrl": "https://translator-web-application-django.onrender.com/static/translator/TranslatorWebApplication.pdf"
+      },
+      {
+        "id": "django-app-5",
+        "day": "Web Application \ud83c\udf72",
+        "topic": "Sambar Handbook (Traditional Culinary Guide & Django Web App)",
+        "url": "https://sambar-handbook.onrender.com/",
+        "liveUrl": "https://sambar-handbook.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/sambar-handbook"
+      },
+      {
+        "id": "django-app-6",
+        "day": "Dynamic Engine \ud83d\udca1",
+        "topic": "Smart Quote Generator (Dynamic Inspiration Engine)",
+        "url": "https://django-smart-quote-generator.onrender.com/",
+        "liveUrl": "https://django-smart-quote-generator.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/django-smart-quote-generator",
+        "driveUrl": "https://drive.google.com/file/d/1U4-_Wd5CGDeLSvkLILivz8uRg6nU-Q0C/view?usp=sharing"
+      },
+      {
+        "id": "django-app-7",
+        "day": "Enterprise App \ud83c\udf0d",
+        "topic": "LinguaFlow (Full-Stack Language Translator & Localization Platform)",
+        "url": "https://linguaflow-django.onrender.com/",
+        "liveUrl": "https://linguaflow-django.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/linguaflow-django",
+        "docUrl": "https://linguaflow-django.onrender.com/static/pdf/LinguaFlow_Project_Documentation.1734d718af1d.pdf"
+      },
+      {
+        "id": "django-app-8",
+        "day": "Scalable Suite \ud83d\ude80",
+        "topic": "Developer Productivity Suite (Django Scalable Enterprise Architecture)",
+        "url": "https://github.com/charanepuri/developer-productivity-suite-Django",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-Django"
+      }
+    ]
+  },
+  {
     "id": "flask-projects",
     "name": "Flask Web Applications & Microservices",
     "shortName": "Flask Apps",
@@ -1361,6 +1439,63 @@
         "topic": "AI Language Translator (Deep Translator Web Engine)",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_ai-languagetranslator-webdevelopment-activity-7433515075644350464-d2am?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "githubUrl": "https://github.com/charanepuri/DEEP-TRANSLATOR-WEB-APPLICATION-USING-FLASK"
+      }
+    ]
+  },
+  {
+    "id": "ai-projects",
+    "name": "AI Integrated Applications & LLMs",
+    "shortName": "AI Apps",
+    "tagline": "Generative AI Resume Engines, Code Morphing, Interview Coaches, Multi-Model LLMs & Assistants",
+    "badge": "AI Apps",
+    "accent": "#a855f7",
+    "icon": "\ud83e\udd16",
+    "count": 5,
+    "posts": [
+      {
+        "id": "ai-app-1",
+        "day": "AI Assistant \ud83e\udd16",
+        "topic": "Nexora AI (Intelligent Multi-Modal Generative Assistant)",
+        "url": "https://nexora-ai-c0ih.onrender.com/",
+        "liveUrl": "https://nexora-ai-c0ih.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/nexora-ai",
+        "driveUrl": "https://drive.google.com/file/d/1WpsDO3lMt6kY10tMJy1QuBoP9JZ5Ovwx/view?usp=sharing"
+      },
+      {
+        "id": "ai-app-2",
+        "day": "GenAI Resume \ud83d\udcc4",
+        "topic": "AI Resume Bullet Improver (ATS Optimization & Impact Enhancer)",
+        "url": "https://ai-resume-bullet-improver.vercel.app/",
+        "liveUrl": "https://ai-resume-bullet-improver.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/ai-resume-bullet-improver",
+        "docUrl": "https://ai-resume-bullet-improver.vercel.app/assets/files/AI_Resume_Bullet_Improver_Documentation.pdf"
+      },
+      {
+        "id": "ai-app-3",
+        "day": "Developer AI \ud83d\udc19",
+        "topic": "AI GitHub Assistant (Repository Code Insights & Automation)",
+        "url": "https://ai-github-assistant-react.vercel.app/",
+        "liveUrl": "https://ai-github-assistant-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/ai-github-assistant-react",
+        "docUrl": "https://ai-github-assistant-react.vercel.app/AIGitHubAssistantDocumentation.pdf"
+      },
+      {
+        "id": "ai-app-4",
+        "day": "Code Converter \u26a1",
+        "topic": "AI Codemorph (Polyglot Code Migration & Transformation Engine)",
+        "url": "https://codemorph-ai-react.vercel.app/",
+        "liveUrl": "https://codemorph-ai-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/codemorph-ai-react",
+        "docUrl": "https://codemorph-ai-react.vercel.app/CodeMorph_AI_Project_Documentation.pdf"
+      },
+      {
+        "id": "ai-app-5",
+        "day": "Groq AI Coach \ud83c\udfaf",
+        "topic": "AI Interview Coach (Real-Time Groq-Powered Mock Interviews & Feedback)",
+        "url": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/",
+        "liveUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/ai-interview-coach-react-groq-ai",
+        "docUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-BYNDHLpH.pdf"
       }
     ]
   },

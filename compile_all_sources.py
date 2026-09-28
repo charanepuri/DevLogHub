@@ -102,6 +102,17 @@ categories = [
         'posts': []
     },
     {
+        'id': 'django-projects',
+        'name': 'Django Web Applications & Systems',
+        'shortName': 'Django Apps',
+        'tagline': 'Enterprise Full-Stack Architecture, Dynamic ORM Platforms, Translation Engines & Scalable Systems',
+        'badge': 'Django Apps',
+        'accent': '#10b981',
+        'icon': '⚡',
+        'count': 0,
+        'posts': []
+    },
+    {
         'id': 'flask-projects',
         'name': 'Flask Web Applications & Microservices',
         'shortName': 'Flask Apps',
@@ -109,6 +120,17 @@ categories = [
         'badge': 'Flask Apps',
         'accent': '#c084fc',
         'icon': '🧪',
+        'count': 0,
+        'posts': []
+    },
+    {
+        'id': 'ai-projects',
+        'name': 'AI Integrated Applications & LLMs',
+        'shortName': 'AI Apps',
+        'tagline': 'Generative AI Resume Engines, Code Morphing, Interview Coaches, Multi-Model LLMs & Assistants',
+        'badge': 'AI Apps',
+        'accent': '#a855f7',
+        'icon': '🤖',
         'count': 0,
         'posts': []
     },
@@ -569,6 +591,192 @@ if flask_idx != -1:
             'topic': 'AI Language Translator (Deep Translator Web Engine)',
             'url': b3[1],
             'githubUrl': b3[2] if len(b3) > 2 else ''
+        })
+
+# --- 7. Parse Django projects into Django Web Applications Track ---
+django_app_posts = cat_by_id['django-projects']['posts']
+
+django_idx = -1
+for i, b in enumerate(blocks):
+    if b[0].strip().lower().startswith('django project'):
+        django_idx = i
+        break
+
+if django_idx != -1:
+    db = blocks[django_idx+1:]
+    # Block 0: Tech Glossary Hub -- Django Version
+    if len(db) > 0:
+        b0 = db[0]
+        # b0 has:
+        # line 0: Tech Glossary Hub -- Django Version
+        # line 1: render url
+        # line 2: github url
+        # line 3: linkedin post (Live)
+        # line 4: linkedin post (Progress Update 2)
+        # line 5: linkedin post (Progress Update 1)
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Platform Launch 🚀',
+            'topic': 'Tech Glossary Hub (Full-Stack Django Knowledge System)',
+            'url': b0[3] if len(b0) > 3 else b0[1],
+            'liveUrl': b0[1],
+            'githubUrl': b0[2] if len(b0) > 2 else ''
+        })
+        if len(b0) > 4:
+            django_app_posts.append({
+                'id': f"django-app-{len(django_app_posts)+1}",
+                'day': 'Milestone 2 ⚙️',
+                'topic': 'Tech Glossary Hub • Progress Update 2: Architecture & Models',
+                'url': b0[4],
+                'liveUrl': b0[1],
+                'githubUrl': b0[2] if len(b0) > 2 else ''
+            })
+        if len(b0) > 5:
+            django_app_posts.append({
+                'id': f"django-app-{len(django_app_posts)+1}",
+                'day': 'Milestone 1 🏗️',
+                'topic': 'Tech Glossary Hub • Progress Update 1: Core Setup & Schemas',
+                'url': b0[5],
+                'liveUrl': b0[1],
+                'githubUrl': b0[2] if len(b0) > 2 else ''
+            })
+
+    # Block 1: Translator Web Application
+    if len(db) > 1:
+        b1 = db[1]
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Translation App 🌐',
+            'topic': 'Translator Web Application (Django Multi-Language Engine)',
+            'url': b1[4] if len(b1) > 4 else b1[1],
+            'liveUrl': b1[1],
+            'githubUrl': b1[2] if len(b1) > 2 else '',
+            'docUrl': b1[3].replace('Documentation Link:', '').strip() if len(b1) > 3 else ''
+        })
+
+    # Block 2: Sambar Handbook
+    if len(db) > 2:
+        b2 = db[2]
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Web Application 🍲',
+            'topic': 'Sambar Handbook (Traditional Culinary Guide & Django Web App)',
+            'url': b2[1],
+            'liveUrl': b2[1],
+            'githubUrl': b2[2] if len(b2) > 2 else ''
+        })
+
+    # Block 3: Smart Quote Generator
+    if len(db) > 3:
+        b3 = db[3]
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Dynamic Engine 💡',
+            'topic': 'Smart Quote Generator (Dynamic Inspiration Engine)',
+            'url': b3[1],
+            'liveUrl': b3[1],
+            'githubUrl': b3[2] if len(b3) > 2 else '',
+            'driveUrl': b3[3] if len(b3) > 3 else ''
+        })
+
+    # Block 4: LinguaFlow | Full-Stack Language Translator
+    if len(db) > 4:
+        b4 = db[4]
+        # b4[0]: title
+        # b4[1]: github
+        # b4[2]: render
+        # b4[3]: Documentation Link
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Enterprise App 🌍',
+            'topic': 'LinguaFlow (Full-Stack Language Translator & Localization Platform)',
+            'url': b4[2] if len(b4) > 2 else b4[1],
+            'liveUrl': b4[2] if len(b4) > 2 else '',
+            'githubUrl': b4[1] if len(b4) > 1 else '',
+            'docUrl': b4[3].replace('Documentation Link:', '').strip() if len(b4) > 3 else ''
+        })
+
+    # Block 5: Developer Productivity Suite -- Django Scalable Platform
+    if len(db) > 5:
+        b5 = db[5]
+        django_app_posts.append({
+            'id': f"django-app-{len(django_app_posts)+1}",
+            'day': 'Scalable Suite 🚀',
+            'topic': 'Developer Productivity Suite (Django Scalable Enterprise Architecture)',
+            'url': b5[1],
+            'githubUrl': b5[1]
+        })
+
+# --- 8. Parse AI Integrated projects into AI Integrated Applications Track ---
+ai_app_posts = cat_by_id['ai-projects']['posts']
+
+ai_idx = -1
+for i, b in enumerate(blocks):
+    if b[0].strip().lower().startswith('ai integrated project'):
+        ai_idx = i
+        break
+
+if ai_idx != -1:
+    aib = blocks[ai_idx+1:]
+    # Nexora AI
+    if len(aib) > 0:
+        b0 = aib[0]
+        ai_app_posts.append({
+            'id': f"ai-app-{len(ai_app_posts)+1}",
+            'day': 'AI Assistant 🤖',
+            'topic': 'Nexora AI (Intelligent Multi-Modal Generative Assistant)',
+            'url': b0[1],
+            'liveUrl': b0[1],
+            'githubUrl': b0[2] if len(b0) > 2 else '',
+            'driveUrl': b0[3] if len(b0) > 3 else ''
+        })
+    # AI Resume Bullet Improver
+    if len(aib) > 1:
+        b1 = aib[1]
+        ai_app_posts.append({
+            'id': f"ai-app-{len(ai_app_posts)+1}",
+            'day': 'GenAI Resume 📄',
+            'topic': 'AI Resume Bullet Improver (ATS Optimization & Impact Enhancer)',
+            'url': b1[1],
+            'liveUrl': b1[1],
+            'githubUrl': b1[2] if len(b1) > 2 else '',
+            'docUrl': b1[3] if len(b1) > 3 else ''
+        })
+    # AI GitHub Assistant
+    if len(aib) > 2:
+        b2 = aib[2]
+        ai_app_posts.append({
+            'id': f"ai-app-{len(ai_app_posts)+1}",
+            'day': 'Developer AI 🐙',
+            'topic': 'AI GitHub Assistant (Repository Code Insights & Automation)',
+            'url': b2[1],
+            'liveUrl': b2[1],
+            'githubUrl': b2[2] if len(b2) > 2 else '',
+            'docUrl': b2[3] if len(b2) > 3 else ''
+        })
+    # AI Codemorph
+    if len(aib) > 3:
+        b3 = aib[3]
+        ai_app_posts.append({
+            'id': f"ai-app-{len(ai_app_posts)+1}",
+            'day': 'Code Converter ⚡',
+            'topic': 'AI Codemorph (Polyglot Code Migration & Transformation Engine)',
+            'url': b3[1],
+            'liveUrl': b3[1],
+            'githubUrl': b3[2] if len(b3) > 2 else '',
+            'docUrl': b3[3] if len(b3) > 3 else ''
+        })
+    # AI Interview Coach
+    if len(aib) > 4:
+        b4 = aib[4]
+        ai_app_posts.append({
+            'id': f"ai-app-{len(ai_app_posts)+1}",
+            'day': 'Groq AI Coach 🎯',
+            'topic': 'AI Interview Coach (Real-Time Groq-Powered Mock Interviews & Feedback)',
+            'url': b4[1],
+            'liveUrl': b4[1],
+            'githubUrl': b4[2] if len(b4) > 2 else '',
+            'docUrl': b4[3] if len(b4) > 3 else ''
         })
 
 for c in categories:
