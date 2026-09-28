@@ -1100,6 +1100,226 @@
     ]
   },
   {
+    "id": "web-projects",
+    "name": "HTML, CSS & JavaScript Projects",
+    "shortName": "Web Apps",
+    "tagline": "Interactive Frontend Applications, Responsive Web Experiences, UI Clones & Tools",
+    "badge": "Web Dev",
+    "accent": "#eab308",
+    "icon": "\ud83c\udf10",
+    "count": 16,
+    "posts": [
+      {
+        "id": "web-1",
+        "day": "Frontend App \ud83d\udcee",
+        "topic": "India Post Digital Tribute",
+        "url": "https://lnkd.in/p/dyNy8nhw",
+        "liveUrl": "https://charanepuri.github.io/india-post-digital-tribute/",
+        "githubUrl": "https://github.com/charanepuri/india-post-digital-tribute",
+        "driveUrl": "https://drive.google.com/file/d/1B4thlqs3zoRqTtjPTU6-mVNbchZebR9T/view?usp=sharing"
+      },
+      {
+        "id": "web-2",
+        "day": "SaaS Web App \u2696\ufe0f",
+        "topic": "Terms & Conditions Simplifier (T&C Simplifier SaaS)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-reactjs-webdevelopment-activity-7463797110736400384-vfBH?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy",
+        "liveUrl": "https://charanepuri.github.io/tc-simplifier-saas/",
+        "githubUrl": "https://github.com/charanepuri/tc-simplifier-saas",
+        "driveUrl": "https://drive.google.com/file/d/1ZzfY_jakH3uz2DnZXmlyTejezbUhNByJ/view?usp=sharing"
+      },
+      {
+        "id": "web-3",
+        "day": "Frontend App \ud83c\udfac",
+        "topic": "Anasuya Filmography & Fan Portfolio Application",
+        "url": "https://lnkd.in/p/dcAja7UX",
+        "liveUrl": "https://charanepuri.github.io/anasuya-filmography-app/",
+        "githubUrl": "https://github.com/charanepuri/anasuya-filmography-app",
+        "driveUrl": "https://drive.google.com/file/d/1ATQEft0uYbjef9qphJDIdaKNx6WVyZzB/view?usp=sharing"
+      },
+      {
+        "id": "web-4",
+        "day": "Bible App P1 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 1: Architecture, Setup & Navigation Shell",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-frontenddevelopment-activity-7439166079328788480-cRlp?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-5",
+        "day": "Bible App P2 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 2: GitHub Repository & Scripture Directory Structure",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_github-charanepuribible-reference-app-activity-7439528483652878336-L4EC?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-6",
+        "day": "Bible App P3 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 3: Scripture Filtering & Dynamic Passage Loading",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_github-charanepuribible-reference-app-activity-7439890858679701505-c6yT?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-7",
+        "day": "Bible App P4 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 4: Learning in Public & Scripture Search Mechanics",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-learninginpublic-developerjourney-activity-7440253223589847040-b1Fy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-8",
+        "day": "Bible App P5 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 5: Chapter & Verse Selector UI Controllers",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_github-charanepuribible-reference-app-activity-7440615625280032768-_VFD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-9",
+        "day": "Bible App P6 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 6: Responsive Layout & Mobile Scripture View",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_github-charanepuribible-reference-app-activity-7440978001992851456-02mo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-10",
+        "day": "Bible App P7 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 7: Dynamic DOM Updates & Content Rendering",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-frontenddevelopment-activity-7441702794891350016-8g7g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-11",
+        "day": "Bible App P8 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 8: Local State Management & Caching Pipeline",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-learninginpublic-activity-7442065189149024256-AlPq?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-12",
+        "day": "Bible App P9 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 9: Verse Highlighting & Customization Engine",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-frontenddeveloper-activity-7442937164440670208-Vc5d?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-13",
+        "day": "Bible App P10 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 10: UI/UX Theme Styling & Polished Aesthetics",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-frontenddevelopment-uiux-activity-7444398059448532992-qVpN?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-14",
+        "day": "Bible App P11 \ud83d\udcd6",
+        "topic": "Bible Reference Application \u2022 Part 11: Production GitHub Pages Release & Retrospective",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-javascript-frontenddeveloper-activity-7446198647513423872-KaY6?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/bible-reference-app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app",
+        "driveUrl": "https://drive.google.com/file/d/1DYKvz-mUyM-cKtNQ7e72qmlAx4YX0omk/view?usp=sharing"
+      },
+      {
+        "id": "web-15",
+        "day": "Web Tool \ud83d\udcb0",
+        "topic": "Personal Finance Manager (Budget & Expense Tracker)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-html-css-activity-7502572618718527489-Amrm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/Personal-Finance-Manager/",
+        "githubUrl": "https://github.com/charanepuri/Personal-Finance-Manager",
+        "driveUrl": "https://drive.google.com/file/d/12nK5O8esh0rcp4tNwPdJtGiLDdSMC-Zl/view?usp=sharing"
+      },
+      {
+        "id": "web-16",
+        "day": "UI Component \ud83c\udfa8",
+        "topic": "Interactive 404 Error Page Experience",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-frontenddevelopment-javascript-activity-7486989932767588353-RXlS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://charanepuri.github.io/interactive-404-page/",
+        "githubUrl": "https://github.com/charanepuri/interactive-404-page"
+      }
+    ]
+  },
+  {
+    "id": "react-projects",
+    "name": "React Applications & SPAs",
+    "shortName": "React Apps",
+    "tagline": "Single Page Applications, Modern Component Architecture, Interactive State & Dashboards",
+    "badge": "React.js",
+    "accent": "#00d8ff",
+    "icon": "\u269b\ufe0f",
+    "count": 6,
+    "posts": [
+      {
+        "id": "react-1",
+        "day": "React SPA \u26a1",
+        "topic": "Converter Hub (Unit, Currency & Media Converter Tool)",
+        "url": "https://converter-hub.netlify.app/",
+        "liveUrl": "https://converter-hub.netlify.app/",
+        "githubUrl": "https://github.com/charanepuri/converter-hub-react",
+        "docUrl": "https://converter-hub.netlify.app/Converter%20Hub%20Documentation.pdf"
+      },
+      {
+        "id": "react-2",
+        "day": "Sports Analytics \ud83c\udfcf",
+        "topic": "MS Dhoni Career Records & Analytics Dashboard",
+        "url": "https://lnkd.in/p/dg2sk_9n",
+        "liveUrl": "https://ms-dhoni-dashboard-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/ms-dhoni-dashboard-react",
+        "driveUrl": "https://drive.google.com/file/d/1Ze-FZ5WNFoAONZItoHG3WBqrJQR_snGp/view?usp=sharing"
+      },
+      {
+        "id": "react-3",
+        "day": "React App \ud83d\udcd6",
+        "topic": "Bible Reference Application (React.js Edition)",
+        "url": "https://lnkd.in/p/dRKQmR84",
+        "liveUrl": "https://bible-reference-app-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/bible-reference-app-react",
+        "driveUrl": "https://drive.google.com/file/d/1Lw-DD3W7XtXGFZqR7usDesQs4tZNw6dM/view"
+      },
+      {
+        "id": "react-4",
+        "day": "Cloud Platform \u2601\ufe0f",
+        "topic": "Cloud Explorer (Multi-Service Cloud Resource Navigator)",
+        "url": "https://lnkd.in/p/dNg2tc8y",
+        "liveUrl": "https://cloud-explorer-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/cloud-explorer-react",
+        "docUrl": "https://cloud-explorer-react.vercel.app/Cloud_Explorer_Project_Documentation.pdf"
+      },
+      {
+        "id": "react-5",
+        "day": "Culinary Web App \ud83c\udf72",
+        "topic": "The Ultimate Biryani Handbook (Culinary Guide & Recipe App)",
+        "url": "https://ultimate-biryani-handbook.vercel.app/",
+        "liveUrl": "https://ultimate-biryani-handbook.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/ultimate-biryani-handbook",
+        "docUrl": "https://ultimate-biryani-handbook.vercel.app/The%20Ultimate%20Biryani%20Handbook.pdf"
+      },
+      {
+        "id": "react-6",
+        "day": "Developer Tool \ud83d\udee0\ufe0f",
+        "topic": "Smart Error Assistant (Interactive Debugging & Fix Engine)",
+        "url": "https://smart-error-assistant-react.vercel.app/",
+        "liveUrl": "https://smart-error-assistant-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/smart-error-assistant-react"
+      }
+    ]
+  },
+  {
     "id": "projects",
     "name": "Projects & AI Applications",
     "shortName": "Projects & AI",

@@ -33,6 +33,8 @@ html_template = '''<!DOCTYPE html>
       --django-color: #10b981;
       --flask-color: #c084fc;
       --sql-color: #06b6d4;
+      --web-color: #eab308;
+      --react-color: #00d8ff;
       --projects-color: #f97316;
       --advpy-color: #a3e635;
       --intern-color: #ec4899;
@@ -57,6 +59,8 @@ html_template = '''<!DOCTYPE html>
       --django-color: #059669;
       --flask-color: #7c3aed;
       --sql-color: #0891b2;
+      --web-color: #ca8a04;
+      --react-color: #0284c7;
       --projects-color: #ea580c;
       --advpy-color: #65a30d;
       --intern-color: #db2777;
@@ -315,6 +319,8 @@ html_template = '''<!DOCTYPE html>
     .stat-card.stat-django::before { background: linear-gradient(90deg, var(--django-color), transparent); }
     .stat-card.stat-flask::before { background: linear-gradient(90deg, var(--flask-color), transparent); }
     .stat-card.stat-sql::before { background: linear-gradient(90deg, var(--sql-color), transparent); }
+    .stat-card.stat-web::before { background: linear-gradient(90deg, var(--web-color), transparent); }
+    .stat-card.stat-react::before { background: linear-gradient(90deg, var(--react-color), transparent); }
     .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
     .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
     .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
@@ -597,24 +603,34 @@ html_template = '''<!DOCTYPE html>
       justify-content: space-between;
       padding-top: 1rem;
       border-top: 1px solid var(--border-color);
-      gap: 0.75rem;
+      gap: 0.6rem;
+    }
+
+    .card-actions-group {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex: 1;
+      flex-wrap: wrap;
     }
 
     .btn-link {
       display: inline-flex;
       align-items: center;
-      gap: 0.45rem;
+      gap: 0.35rem;
       background: rgba(10, 102, 194, 0.15);
       color: #38bdf8;
       border: 1px solid rgba(56, 189, 248, 0.25);
-      padding: 0.5rem 0.95rem;
+      padding: 0.48rem 0.8rem;
       border-radius: 8px;
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       font-weight: 600;
       text-decoration: none;
       transition: var(--transition);
       flex: 1;
+      min-width: fit-content;
       justify-content: center;
+      white-space: nowrap;
     }
 
     .btn-link:hover {
@@ -622,6 +638,42 @@ html_template = '''<!DOCTYPE html>
       color: #ffffff;
       border-color: #0a66c2;
       transform: translateY(-1px);
+    }
+
+    .btn-link.btn-live {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-link.btn-live:hover {
+      background: #059669;
+      color: #ffffff;
+      border-color: #059669;
+    }
+
+    .btn-link.btn-github {
+      background: rgba(255, 255, 255, 0.08);
+      color: #f1f5f9;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    .btn-link.btn-github:hover {
+      background: #24292e;
+      color: #ffffff;
+      border-color: #6e5494;
+    }
+
+    .btn-link.btn-doc {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border-color: rgba(245, 158, 11, 0.3);
+    }
+
+    .btn-link.btn-doc:hover {
+      background: #d97706;
+      color: #ffffff;
+      border-color: #d97706;
     }
 
     .btn-copy {
@@ -670,6 +722,16 @@ html_template = '''<!DOCTYPE html>
       background: rgba(6, 182, 212, 0.12);
       color: var(--sql-color);
       border: 1px solid rgba(6, 182, 212, 0.25);
+    }
+    .card-web-projects .day-pill {
+      background: rgba(234, 179, 8, 0.12);
+      color: var(--web-color);
+      border: 1px solid rgba(234, 179, 8, 0.25);
+    }
+    .card-react-projects .day-pill {
+      background: rgba(0, 216, 255, 0.12);
+      color: var(--react-color);
+      border: 1px solid rgba(0, 216, 255, 0.28);
     }
     .card-projects .day-pill {
       background: rgba(249, 115, 22, 0.12);
@@ -1058,20 +1120,20 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      200+ Verified Technical Milestones
+      224+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
       Full-Stack Engineering, Data &amp; <br>
       <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive knowledge hub indexing 200+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, Projects &amp; AI, and Career Milestones.
+      A unified, interactive knowledge hub indexing 224+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">202<small>posts</small></div>
+        <div class="stat-number" id="totalPostsStat">224<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
@@ -1093,6 +1155,14 @@ html_template = '''<!DOCTYPE html>
       <div class="stat-card stat-sql">
         <div class="stat-number">18<small>queries</small></div>
         <div class="stat-label">SQL &amp; MySQL Databases</div>
+      </div>
+      <div class="stat-card stat-web">
+        <div class="stat-number">16<small>apps</small></div>
+        <div class="stat-label">HTML, CSS &amp; JS Apps</div>
+      </div>
+      <div class="stat-card stat-react">
+        <div class="stat-number">6<small>spas</small></div>
+        <div class="stat-label">React Applications</div>
       </div>
       <div class="stat-card stat-projects">
         <div class="stat-number">8<small>apps</small></div>
@@ -1117,7 +1187,7 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">202</span>
+            <span class="badge-count" id="countAll">224</span>
           </button>
           <button class="filter-tab" data-category="tech-docs">
             <span>📚 Technical Docs</span>
@@ -1138,6 +1208,14 @@ html_template = '''<!DOCTYPE html>
           <button class="filter-tab" data-category="sql-mysql">
             <span>🗄️ SQL &amp; MySQL</span>
             <span class="badge-count" id="countSql">18</span>
+          </button>
+          <button class="filter-tab" data-category="web-projects">
+            <span>🌐 Web Apps</span>
+            <span class="badge-count" id="countWeb">16</span>
+          </button>
+          <button class="filter-tab" data-category="react-projects">
+            <span>⚛️ React Apps</span>
+            <span class="badge-count" id="countReact">6</span>
           </button>
           <button class="filter-tab" data-category="projects">
             <span>🚀 Projects &amp; AI</span>
@@ -1340,6 +1418,8 @@ html_template = '''<!DOCTYPE html>
     document.getElementById('countDjango').textContent = allPosts.filter(p => p.categoryId === 'django').length;
     document.getElementById('countFlask').textContent = allPosts.filter(p => p.categoryId === 'flask').length;
     document.getElementById('countSql').textContent = allPosts.filter(p => p.categoryId === 'sql-mysql').length;
+    document.getElementById('countWeb').textContent = allPosts.filter(p => p.categoryId === 'web-projects').length;
+    document.getElementById('countReact').textContent = allPosts.filter(p => p.categoryId === 'react-projects').length;
     document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'projects').length;
     document.getElementById('countAdvPy').textContent = allPosts.filter(p => p.categoryId === 'advanced-python').length;
     document.getElementById('countIntern').textContent = allPosts.filter(p => p.categoryId === 'internships').length;
@@ -1390,6 +1470,39 @@ html_template = '''<!DOCTYPE html>
       }
 
       grid.innerHTML = filtered.map(post => {
+        const isLinkedIn = post.url && (post.url.includes('linkedin.com') || post.url.includes('lnkd.in'));
+        const linkedInBtn = isLinkedIn ? `
+          <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="btn-link" title="Read Post on LinkedIn">
+            <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        ` : '';
+
+        const liveBtn = post.liveUrl ? `
+          <a href="${post.liveUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-live" title="Open Live Application">
+            <span>🌐 Live</span>
+          </a>
+        ` : '';
+
+        const ghBtn = post.githubUrl ? `
+          <a href="${post.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-github" title="View GitHub Repository">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>Code</span>
+          </a>
+        ` : '';
+
+        const docBtn = post.docUrl ? `
+          <a href="${post.docUrl}" target="_blank" rel="noopener noreferrer" class="btn-link btn-doc" title="View Project Documentation">
+            <span>📄 Doc</span>
+          </a>
+        ` : '';
+
+        const fallbackBtn = (!isLinkedIn && !liveBtn && !ghBtn) ? `
+          <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="btn-link" title="Open Resource">
+            <span>View Link</span>
+          </a>
+        ` : '';
+
         return `
           <article class="post-card card-${post.categoryId}" data-id="${post.id}">
             <div>
@@ -1403,11 +1516,14 @@ html_template = '''<!DOCTYPE html>
               </p>
             </div>
             <div class="card-footer">
-              <a href="${post.url}" target="_blank" rel="noopener noreferrer" class="btn-link">
-                <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                Read on LinkedIn
-              </a>
-              <button class="btn-copy" onclick="copyPostLink('${post.url}', this)" title="Copy Post URL" aria-label="Copy post link">
+              <div class="card-actions-group">
+                ${linkedInBtn}
+                ${liveBtn}
+                ${ghBtn}
+                ${docBtn}
+                ${fallbackBtn}
+              </div>
+              <button class="btn-copy" onclick="copyPostLink('${post.liveUrl || post.url}', this)" title="Copy Post URL" aria-label="Copy post link">
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
               </button>
             </div>
@@ -1430,6 +1546,10 @@ html_template = '''<!DOCTYPE html>
           return `Real-world project build featuring end-to-end implementation details, architectural choices, and practical engineering solutions.`;
         case 'sql-mysql':
           return `Database engineering milestone focusing on relational data queries, complex joins, aggregation mechanics, views, and triggers.`;
+        case 'web-projects':
+          return `Frontend web application engineered with semantic HTML5, modern CSS3 styling, and modular JavaScript, featuring interactive UI states, responsive layout, and clean client-side logic.`;
+        case 'react-projects':
+          return `Modern React application engineered with reusable component architecture, client-side routing, state hooks, and high-performance interactive UI.`;
         case 'advanced-python':
           return `Advanced Python runtime topics including concurrency, multithreading, regex pattern engines, generators, and data libraries.`;
         case 'internships':

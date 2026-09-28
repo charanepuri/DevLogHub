@@ -80,6 +80,28 @@ categories = [
         'posts': []
     },
     {
+        'id': 'web-projects',
+        'name': 'HTML, CSS & JavaScript Projects',
+        'shortName': 'Web Apps',
+        'tagline': 'Interactive Frontend Applications, Responsive Web Experiences, UI Clones & Tools',
+        'badge': 'Web Dev',
+        'accent': '#eab308',
+        'icon': '🌐',
+        'count': 0,
+        'posts': []
+    },
+    {
+        'id': 'react-projects',
+        'name': 'React Applications & SPAs',
+        'shortName': 'React Apps',
+        'tagline': 'Single Page Applications, Modern Component Architecture, Interactive State & Dashboards',
+        'badge': 'React.js',
+        'accent': '#00d8ff',
+        'icon': '⚛️',
+        'count': 0,
+        'posts': []
+    },
+    {
         'id': 'projects',
         'name': 'Projects & AI Applications',
         'shortName': 'Projects & AI',
@@ -279,6 +301,207 @@ for raw_title, url in lp_items:
             'topic': topic_disp,
             'url': url
         })
+
+# --- 4. Parse projects.txt into HTML, CSS & JavaScript Projects Track ---
+with open('projects.txt', 'r', encoding='utf-8', errors='ignore') as f:
+    proj_lines = [l.strip() for l in f.readlines()]
+
+blocks = []
+curr = []
+for l in proj_lines:
+    if not l:
+        if curr:
+            blocks.append(curr)
+            curr = []
+    else:
+        curr.append(l)
+if curr:
+    blocks.append(curr)
+
+bible_parts = {
+    'P1': 'Architecture, Setup & Navigation Shell',
+    'P2': 'GitHub Repository & Scripture Directory Structure',
+    'P3': 'Scripture Filtering & Dynamic Passage Loading',
+    'P4': 'Learning in Public & Scripture Search Mechanics',
+    'P5': 'Chapter & Verse Selector UI Controllers',
+    'P6': 'Responsive Layout & Mobile Scripture View',
+    'P7': 'Dynamic DOM Updates & Content Rendering',
+    'P8': 'Local State Management & Caching Pipeline',
+    'P9': 'Verse Highlighting & Customization Engine',
+    'P10': 'UI/UX Theme Styling & Polished Aesthetics',
+    'P11': 'Production GitHub Pages Release & Retrospective'
+}
+
+web_posts = cat_by_id['web-projects']['posts']
+
+# Block 2: India Post Digital Tribute
+if len(blocks) > 2:
+    b2 = blocks[2]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'Frontend App 📮',
+        'topic': 'India Post Digital Tribute',
+        'url': b2[4] if len(b2) > 4 else b2[-1],
+        'liveUrl': b2[1] if len(b2) > 1 else '',
+        'githubUrl': b2[2] if len(b2) > 2 else '',
+        'driveUrl': b2[3] if len(b2) > 3 else ''
+    })
+
+# Block 3: T&C Simplifier
+if len(blocks) > 3:
+    b3 = blocks[3]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'SaaS Web App ⚖️',
+        'topic': 'Terms & Conditions Simplifier (T&C Simplifier SaaS)',
+        'url': b3[4] if len(b3) > 4 else b3[-1],
+        'liveUrl': b3[1] if len(b3) > 1 else '',
+        'githubUrl': b3[2] if len(b3) > 2 else '',
+        'driveUrl': b3[3] if len(b3) > 3 else ''
+    })
+
+# Block 4: Anasuya Fan Made Portfolio
+if len(blocks) > 4:
+    b4 = blocks[4]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'Frontend App 🎬',
+        'topic': 'Anasuya Filmography & Fan Portfolio Application',
+        'url': b4[4] if len(b4) > 4 else b4[-1],
+        'liveUrl': b4[1] if len(b4) > 1 else '',
+        'githubUrl': b4[2] if len(b4) > 2 else '',
+        'driveUrl': b4[3] if len(b4) > 3 else ''
+    })
+
+# Block 5: Bible App P1
+if len(blocks) > 5:
+    b5 = blocks[5]
+    live_bible = b5[1]
+    gh_bible = b5[2]
+    drive_bible = b5[3]
+    p1_url = re.sub(r'^P1\s+', '', b5[4]).strip()
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'Bible App P1 📖',
+        'topic': f'Bible Reference Application • Part 1: {bible_parts["P1"]}',
+        'url': p1_url,
+        'liveUrl': live_bible,
+        'githubUrl': gh_bible,
+        'driveUrl': drive_bible
+    })
+
+    # Blocks 6 to 15: Bible App P2 to P11
+    for idx, blk in enumerate(blocks[6:16], start=2):
+        p_key = f'P{idx}'
+        p_url = re.sub(rf'^{p_key}\s+', '', blk[0]).strip()
+        web_posts.append({
+            'id': f"web-{len(web_posts)+1}",
+            'day': f'Bible App {p_key} 📖',
+            'topic': f'Bible Reference Application • Part {idx}: {bible_parts[p_key]}',
+            'url': p_url,
+            'liveUrl': live_bible,
+            'githubUrl': gh_bible,
+            'driveUrl': drive_bible
+        })
+
+# Block 16: Personal Finance Manager
+if len(blocks) > 16:
+    b16 = blocks[16]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'Web Tool 💰',
+        'topic': 'Personal Finance Manager (Budget & Expense Tracker)',
+        'url': b16[4] if len(b16) > 4 else b16[-1],
+        'liveUrl': b16[1] if len(b16) > 1 else '',
+        'githubUrl': b16[2] if len(b16) > 2 else '',
+        'driveUrl': b16[3] if len(b16) > 3 else ''
+    })
+
+# Block 17: 404 Page
+if len(blocks) > 17:
+    b17 = blocks[17]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
+        'day': 'UI Component 🎨',
+        'topic': 'Interactive 404 Error Page Experience',
+        'url': b17[3] if len(b17) > 3 else b17[-1],
+        'liveUrl': b17[1] if len(b17) > 1 else '',
+        'githubUrl': b17[2] if len(b17) > 2 else ''
+    })
+
+# --- 5. Parse React projects into React Applications Track ---
+react_posts = cat_by_id['react-projects']['posts']
+
+if len(blocks) > 19:
+    b19 = blocks[19]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'React SPA ⚡',
+        'topic': 'Converter Hub (Unit, Currency & Media Converter Tool)',
+        'url': b19[1],
+        'liveUrl': b19[1],
+        'githubUrl': b19[2],
+        'docUrl': b19[3]
+    })
+
+if len(blocks) > 20:
+    b20 = blocks[20]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'Sports Analytics 🏏',
+        'topic': 'MS Dhoni Career Records & Analytics Dashboard',
+        'url': b20[4],
+        'liveUrl': b20[1],
+        'githubUrl': b20[2],
+        'driveUrl': b20[3]
+    })
+
+if len(blocks) > 21:
+    b21 = blocks[21]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'React App 📖',
+        'topic': 'Bible Reference Application (React.js Edition)',
+        'url': b21[4],
+        'liveUrl': b21[1],
+        'githubUrl': b21[2],
+        'driveUrl': b21[3]
+    })
+
+if len(blocks) > 22:
+    b22 = blocks[22]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'Cloud Platform ☁️',
+        'topic': 'Cloud Explorer (Multi-Service Cloud Resource Navigator)',
+        'url': b22[4],
+        'liveUrl': b22[1],
+        'githubUrl': b22[2],
+        'docUrl': b22[3]
+    })
+
+if len(blocks) > 23:
+    b23 = blocks[23]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'Culinary Web App 🍲',
+        'topic': 'The Ultimate Biryani Handbook (Culinary Guide & Recipe App)',
+        'url': b23[1],
+        'liveUrl': b23[1],
+        'githubUrl': b23[2],
+        'docUrl': b23[3]
+    })
+
+if len(blocks) > 24:
+    b24 = blocks[24]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'Developer Tool 🛠️',
+        'topic': 'Smart Error Assistant (Interactive Debugging & Fix Engine)',
+        'url': b24[1],
+        'liveUrl': b24[1],
+        'githubUrl': b24[2]
+    })
 
 for c in categories:
     c['count'] = len(c['posts'])
