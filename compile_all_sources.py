@@ -102,6 +102,17 @@ categories = [
         'posts': []
     },
     {
+        'id': 'flask-projects',
+        'name': 'Flask Web Applications & Microservices',
+        'shortName': 'Flask Apps',
+        'tagline': 'Production Microservices, Real-Time WebSockets, URL Engines & AI Integrations',
+        'badge': 'Flask Apps',
+        'accent': '#c084fc',
+        'icon': '🧪',
+        'count': 0,
+        'posts': []
+    },
+    {
         'id': 'projects',
         'name': 'Projects & AI Applications',
         'shortName': 'Projects & AI',
@@ -502,6 +513,63 @@ if len(blocks) > 24:
         'liveUrl': b24[1],
         'githubUrl': b24[2]
     })
+
+# --- 6. Parse Flask projects into Flask Web Applications Track ---
+flask_app_posts = cat_by_id['flask-projects']['posts']
+
+flask_idx = -1
+for i, b in enumerate(blocks):
+    if b[0].strip().lower().startswith('flask project'):
+        flask_idx = i
+        break
+
+if flask_idx != -1:
+    fb = blocks[flask_idx+1:]
+    # Quick Link URL Shortener
+    if len(fb) > 0:
+        b0 = fb[0]
+        flask_app_posts.append({
+            'id': f"flask-app-{len(flask_app_posts)+1}",
+            'day': 'Microservice 🔗',
+            'topic': 'Quick Link (Flask URL Shortener & Analytics)',
+            'url': b0[1],
+            'liveUrl': b0[1],
+            'githubUrl': b0[2] if len(b0) > 2 else '',
+            'driveUrl': b0[3] if len(b0) > 3 else ''
+        })
+    # CSK Legacy
+    if len(fb) > 1:
+        b1 = fb[1]
+        flask_app_posts.append({
+            'id': f"flask-app-{len(flask_app_posts)+1}",
+            'day': 'Flask Web App 🏏',
+            'topic': 'CSK Legacy (Chennai Super Kings Tribute & Fan Portal)',
+            'url': b1[1],
+            'liveUrl': b1[1],
+            'githubUrl': b1[2] if len(b1) > 2 else ''
+        })
+    # Real Time Chat Application
+    if len(fb) > 2:
+        b2 = fb[2]
+        flask_app_posts.append({
+            'id': f"flask-app-{len(flask_app_posts)+1}",
+            'day': 'WebSockets 💬',
+            'topic': 'Real-Time Chat Application (Flask & WebSockets)',
+            'url': b2[1],
+            'liveUrl': b2[1],
+            'githubUrl': b2[2] if len(b2) > 2 else '',
+            'driveUrl': b2[3] if len(b2) > 3 else ''
+        })
+    # AI Language Translator
+    if len(fb) > 3:
+        b3 = fb[3]
+        flask_app_posts.append({
+            'id': f"flask-app-{len(flask_app_posts)+1}",
+            'day': 'AI Web App 🌐',
+            'topic': 'AI Language Translator (Deep Translator Web Engine)',
+            'url': b3[1],
+            'githubUrl': b3[2] if len(b3) > 2 else ''
+        })
 
 for c in categories:
     c['count'] = len(c['posts'])

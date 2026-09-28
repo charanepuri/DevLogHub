@@ -35,6 +35,7 @@ html_template = '''<!DOCTYPE html>
       --sql-color: #06b6d4;
       --web-color: #eab308;
       --react-color: #00d8ff;
+      --flask-app-color: #c084fc;
       --projects-color: #f97316;
       --advpy-color: #a3e635;
       --intern-color: #ec4899;
@@ -61,6 +62,7 @@ html_template = '''<!DOCTYPE html>
       --sql-color: #0891b2;
       --web-color: #ca8a04;
       --react-color: #0284c7;
+      --flask-app-color: #7c3aed;
       --projects-color: #ea580c;
       --advpy-color: #65a30d;
       --intern-color: #db2777;
@@ -321,6 +323,7 @@ html_template = '''<!DOCTYPE html>
     .stat-card.stat-sql::before { background: linear-gradient(90deg, var(--sql-color), transparent); }
     .stat-card.stat-web::before { background: linear-gradient(90deg, var(--web-color), transparent); }
     .stat-card.stat-react::before { background: linear-gradient(90deg, var(--react-color), transparent); }
+    .stat-card.stat-flask-app::before { background: linear-gradient(90deg, var(--flask-app-color), transparent); }
     .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
     .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
     .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
@@ -733,6 +736,11 @@ html_template = '''<!DOCTYPE html>
       color: var(--react-color);
       border: 1px solid rgba(0, 216, 255, 0.28);
     }
+    .card-flask-projects .day-pill {
+      background: rgba(192, 132, 252, 0.12);
+      color: var(--flask-app-color);
+      border: 1px solid rgba(192, 132, 252, 0.28);
+    }
     .card-projects .day-pill {
       background: rgba(249, 115, 22, 0.12);
       color: var(--projects-color);
@@ -1120,20 +1128,20 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      224+ Verified Technical Milestones
+      228+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
       Full-Stack Engineering, Data &amp; <br>
       <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive knowledge hub indexing 224+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Projects &amp; AI, and Career Milestones.
+      A unified, interactive knowledge hub indexing 228+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Flask Web Applications, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">224<small>posts</small></div>
+        <div class="stat-number" id="totalPostsStat">228<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
@@ -1164,6 +1172,10 @@ html_template = '''<!DOCTYPE html>
         <div class="stat-number">6<small>spas</small></div>
         <div class="stat-label">React Applications</div>
       </div>
+      <div class="stat-card stat-flask-app">
+        <div class="stat-number">4<small>apps</small></div>
+        <div class="stat-label">Flask Applications</div>
+      </div>
       <div class="stat-card stat-projects">
         <div class="stat-number">8<small>apps</small></div>
         <div class="stat-label">Projects &amp; AI Apps</div>
@@ -1187,7 +1199,7 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">224</span>
+            <span class="badge-count" id="countAll">228</span>
           </button>
           <button class="filter-tab" data-category="tech-docs">
             <span>📚 Technical Docs</span>
@@ -1216,6 +1228,10 @@ html_template = '''<!DOCTYPE html>
           <button class="filter-tab" data-category="react-projects">
             <span>⚛️ React Apps</span>
             <span class="badge-count" id="countReact">6</span>
+          </button>
+          <button class="filter-tab" data-category="flask-projects">
+            <span>🧪 Flask Apps</span>
+            <span class="badge-count" id="countFlaskApp">4</span>
           </button>
           <button class="filter-tab" data-category="projects">
             <span>🚀 Projects &amp; AI</span>
@@ -1420,6 +1436,7 @@ html_template = '''<!DOCTYPE html>
     document.getElementById('countSql').textContent = allPosts.filter(p => p.categoryId === 'sql-mysql').length;
     document.getElementById('countWeb').textContent = allPosts.filter(p => p.categoryId === 'web-projects').length;
     document.getElementById('countReact').textContent = allPosts.filter(p => p.categoryId === 'react-projects').length;
+    document.getElementById('countFlaskApp').textContent = allPosts.filter(p => p.categoryId === 'flask-projects').length;
     document.getElementById('countProj').textContent = allPosts.filter(p => p.categoryId === 'projects').length;
     document.getElementById('countAdvPy').textContent = allPosts.filter(p => p.categoryId === 'advanced-python').length;
     document.getElementById('countIntern').textContent = allPosts.filter(p => p.categoryId === 'internships').length;
@@ -1550,6 +1567,8 @@ html_template = '''<!DOCTYPE html>
           return `Frontend web application engineered with semantic HTML5, modern CSS3 styling, and modular JavaScript, featuring interactive UI states, responsive layout, and clean client-side logic.`;
         case 'react-projects':
           return `Modern React application engineered with reusable component architecture, client-side routing, state hooks, and high-performance interactive UI.`;
+        case 'flask-projects':
+          return `Production-ready Flask application featuring lightweight modular routing, WebSocket communications, REST APIs, and responsive UI integration.`;
         case 'advanced-python':
           return `Advanced Python runtime topics including concurrency, multithreading, regex pattern engines, generators, and data libraries.`;
         case 'internships':

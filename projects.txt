@@ -126,3 +126,24 @@ Developer Productivity Suite -- Django Scalable Platform
 https://github.com/charanepuri/developer-productivity-suite-Django
 
 
+Flask Project's
+
+Quick Link URL Shortener
+https://quicklink-flask-url-shortener.onrender.com/
+https://github.com/charanepuri/quicklink-flask-url-shortener
+https://drive.google.com/file/d/1tz7PUxLn-9Xc9sFtxSq8HkHD4UDybcmE/view?usp=sharing
+
+CSK Legacy
+https://csk-legacy-flask.onrender.com/
+https://github.com/charanepuri/CSK_Legacy_Flask
+
+Real Time Chat Application 
+https://flask-realtime-chat-app.onrender.com/
+https://github.com/charanepuri/flask-realtime-chat-app
+https://drive.google.com/file/d/1duGfJRi0FyHJDs9QcIa953GzC2djfmkp/view?usp=sharing
+
+AI Language Translator
+https://www.linkedin.com/posts/charan-teja-972aa9231_ai-languagetranslator-webdevelopment-activity-7433515075644350464-d2am?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+https://github.com/charanepuri/DEEP-TRANSLATOR-WEB-APPLICATION-USING-FLASK
+
+

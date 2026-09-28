@@ -1320,6 +1320,51 @@
     ]
   },
   {
+    "id": "flask-projects",
+    "name": "Flask Web Applications & Microservices",
+    "shortName": "Flask Apps",
+    "tagline": "Production Microservices, Real-Time WebSockets, URL Engines & AI Integrations",
+    "badge": "Flask Apps",
+    "accent": "#c084fc",
+    "icon": "\ud83e\uddea",
+    "count": 4,
+    "posts": [
+      {
+        "id": "flask-app-1",
+        "day": "Microservice \ud83d\udd17",
+        "topic": "Quick Link (Flask URL Shortener & Analytics)",
+        "url": "https://quicklink-flask-url-shortener.onrender.com/",
+        "liveUrl": "https://quicklink-flask-url-shortener.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/quicklink-flask-url-shortener",
+        "driveUrl": "https://drive.google.com/file/d/1tz7PUxLn-9Xc9sFtxSq8HkHD4UDybcmE/view?usp=sharing"
+      },
+      {
+        "id": "flask-app-2",
+        "day": "Flask Web App \ud83c\udfcf",
+        "topic": "CSK Legacy (Chennai Super Kings Tribute & Fan Portal)",
+        "url": "https://csk-legacy-flask.onrender.com/",
+        "liveUrl": "https://csk-legacy-flask.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/CSK_Legacy_Flask"
+      },
+      {
+        "id": "flask-app-3",
+        "day": "WebSockets \ud83d\udcac",
+        "topic": "Real-Time Chat Application (Flask & WebSockets)",
+        "url": "https://flask-realtime-chat-app.onrender.com/",
+        "liveUrl": "https://flask-realtime-chat-app.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/flask-realtime-chat-app",
+        "driveUrl": "https://drive.google.com/file/d/1duGfJRi0FyHJDs9QcIa953GzC2djfmkp/view?usp=sharing"
+      },
+      {
+        "id": "flask-app-4",
+        "day": "AI Web App \ud83c\udf10",
+        "topic": "AI Language Translator (Deep Translator Web Engine)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_ai-languagetranslator-webdevelopment-activity-7433515075644350464-d2am?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "githubUrl": "https://github.com/charanepuri/DEEP-TRANSLATOR-WEB-APPLICATION-USING-FLASK"
+      }
+    ]
+  },
+  {
     "id": "projects",
     "name": "Projects & AI Applications",
     "shortName": "Projects & AI",
