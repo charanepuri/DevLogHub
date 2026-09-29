@@ -1327,7 +1327,7 @@
     "badge": "Django Apps",
     "accent": "#10b981",
     "icon": "\u26a1",
-    "count": 8,
+    "count": 7,
     "posts": [
       {
         "id": "django-app-1",
@@ -1387,13 +1387,6 @@
         "liveUrl": "https://linguaflow-django.onrender.com/",
         "githubUrl": "https://github.com/charanepuri/linguaflow-django",
         "docUrl": "https://linguaflow-django.onrender.com/static/pdf/LinguaFlow_Project_Documentation.1734d718af1d.pdf"
-      },
-      {
-        "id": "django-app-8",
-        "day": "Scalable Suite \ud83d\ude80",
-        "topic": "Developer Productivity Suite (Django Scalable Enterprise Architecture)",
-        "url": "https://github.com/charanepuri/developer-productivity-suite-Django",
-        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-Django"
       }
     ]
   },
@@ -1496,6 +1489,78 @@
         "liveUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/",
         "githubUrl": "https://github.com/charanepuri/ai-interview-coach-react-groq-ai",
         "docUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-BYNDHLpH.pdf"
+      }
+    ]
+  },
+  {
+    "id": "dev-productivity",
+    "name": "Developer Productivity Suite",
+    "shortName": "Productivity Suite",
+    "tagline": "Multi-Architecture Engineering: HTML Foundation, React SPA, Angular Frontend, Flask Backend, Django Platform & Full Stack Evolution",
+    "badge": "Suite",
+    "accent": "#6366f1",
+    "icon": "\ud83d\udee0\ufe0f",
+    "count": 7,
+    "posts": [
+      {
+        "id": "dev-prod-1",
+        "day": "Suite Overview \ud83d\ude80",
+        "topic": "Developer Productivity Suite \u2022 Official Introduction & Architecture Roadmap",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_developerproductivitysuite-webdevelopment-activity-7483894551938678784-nuIQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "description": "Official introduction and architectural roadmap for the Developer Productivity Suite \u2014 chronicling the evolution from HTML/CSS/JS foundation to modern React SPA, Angular enterprise frontend, Flask backend, Django platform, and full-stack production platform."
+      },
+      {
+        "id": "dev-prod-2",
+        "day": "Foundation v1.0 \ud83c\udf10",
+        "topic": "Developer Productivity Suite \u2022 v1.0 \u2014 HTML/CSS/JS Foundation",
+        "description": "A browser-based developer productivity platform that brings essential development utilities together in one responsive application. Built using HTML5, CSS3, and Vanilla JavaScript, it provides categorized tools with a clean interface, theme support, search, and local storage. This version establishes the foundation of the Developer Productivity Suite.",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-html",
+        "liveUrl": "https://charanepuri.github.io/developer-productivity-suite-html/",
+        "docUrl": "https://charanepuri.github.io/developer-productivity-suite-html/assets/Developer%20Productivity%20Suite.pdf",
+        "url": "https://lnkd.in/p/dU25Mbv5"
+      },
+      {
+        "id": "dev-prod-3",
+        "day": "React SPA v2.0 \u269b\ufe0f",
+        "topic": "Developer Productivity Suite \u2022 v2.0 \u2014 React Modern SPA",
+        "description": "A modern React-based evolution of the Developer Productivity Suite, designed as a scalable Single Page Application. It introduces reusable components, client-side routing, tool discovery, favorites, recently used tools, and persistent user preferences. This version demonstrates the transition from traditional frontend development to modern component-based architecture.",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-react",
+        "liveUrl": "https://developer-productivity-suite-react.vercel.app/",
+        "docUrl": "https://developer-productivity-suite-react.vercel.app/DeveloperProductivitySuiteReactVersion.pdf",
+        "url": "https://lnkd.in/p/d3qxxs5A"
+      },
+      {
+        "id": "dev-prod-4",
+        "day": "Angular v3.0 \ud83c\udd70\ufe0f",
+        "topic": "Developer Productivity Suite \u2022 v3.0 \u2014 Angular Enterprise Frontend",
+        "description": "An enterprise-oriented frontend edition of the Developer Productivity Suite built with Angular and TypeScript. The application uses Angular services, routing, dependency injection, reactive forms, and scalable component architecture to organize a growing collection of developer utilities. This version focuses on structured and maintainable frontend engineering.",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-angular",
+        "liveUrl": "https://developer-productivity-suite-angula.vercel.app/dashboard",
+        "docUrl": "https://developer-productivity-suite-angula.vercel.app/documentation/Developer_Productivity_Suite_Angular_Documentation.pdf",
+        "url": "https://lnkd.in/p/dvXsVMCJ"
+      },
+      {
+        "id": "dev-prod-5",
+        "day": "Flask v4.0 \ud83e\uddea",
+        "topic": "Developer Productivity Suite \u2022 v4.0 \u2014 Flask Backend Web Application",
+        "description": "A backend-powered web application that extends the Developer Productivity Suite with Python and Flask. It introduces server-side processing, database integration, authentication, user history, favorites, saved results, and REST APIs. This version marks the transition from a frontend-focused application to a full backend-enabled platform.",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-flask",
+        "url": "https://github.com/charanepuri/developer-productivity-suite-flask"
+      },
+      {
+        "id": "dev-prod-6",
+        "day": "Django v5.0 \u26a1",
+        "topic": "Developer Productivity Suite \u2022 v5.0 \u2014 Django Scalable Platform",
+        "description": "A scalable web platform built with Django to provide a more structured and feature-rich developer productivity experience. It introduces Django ORM, authentication, administration, dashboards, permissions, analytics, and PostgreSQL-ready architecture. This edition focuses on building a maintainable application using Django's robust ecosystem.",
+        "githubUrl": "https://github.com/charanepuri/developer-productivity-suite-Django",
+        "url": "https://github.com/charanepuri/developer-productivity-suite-Django"
+      },
+      {
+        "id": "dev-prod-7",
+        "day": "Full Stack v6.0 \ud83d\ude80",
+        "topic": "Developer Productivity Suite \u2022 v6.0 \u2014 Full Stack Production Application",
+        "description": "The complete full-stack evolution of the Developer Productivity Suite, combining a modern frontend with a production-ready backend and database. It brings together authentication, REST APIs, user profiles, favorites, history, analytics, and advanced productivity features in one platform. This version represents the project's transition into a production-style full-stack application.",
+        "url": ""
       }
     ]
   },

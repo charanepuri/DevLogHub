@@ -187,3 +187,77 @@ AI Interview Coach
 https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/
 https://github.com/charanepuri/ai-interview-coach-react-groq-ai
 https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-BYNDHLpH.pdf
+
+
+Tech Glossary Hub
+
+HTML Version
+Live Link: https://charanepuri.github.io/tech-glossary-hub-html/
+GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-html
+Documentation Link: https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf
+LinkedIn Post Link: https://lnkd.in/p/dYVY6fZC
+
+React Version 
+Live Link: https://tech-glossary-hub-react.vercel.app/
+GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-react
+Documentation Link: https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf
+LinkedIn Post Link: https://lnkd.in/p/d5baNnEZ
+
+Django Version
+Live Link: https://tech-glossary-hub.onrender.com/
+GitHub Repository: https://github.com/charanepuri/tech-glossary-hub
+Documentation Link: https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view
+LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+Angular Version
+Live Link: https://tech-glossary-hub-angular.vercel.app/home
+GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-angular
+Documentation Link: https://tech-glossary-hub-angular.vercel.app/Tech_Glossary_Hub_Angular.pdf
+
+Flask Version
+GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-flask
+
+
+Full Stack Version
+
+
+
+Developer Productivity Suite
+
+Introduction LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_developerproductivitysuite-webdevelopment-activity-7483894551938678784-nuIQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+
+v1.0 — HTML/CSS/JS Foundation
+Description: A browser-based developer productivity platform that brings essential development utilities together in one responsive application. Built using HTML5, CSS3, and Vanilla JavaScript, it provides categorized tools with a clean interface, theme support, search, and local storage. This version establishes the foundation of the Developer Productivity Suite.
+GitHub Repository: https://github.com/charanepuri/developer-productivity-suite-html
+Live Link: https://charanepuri.github.io/developer-productivity-suite-html/
+Documentation Link: https://charanepuri.github.io/developer-productivity-suite-html/assets/Developer%20Productivity%20Suite.pdf
+LinkedIn Post Link: https://lnkd.in/p/dU25Mbv5
+
+v2.0 — React Modern SPA
+Description: A modern React-based evolution of the Developer Productivity Suite, designed as a scalable Single Page Application. It introduces reusable components, client-side routing, tool discovery, favorites, recently used tools, and persistent user preferences. This version demonstrates the transition from traditional frontend development to modern component-based architecture.
+GitHub Repository: https://github.com/charanepuri/developer-productivity-suite-react
+Live Link: https://developer-productivity-suite-react.vercel.app/
+Documentation Link: https://developer-productivity-suite-react.vercel.app/DeveloperProductivitySuiteReactVersion.pdf
+LinkedIn Post Link: https://lnkd.in/p/d3qxxs5A
+
+v3.0 — Angular Enterprise Frontend
+Description: An enterprise-oriented frontend edition of the Developer Productivity Suite built with Angular and TypeScript. The application uses Angular services, routing, dependency injection, reactive forms, and scalable component architecture to organize a growing collection of developer utilities. This version focuses on structured and maintainable frontend engineering.
+GitHub Repository: https://github.com/charanepuri/developer-productivity-suite-angular
+Live Link: https://developer-productivity-suite-angula.vercel.app/dashboard
+Documentation Link: https://developer-productivity-suite-angula.vercel.app/documentation/Developer_Productivity_Suite_Angular_Documentation.pdf
+LinkedIn Post Link: https://lnkd.in/p/dvXsVMCJ
+
+v4.0 — Flask Backend Web Application
+Description: A backend-powered web application that extends the Developer Productivity Suite with Python and Flask. It introduces server-side processing, database integration, authentication, user history, favorites, saved results, and REST APIs. This version marks the transition from a frontend-focused application to a full backend-enabled platform.
+GitHub Repository: https://github.com/charanepuri/developer-productivity-suite-flask
+
+
+v5.0 — Django Scalable Platform
+Description: A scalable web platform built with Django to provide a more structured and feature-rich developer productivity experience. It introduces Django ORM, authentication, administration, dashboards, permissions, analytics, and PostgreSQL-ready architecture. This edition focuses on building a maintainable application using Django's robust ecosystem.
+GitHub Repository: https://github.com/charanepuri/developer-productivity-suite-Django
+
+
+v6.0 — Full Stack Production Application
+Description: The complete full-stack evolution of the Developer Productivity Suite, combining a modern frontend with a production-ready backend and database. It brings together authentication, REST APIs, user profiles, favorites, history, analytics, and advanced productivity features in one platform. This version represents the project's transition into a production-style full-stack application.

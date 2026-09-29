@@ -135,6 +135,17 @@ categories = [
         'posts': []
     },
     {
+        'id': 'dev-productivity',
+        'name': 'Developer Productivity Suite',
+        'shortName': 'Productivity Suite',
+        'tagline': 'Multi-Architecture Engineering: HTML Foundation, React SPA, Angular Frontend, Flask Backend, Django Platform & Full Stack Evolution',
+        'badge': 'Suite',
+        'accent': '#6366f1',
+        'icon': '🛠️',
+        'count': 0,
+        'posts': []
+    },
+    {
         'id': 'projects',
         'name': 'Projects & AI Applications',
         'shortName': 'Projects & AI',
@@ -406,25 +417,15 @@ if len(blocks) > 4:
         'driveUrl': b4[3] if len(b4) > 3 else ''
     })
 
-# Block 5: Bible App P1
+# Block 5: Bible App details (Blocks 6 to 16 are P1 to P11)
 if len(blocks) > 5:
     b5 = blocks[5]
     live_bible = b5[1]
     gh_bible = b5[2]
     drive_bible = b5[3]
-    p1_url = re.sub(r'^P1\s+', '', b5[4]).strip()
-    web_posts.append({
-        'id': f"web-{len(web_posts)+1}",
-        'day': 'Bible App P1 📖',
-        'topic': f'Bible Reference Application • Part 1: {bible_parts["P1"]}',
-        'url': p1_url,
-        'liveUrl': live_bible,
-        'githubUrl': gh_bible,
-        'driveUrl': drive_bible
-    })
 
-    # Blocks 6 to 15: Bible App P2 to P11
-    for idx, blk in enumerate(blocks[6:16], start=2):
+    # Blocks 6 to 16: Bible App P1 to P11
+    for idx, blk in enumerate(blocks[6:17], start=1):
         p_key = f'P{idx}'
         p_url = re.sub(rf'^{p_key}\s+', '', blk[0]).strip()
         web_posts.append({
@@ -437,64 +438,52 @@ if len(blocks) > 5:
             'driveUrl': drive_bible
         })
 
-# Block 16: Personal Finance Manager
-if len(blocks) > 16:
-    b16 = blocks[16]
-    web_posts.append({
-        'id': f"web-{len(web_posts)+1}",
-        'day': 'Web Tool 💰',
-        'topic': 'Personal Finance Manager (Budget & Expense Tracker)',
-        'url': b16[4] if len(b16) > 4 else b16[-1],
-        'liveUrl': b16[1] if len(b16) > 1 else '',
-        'githubUrl': b16[2] if len(b16) > 2 else '',
-        'driveUrl': b16[3] if len(b16) > 3 else ''
-    })
-
-# Block 17: 404 Page
+# Block 17: Personal Finance Manager
 if len(blocks) > 17:
     b17 = blocks[17]
     web_posts.append({
         'id': f"web-{len(web_posts)+1}",
+        'day': 'Web Tool 💰',
+        'topic': 'Personal Finance Manager (Budget & Expense Tracker)',
+        'url': b17[4] if len(b17) > 4 else b17[-1],
+        'liveUrl': b17[1] if len(b17) > 1 else '',
+        'githubUrl': b17[2] if len(b17) > 2 else '',
+        'driveUrl': b17[3] if len(b17) > 3 else ''
+    })
+
+# Block 18: 404 Page
+if len(blocks) > 18:
+    b18 = blocks[18]
+    web_posts.append({
+        'id': f"web-{len(web_posts)+1}",
         'day': 'UI Component 🎨',
         'topic': 'Interactive 404 Error Page Experience',
-        'url': b17[3] if len(b17) > 3 else b17[-1],
-        'liveUrl': b17[1] if len(b17) > 1 else '',
-        'githubUrl': b17[2] if len(b17) > 2 else ''
+        'url': b18[3] if len(b18) > 3 else b18[-1],
+        'liveUrl': b18[1] if len(b18) > 1 else '',
+        'githubUrl': b18[2] if len(b18) > 2 else ''
     })
 
 # --- 5. Parse React projects into React Applications Track ---
 react_posts = cat_by_id['react-projects']['posts']
 
-if len(blocks) > 19:
-    b19 = blocks[19]
-    react_posts.append({
-        'id': f"react-{len(react_posts)+1}",
-        'day': 'React SPA ⚡',
-        'topic': 'Converter Hub (Unit, Currency & Media Converter Tool)',
-        'url': b19[1],
-        'liveUrl': b19[1],
-        'githubUrl': b19[2],
-        'docUrl': b19[3]
-    })
-
 if len(blocks) > 20:
     b20 = blocks[20]
     react_posts.append({
         'id': f"react-{len(react_posts)+1}",
-        'day': 'Sports Analytics 🏏',
-        'topic': 'MS Dhoni Career Records & Analytics Dashboard',
-        'url': b20[4],
+        'day': 'React SPA ⚡',
+        'topic': 'Converter Hub (Unit, Currency & Media Converter Tool)',
+        'url': b20[1],
         'liveUrl': b20[1],
         'githubUrl': b20[2],
-        'driveUrl': b20[3]
+        'docUrl': b20[3]
     })
 
 if len(blocks) > 21:
     b21 = blocks[21]
     react_posts.append({
         'id': f"react-{len(react_posts)+1}",
-        'day': 'React App 📖',
-        'topic': 'Bible Reference Application (React.js Edition)',
+        'day': 'Sports Analytics 🏏',
+        'topic': 'MS Dhoni Career Records & Analytics Dashboard',
         'url': b21[4],
         'liveUrl': b21[1],
         'githubUrl': b21[2],
@@ -505,21 +494,21 @@ if len(blocks) > 22:
     b22 = blocks[22]
     react_posts.append({
         'id': f"react-{len(react_posts)+1}",
-        'day': 'Cloud Platform ☁️',
-        'topic': 'Cloud Explorer (Multi-Service Cloud Resource Navigator)',
+        'day': 'React App 📖',
+        'topic': 'Bible Reference Application (React.js Edition)',
         'url': b22[4],
         'liveUrl': b22[1],
         'githubUrl': b22[2],
-        'docUrl': b22[3]
+        'driveUrl': b22[3]
     })
 
 if len(blocks) > 23:
     b23 = blocks[23]
     react_posts.append({
         'id': f"react-{len(react_posts)+1}",
-        'day': 'Culinary Web App 🍲',
-        'topic': 'The Ultimate Biryani Handbook (Culinary Guide & Recipe App)',
-        'url': b23[1],
+        'day': 'Cloud Platform ☁️',
+        'topic': 'Cloud Explorer (Multi-Service Cloud Resource Navigator)',
+        'url': b23[4],
         'liveUrl': b23[1],
         'githubUrl': b23[2],
         'docUrl': b23[3]
@@ -529,11 +518,23 @@ if len(blocks) > 24:
     b24 = blocks[24]
     react_posts.append({
         'id': f"react-{len(react_posts)+1}",
-        'day': 'Developer Tool 🛠️',
-        'topic': 'Smart Error Assistant (Interactive Debugging & Fix Engine)',
+        'day': 'Culinary Web App 🍲',
+        'topic': 'The Ultimate Biryani Handbook (Culinary Guide & Recipe App)',
         'url': b24[1],
         'liveUrl': b24[1],
-        'githubUrl': b24[2]
+        'githubUrl': b24[2],
+        'docUrl': b24[3]
+    })
+
+if len(blocks) > 25:
+    b25 = blocks[25]
+    react_posts.append({
+        'id': f"react-{len(react_posts)+1}",
+        'day': 'Developer Tool 🛠️',
+        'topic': 'Smart Error Assistant (Interactive Debugging & Fix Engine)',
+        'url': b25[1],
+        'liveUrl': b25[1],
+        'githubUrl': b25[2]
     })
 
 # --- 6. Parse Flask projects into Flask Web Applications Track ---
@@ -696,17 +697,6 @@ if django_idx != -1:
             'docUrl': b4[3].replace('Documentation Link:', '').strip() if len(b4) > 3 else ''
         })
 
-    # Block 5: Developer Productivity Suite -- Django Scalable Platform
-    if len(db) > 5:
-        b5 = db[5]
-        django_app_posts.append({
-            'id': f"django-app-{len(django_app_posts)+1}",
-            'day': 'Scalable Suite 🚀',
-            'topic': 'Developer Productivity Suite (Django Scalable Enterprise Architecture)',
-            'url': b5[1],
-            'githubUrl': b5[1]
-        })
-
 # --- 8. Parse AI Integrated projects into AI Integrated Applications Track ---
 ai_app_posts = cat_by_id['ai-projects']['posts']
 
@@ -778,6 +768,73 @@ if ai_idx != -1:
             'githubUrl': b4[2] if len(b4) > 2 else '',
             'docUrl': b4[3] if len(b4) > 3 else ''
         })
+
+# --- 9. Parse Developer Productivity Suite into dedicated unified section ---
+dev_prod_posts = cat_by_id['dev-productivity']['posts']
+suite_match = re.search(r'Developer Productivity Suite\s*\n(.*?)$', '\n'.join(proj_lines), re.DOTALL)
+if suite_match:
+    section_text = suite_match.group(1)
+    
+    # 1. Introduction Milestone Post
+    intro_match = re.search(r'Introduction LinkedIn Post Link:\s*(https://[^\s]+)', section_text)
+    if intro_match:
+        intro_url = intro_match.group(1).strip()
+        dev_prod_posts.append({
+            'id': f"dev-prod-{len(dev_prod_posts)+1}",
+            'day': 'Suite Overview 🚀',
+            'topic': 'Developer Productivity Suite • Official Introduction & Architecture Roadmap',
+            'url': intro_url,
+            'description': 'Official introduction and architectural roadmap for the Developer Productivity Suite — chronicling the evolution from HTML/CSS/JS foundation to modern React SPA, Angular enterprise frontend, Flask backend, Django platform, and full-stack production platform.'
+        })
+
+    # 2. Version Editions (v1.0 to v6.0)
+    version_badges = {
+        'v1.0': 'Foundation v1.0 🌐',
+        'v2.0': 'React SPA v2.0 ⚛️',
+        'v3.0': 'Angular v3.0 🅰️',
+        'v4.0': 'Flask v4.0 🧪',
+        'v5.0': 'Django v5.0 ⚡',
+        'v6.0': 'Full Stack v6.0 🚀'
+    }
+
+    v_matches = re.findall(r'(v\d+\.\d+\s*—[^\n]+)(.*?)(?=(?:v\d+\.\d+\s*—)|$)', section_text, re.DOTALL)
+    for title_line, body in v_matches:
+        v_title = title_line.strip()
+        # Find version key like 'v1.0'
+        v_num_match = re.search(r'(v\d+\.\d+)', v_title)
+        v_key = v_num_match.group(1) if v_num_match else 'Edition'
+        day_badge = version_badges.get(v_key, f'{v_key} 🛠️')
+
+        desc_match = re.search(r'Description:\s*(.*?)(?=(?:GitHub Repository|Live Link|Documentation Link|LinkedIn Post Link|\Z))', body, re.DOTALL)
+        desc_text = desc_match.group(1).strip() if desc_match else ''
+        # Replace newlines with single space for clean text
+        desc_text = ' '.join(desc_text.split())
+
+        gh_match = re.search(r'GitHub Repository:\s*(https://[^\s]+)', body)
+        live_match = re.search(r'Live Link:\s*(https://[^\s]+)', body)
+        doc_match = re.search(r'Documentation Link:\s*(https://[^\s]+)', body)
+        li_match = re.search(r'LinkedIn Post Link:\s*(https://[^\s]+)', body)
+
+        post_entry = {
+            'id': f"dev-prod-{len(dev_prod_posts)+1}",
+            'day': day_badge,
+            'topic': f'Developer Productivity Suite • {v_title}',
+            'description': desc_text
+        }
+
+        if gh_match:
+            post_entry['githubUrl'] = gh_match.group(1).strip()
+        if live_match:
+            post_entry['liveUrl'] = live_match.group(1).strip()
+        if doc_match:
+            post_entry['docUrl'] = doc_match.group(1).strip()
+        if li_match:
+            post_entry['url'] = li_match.group(1).strip()
+        else:
+            # Fallback primary url to Live or GitHub if LinkedIn not yet available
+            post_entry['url'] = post_entry.get('liveUrl') or post_entry.get('githubUrl') or ''
+
+        dev_prod_posts.append(post_entry)
 
 for c in categories:
     c['count'] = len(c['posts'])
