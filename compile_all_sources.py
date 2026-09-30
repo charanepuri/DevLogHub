@@ -135,6 +135,17 @@ categories = [
         'posts': []
     },
     {
+        'id': 'tech-glossary',
+        'name': 'Tech Glossary Hub',
+        'shortName': 'Tech Glossary',
+        'tagline': 'Multi-Architecture Engineering: HTML5 Foundation, React Modern SPA, Django Full-Stack, Angular Enterprise & Flask Backend',
+        'badge': 'Glossary Hub',
+        'accent': '#06b6d4',
+        'icon': '📖',
+        'count': 0,
+        'posts': []
+    },
+    {
         'id': 'dev-productivity',
         'name': 'Developer Productivity Suite',
         'shortName': 'Productivity Suite',
@@ -605,43 +616,6 @@ for i, b in enumerate(blocks):
 
 if django_idx != -1:
     db = blocks[django_idx+1:]
-    # Block 0: Tech Glossary Hub -- Django Version
-    if len(db) > 0:
-        b0 = db[0]
-        # b0 has:
-        # line 0: Tech Glossary Hub -- Django Version
-        # line 1: render url
-        # line 2: github url
-        # line 3: linkedin post (Live)
-        # line 4: linkedin post (Progress Update 2)
-        # line 5: linkedin post (Progress Update 1)
-        django_app_posts.append({
-            'id': f"django-app-{len(django_app_posts)+1}",
-            'day': 'Platform Launch 🚀',
-            'topic': 'Tech Glossary Hub (Full-Stack Django Knowledge System)',
-            'url': b0[3] if len(b0) > 3 else b0[1],
-            'liveUrl': b0[1],
-            'githubUrl': b0[2] if len(b0) > 2 else ''
-        })
-        if len(b0) > 4:
-            django_app_posts.append({
-                'id': f"django-app-{len(django_app_posts)+1}",
-                'day': 'Milestone 2 ⚙️',
-                'topic': 'Tech Glossary Hub • Progress Update 2: Architecture & Models',
-                'url': b0[4],
-                'liveUrl': b0[1],
-                'githubUrl': b0[2] if len(b0) > 2 else ''
-            })
-        if len(b0) > 5:
-            django_app_posts.append({
-                'id': f"django-app-{len(django_app_posts)+1}",
-                'day': 'Milestone 1 🏗️',
-                'topic': 'Tech Glossary Hub • Progress Update 1: Core Setup & Schemas',
-                'url': b0[5],
-                'liveUrl': b0[1],
-                'githubUrl': b0[2] if len(b0) > 2 else ''
-            })
-
     # Block 1: Translator Web Application
     if len(db) > 1:
         b1 = db[1]
@@ -769,7 +743,96 @@ if ai_idx != -1:
             'docUrl': b4[3] if len(b4) > 3 else ''
         })
 
-# --- 9. Parse Developer Productivity Suite into dedicated unified section ---
+# --- 9. Parse Tech Glossary Hub into dedicated unified section ---
+tech_glossary_posts = cat_by_id['tech-glossary']['posts']
+tgh_match = re.search(r'Tech Glossary Hub\s*\n(.*?)(?=Developer Productivity Suite|\Z)', '\n'.join(proj_lines), re.DOTALL)
+if tgh_match:
+    tgh_section_text = tgh_match.group(1).strip()
+    version_badges_tgh = {
+        'HTML Version': 'HTML Foundation 🌐',
+        'React Version': 'React Modern SPA ⚛️',
+        'Django Version': 'Django Full-Stack ⚡',
+        'Angular Version': 'Angular Enterprise 🅰️',
+        'Flask Version': 'Flask Backend 🧪',
+        'Full Stack Version': 'Production Full Stack 🚀'
+    }
+
+    tgh_version_descriptions = {
+        'HTML Version': 'Interactive tech terminology dictionary and glossary application built with semantic HTML5, CSS3, and modern Vanilla JavaScript. Features real-time search, category filtering, responsive typography, and clean client-side lookup.',
+        'React Version': 'Modern Single Page Application evolution of Tech Glossary Hub built with React.js. Features component-based glossary cards, live search filtering, category exploration, state hooks, and responsive modern UI.',
+        'Django Version': 'Enterprise-grade full-stack glossary platform engineered with Django, Python, and dynamic relational models. Supports comprehensive database querying, category navigation, admin panel management, and production-ready server-side rendering.',
+        'Angular Version': 'Enterprise frontend edition of Tech Glossary Hub architected with Angular and TypeScript. Implements modular component hierarchies, dependency injection services, client-side routing, and structured design patterns.',
+        'Flask Version': 'Lightweight backend web edition of Tech Glossary Hub powered by Python and Flask. Designed for fast server-side response times, dynamic glossary term routing, template rendering, and clean microservice architecture.'
+    }
+
+    v_matches = re.findall(r'(^[ \t]*(\w+(?:\s+\w+)*\s+Version)[ \t]*\n.*?)(?=(?:^[ \t]*\w+(?:\s+\w+)*\s+Version)|\Z)', tgh_section_text, re.MULTILINE | re.DOTALL)
+    for v_full, v_head in v_matches:
+        v_title = v_head.strip()
+        day_badge = version_badges_tgh.get(v_title, f'{v_title} 📖')
+        custom_desc = tgh_version_descriptions.get(v_title, 'Comprehensive multi-framework tech glossary and software engineering terminology knowledge platform.')
+
+        live_m = re.search(r'Live Link:\s*(https://[^\s]+)', v_full)
+        gh_m = re.search(r'GitHub Repository:\s*(https://[^\s]+)', v_full)
+        doc_m = re.search(r'Documentation Link:\s*(https://[^\s]+)', v_full)
+        li_links = re.findall(r'LinkedIn Post Link:\s*(https://[^\s]+)', v_full)
+
+        live_url = live_m.group(1).strip() if live_m else ''
+        gh_url = gh_m.group(1).strip() if gh_m else ''
+        doc_url = doc_m.group(1).strip() if doc_m else ''
+
+        if v_title == 'Django Version' and len(li_links) >= 3:
+            # Add the 3 milestone posts for Django Version to give full transparency
+            # Post 1: Milestone 1 - Core Setup & Schemas
+            tech_glossary_posts.append({
+                'id': f"tech-glossary-{len(tech_glossary_posts)+1}",
+                'day': 'Milestone 1 🏗️',
+                'topic': 'Tech Glossary Hub (Django) • Progress Update 1: Core Setup & Schemas',
+                'url': li_links[0],
+                'liveUrl': live_url,
+                'githubUrl': gh_url,
+                'docUrl': doc_url,
+                'description': 'First development milestone of the Django edition of Tech Glossary Hub, documenting initial architectural setup, data models, schema definitions, and project structure.'
+            })
+            # Post 2: Milestone 2 - Architecture & Models
+            tech_glossary_posts.append({
+                'id': f"tech-glossary-{len(tech_glossary_posts)+1}",
+                'day': 'Milestone 2 ⚙️',
+                'topic': 'Tech Glossary Hub (Django) • Progress Update 2: Architecture & Models',
+                'url': li_links[1],
+                'liveUrl': live_url,
+                'githubUrl': gh_url,
+                'docUrl': doc_url,
+                'description': 'Second milestone detailing database model relationships, view controllers, query optimizations, and template rendering integration in Django.'
+            })
+            # Post 3: Official Platform Launch
+            tech_glossary_posts.append({
+                'id': f"tech-glossary-{len(tech_glossary_posts)+1}",
+                'day': 'Platform Launch 🚀',
+                'topic': 'Tech Glossary Hub (Full-Stack Django Knowledge System)',
+                'url': li_links[2],
+                'liveUrl': live_url,
+                'githubUrl': gh_url,
+                'docUrl': doc_url,
+                'description': custom_desc
+            })
+        else:
+            primary_url = li_links[0] if li_links else (live_url or gh_url or '')
+            entry = {
+                'id': f"tech-glossary-{len(tech_glossary_posts)+1}",
+                'day': day_badge,
+                'topic': f'Tech Glossary Hub • {v_title}',
+                'url': primary_url,
+                'description': custom_desc
+            }
+            if live_url:
+                entry['liveUrl'] = live_url
+            if gh_url:
+                entry['githubUrl'] = gh_url
+            if doc_url:
+                entry['docUrl'] = doc_url
+            tech_glossary_posts.append(entry)
+
+# --- 10. Parse Developer Productivity Suite into dedicated unified section ---
 dev_prod_posts = cat_by_id['dev-productivity']['posts']
 suite_match = re.search(r'Developer Productivity Suite\s*\n(.*?)$', '\n'.join(proj_lines), re.DOTALL)
 if suite_match:

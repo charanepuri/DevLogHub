@@ -1327,34 +1327,10 @@
     "badge": "Django Apps",
     "accent": "#10b981",
     "icon": "\u26a1",
-    "count": 7,
+    "count": 4,
     "posts": [
       {
         "id": "django-app-1",
-        "day": "Platform Launch \ud83d\ude80",
-        "topic": "Tech Glossary Hub (Full-Stack Django Knowledge System)",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
-      },
-      {
-        "id": "django-app-2",
-        "day": "Milestone 2 \u2699\ufe0f",
-        "topic": "Tech Glossary Hub \u2022 Progress Update 2: Architecture & Models",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
-      },
-      {
-        "id": "django-app-3",
-        "day": "Milestone 1 \ud83c\udfd7\ufe0f",
-        "topic": "Tech Glossary Hub \u2022 Progress Update 1: Core Setup & Schemas",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub"
-      },
-      {
-        "id": "django-app-4",
         "day": "Translation App \ud83c\udf10",
         "topic": "Translator Web Application (Django Multi-Language Engine)",
         "url": "https://lnkd.in/p/dz-vgKPr",
@@ -1363,7 +1339,7 @@
         "docUrl": "https://translator-web-application-django.onrender.com/static/translator/TranslatorWebApplication.pdf"
       },
       {
-        "id": "django-app-5",
+        "id": "django-app-2",
         "day": "Web Application \ud83c\udf72",
         "topic": "Sambar Handbook (Traditional Culinary Guide & Django Web App)",
         "url": "https://sambar-handbook.onrender.com/",
@@ -1371,7 +1347,7 @@
         "githubUrl": "https://github.com/charanepuri/sambar-handbook"
       },
       {
-        "id": "django-app-6",
+        "id": "django-app-3",
         "day": "Dynamic Engine \ud83d\udca1",
         "topic": "Smart Quote Generator (Dynamic Inspiration Engine)",
         "url": "https://django-smart-quote-generator.onrender.com/",
@@ -1380,7 +1356,7 @@
         "driveUrl": "https://drive.google.com/file/d/1U4-_Wd5CGDeLSvkLILivz8uRg6nU-Q0C/view?usp=sharing"
       },
       {
-        "id": "django-app-7",
+        "id": "django-app-4",
         "day": "Enterprise App \ud83c\udf0d",
         "topic": "LinguaFlow (Full-Stack Language Translator & Localization Platform)",
         "url": "https://linguaflow-django.onrender.com/",
@@ -1489,6 +1465,86 @@
         "liveUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/",
         "githubUrl": "https://github.com/charanepuri/ai-interview-coach-react-groq-ai",
         "docUrl": "https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-BYNDHLpH.pdf"
+      }
+    ]
+  },
+  {
+    "id": "tech-glossary",
+    "name": "Tech Glossary Hub",
+    "shortName": "Tech Glossary",
+    "tagline": "Multi-Architecture Engineering: HTML5 Foundation, React Modern SPA, Django Full-Stack, Angular Enterprise & Flask Backend",
+    "badge": "Glossary Hub",
+    "accent": "#06b6d4",
+    "icon": "\ud83d\udcd6",
+    "count": 7,
+    "posts": [
+      {
+        "id": "tech-glossary-1",
+        "day": "HTML Foundation \ud83c\udf10",
+        "topic": "Tech Glossary Hub \u2022 HTML Version",
+        "url": "https://lnkd.in/p/dYVY6fZC",
+        "description": "Interactive tech terminology dictionary and glossary application built with semantic HTML5, CSS3, and modern Vanilla JavaScript. Features real-time search, category filtering, responsive typography, and clean client-side lookup.",
+        "liveUrl": "https://charanepuri.github.io/tech-glossary-hub-html/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub-html",
+        "docUrl": "https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf"
+      },
+      {
+        "id": "tech-glossary-2",
+        "day": "React Modern SPA \u269b\ufe0f",
+        "topic": "Tech Glossary Hub \u2022 React Version",
+        "url": "https://lnkd.in/p/d5baNnEZ",
+        "description": "Modern Single Page Application evolution of Tech Glossary Hub built with React.js. Features component-based glossary cards, live search filtering, category exploration, state hooks, and responsive modern UI.",
+        "liveUrl": "https://tech-glossary-hub-react.vercel.app/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub-react",
+        "docUrl": "https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf"
+      },
+      {
+        "id": "tech-glossary-3",
+        "day": "Milestone 1 \ud83c\udfd7\ufe0f",
+        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 1: Core Setup & Schemas",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "First development milestone of the Django edition of Tech Glossary Hub, documenting initial architectural setup, data models, schema definitions, and project structure."
+      },
+      {
+        "id": "tech-glossary-4",
+        "day": "Milestone 2 \u2699\ufe0f",
+        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 2: Architecture & Models",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "Second milestone detailing database model relationships, view controllers, query optimizations, and template rendering integration in Django."
+      },
+      {
+        "id": "tech-glossary-5",
+        "day": "Platform Launch \ud83d\ude80",
+        "topic": "Tech Glossary Hub (Full-Stack Django Knowledge System)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "Enterprise-grade full-stack glossary platform engineered with Django, Python, and dynamic relational models. Supports comprehensive database querying, category navigation, admin panel management, and production-ready server-side rendering."
+      },
+      {
+        "id": "tech-glossary-6",
+        "day": "Angular Enterprise \ud83c\udd70\ufe0f",
+        "topic": "Tech Glossary Hub \u2022 Angular Version",
+        "url": "https://tech-glossary-hub-angular.vercel.app/home",
+        "description": "Enterprise frontend edition of Tech Glossary Hub architected with Angular and TypeScript. Implements modular component hierarchies, dependency injection services, client-side routing, and structured design patterns.",
+        "liveUrl": "https://tech-glossary-hub-angular.vercel.app/home",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub-angular",
+        "docUrl": "https://tech-glossary-hub-angular.vercel.app/Tech_Glossary_Hub_Angular.pdf"
+      },
+      {
+        "id": "tech-glossary-7",
+        "day": "Flask Backend \ud83e\uddea",
+        "topic": "Tech Glossary Hub \u2022 Flask Version",
+        "url": "https://github.com/charanepuri/tech-glossary-hub-flask",
+        "description": "Lightweight backend web edition of Tech Glossary Hub powered by Python and Flask. Designed for fast server-side response times, dynamic glossary term routing, template rendering, and clean microservice architecture.",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub-flask"
       }
     ]
   },
