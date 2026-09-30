@@ -65,34 +65,40 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_webdevelopment-frontenddeve
 React Project's
 
 Converter Hub
+**Converter Hub** is a modern, responsive React.js web application that brings **33 everyday converters, calculators, and utility tools** into one convenient platform. It includes tools for unit conversion, digital data, finance, colors, text processing, and calculations. The project demonstrates **reusable React components, React Router, responsive UI design, theme switching, and interactive user experiences**. It provides a fast and user-friendly solution for performing common calculations and conversions without relying on multiple websites.
 https://converter-hub.netlify.app/
 https://github.com/charanepuri/converter-hub-react
 https://converter-hub.netlify.app/Converter%20Hub%20Documentation.pdf
 
 MS Dhoni Dashboard
+**MS Dhoni Fan Dashboard** is a modern, interactive React + Vite web application designed to showcase MS Dhoni’s cricket career, achievements, statistics, milestones, and legacy. It features a premium glassmorphism interface with **India Blue and CSK Yellow themes**, responsive layouts, and smooth animations powered by Framer Motion. The project demonstrates **component-based React architecture, CSS design systems, responsive development, interactive dashboards, and modern UI/UX techniques**.
 https://ms-dhoni-dashboard-react.vercel.app/
 https://github.com/charanepuri/ms-dhoni-dashboard-react
 https://drive.google.com/file/d/1Ze-FZ5WNFoAONZItoHG3WBqrJQR_snGp/view?usp=sharing
 https://lnkd.in/p/dg2sk_9n
 
 Bible Reference Application 
+**Bible Reference App** is a modern and responsive React + Vite web application that allows users to search Bible verses, browse all 66 books, read chapters, and easily navigate scripture references. It integrates the **Bible API** for dynamic content and uses Local Storage to manage favorite verses and reading bookmarks. The project demonstrates **API integration, React Router navigation, reusable component architecture, responsive UI design, and client-side data persistence**.
 https://bible-reference-app-react.vercel.app/
 https://github.com/charanepuri/bible-reference-app-react
 https://drive.google.com/file/d/1Lw-DD3W7XtXGFZqR7usDesQs4tZNw6dM/view
 https://lnkd.in/p/dRKQmR84
 
 Cloud Explorer 
+**Cloud Explorer** is an interactive React-based learning platform designed to make Cloud Computing concepts simple, visual, and beginner-friendly. It focuses on **IaaS, PaaS, and SaaS** through clear explanations, real-world analogies, side-by-side comparisons, and an interactive quiz. The project demonstrates **React component architecture, React Router, responsive UI design, accessibility-focused development, and data-driven interfaces**.
 https://cloud-explorer-react.vercel.app/
 https://github.com/charanepuri/cloud-explorer-react
 https://cloud-explorer-react.vercel.app/Cloud_Explorer_Project_Documentation.pdf
 https://lnkd.in/p/dNg2tc8y
 
 Ultimate Biryani Handbook
+**The Ultimate Biryani Handbook** is a comprehensive React.js web application that explores the **history, regional diversity, recipes, ingredients, preparation methods, and cultural significance of Biryani**. It features an extensive collection covering Indian state-wise biryanis, South Indian specialties, and international varieties, supported by recipes, videos, and visual galleries. The project demonstrates **React component architecture, dynamic search and filtering, responsive design, dark mode, asset management, and interactive UI/UX development**.
 https://ultimate-biryani-handbook.vercel.app/
 https://github.com/charanepuri/ultimate-biryani-handbook
 https://ultimate-biryani-handbook.vercel.app/The%20Ultimate%20Biryani%20Handbook.pdf
 
 Smart Error Assistant 
+**Smart Error Assistant** is an interactive React.js application that transforms a traditional **404 Page Not Found** experience into a helpful navigation assistant. It enables users to search available pages, discover suggestions, revisit recently visited pages, and access popular sections through a user-friendly interface. The project demonstrates **React Router, state management, conditional rendering, Local Storage, reusable components, and responsive UI design**.
 https://smart-error-assistant-react.vercel.app/
 https://github.com/charanepuri/smart-error-assistant-react
 

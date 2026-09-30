@@ -483,10 +483,11 @@ if len(blocks) > 20:
         'id': f"react-{len(react_posts)+1}",
         'day': 'React SPA ⚡',
         'topic': 'Converter Hub (Unit, Currency & Media Converter Tool)',
-        'url': b20[1],
-        'liveUrl': b20[1],
-        'githubUrl': b20[2],
-        'docUrl': b20[3]
+        'description': b20[1],
+        'url': b20[2],
+        'liveUrl': b20[2],
+        'githubUrl': b20[3],
+        'docUrl': b20[4] if len(b20) > 4 else ''
     })
 
 if len(blocks) > 21:
@@ -495,10 +496,11 @@ if len(blocks) > 21:
         'id': f"react-{len(react_posts)+1}",
         'day': 'Sports Analytics 🏏',
         'topic': 'MS Dhoni Career Records & Analytics Dashboard',
-        'url': b21[4],
-        'liveUrl': b21[1],
-        'githubUrl': b21[2],
-        'driveUrl': b21[3]
+        'description': b21[1],
+        'url': b21[5] if len(b21) > 5 else b21[2],
+        'liveUrl': b21[2],
+        'githubUrl': b21[3],
+        'driveUrl': b21[4]
     })
 
 if len(blocks) > 22:
@@ -507,10 +509,11 @@ if len(blocks) > 22:
         'id': f"react-{len(react_posts)+1}",
         'day': 'React App 📖',
         'topic': 'Bible Reference Application (React.js Edition)',
-        'url': b22[4],
-        'liveUrl': b22[1],
-        'githubUrl': b22[2],
-        'driveUrl': b22[3]
+        'description': b22[1],
+        'url': b22[5] if len(b22) > 5 else b22[2],
+        'liveUrl': b22[2],
+        'githubUrl': b22[3],
+        'driveUrl': b22[4]
     })
 
 if len(blocks) > 23:
@@ -519,10 +522,11 @@ if len(blocks) > 23:
         'id': f"react-{len(react_posts)+1}",
         'day': 'Cloud Platform ☁️',
         'topic': 'Cloud Explorer (Multi-Service Cloud Resource Navigator)',
-        'url': b23[4],
-        'liveUrl': b23[1],
-        'githubUrl': b23[2],
-        'docUrl': b23[3]
+        'description': b23[1],
+        'url': b23[5] if len(b23) > 5 else b23[2],
+        'liveUrl': b23[2],
+        'githubUrl': b23[3],
+        'docUrl': b23[4]
     })
 
 if len(blocks) > 24:
@@ -531,10 +535,11 @@ if len(blocks) > 24:
         'id': f"react-{len(react_posts)+1}",
         'day': 'Culinary Web App 🍲',
         'topic': 'The Ultimate Biryani Handbook (Culinary Guide & Recipe App)',
-        'url': b24[1],
-        'liveUrl': b24[1],
-        'githubUrl': b24[2],
-        'docUrl': b24[3]
+        'description': b24[1],
+        'url': b24[2],
+        'liveUrl': b24[2],
+        'githubUrl': b24[3],
+        'docUrl': b24[4] if len(b24) > 4 else ''
     })
 
 if len(blocks) > 25:
@@ -543,9 +548,10 @@ if len(blocks) > 25:
         'id': f"react-{len(react_posts)+1}",
         'day': 'Developer Tool 🛠️',
         'topic': 'Smart Error Assistant (Interactive Debugging & Fix Engine)',
-        'url': b25[1],
-        'liveUrl': b25[1],
-        'githubUrl': b25[2]
+        'description': b25[1],
+        'url': b25[2],
+        'liveUrl': b25[2],
+        'githubUrl': b25[3]
     })
 
 # --- 6. Parse Flask projects into Flask Web Applications Track ---

@@ -169,7 +169,7 @@ const POSTS_DATA = window.DEVLOG_DATA || [];
 
     function getPostSummary(post) {
       if (post.description) {
-        return escapeHtml(post.description);
+        return escapeHtml(post.description).replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
       }
       switch (post.categoryId) {
         case 'tech-docs':
