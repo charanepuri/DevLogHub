@@ -1650,6 +1650,36 @@
     "posts": [
       {
         "id": "tech-glossary-1",
+        "day": "Milestone 1 \ud83c\udfd7\ufe0f",
+        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 1: Core Setup & Schemas",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "Reached the first development milestone for Tech Glossary Hub (Django Edition), establishing the core relational database schema for glossary terms and categories alongside a customized Django Admin panel. Built the initial category-based navigation and foundational UI to support scalable content management and future learner features."
+      },
+      {
+        "id": "tech-glossary-2",
+        "day": "Milestone 2 \u2699\ufe0f",
+        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 2: Architecture & Models",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "Shipped the UX and feature-expansion milestone for Tech Glossary Hub (Django Edition), introducing faster concept search, dedicated term detail pages, and relational links between connected concepts. Integrated REST API endpoints and responsive cross-device styling as the platform prepares for production deployment."
+      },
+      {
+        "id": "tech-glossary-3",
+        "day": "Platform Launch \ud83d\ude80",
+        "topic": "Tech Glossary Hub (Full-Stack Django Knowledge System)",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "liveUrl": "https://tech-glossary-hub.onrender.com/",
+        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
+        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
+        "description": "Launched Tech Glossary Hub (Django Edition) to production as the capstone of a 40-day Django learning journey, delivering a full-stack knowledge platform for developers and students. Built with organized technology categories, smart term search, detailed explanation pages, and relational links between connected concepts inside a clean, responsive UI."
+      },
+      {
+        "id": "tech-glossary-4",
         "day": "HTML Foundation \ud83c\udf10",
         "topic": "Tech Glossary Hub \u2022 HTML Version",
         "url": "https://lnkd.in/p/dYVY6fZC",
@@ -1659,7 +1689,7 @@
         "docUrl": "https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf"
       },
       {
-        "id": "tech-glossary-2",
+        "id": "tech-glossary-5",
         "day": "React Modern SPA \u269b\ufe0f",
         "topic": "Tech Glossary Hub \u2022 React Version",
         "url": "https://lnkd.in/p/d5baNnEZ",
@@ -1667,36 +1697,6 @@
         "liveUrl": "https://tech-glossary-hub-react.vercel.app/",
         "githubUrl": "https://github.com/charanepuri/tech-glossary-hub-react",
         "docUrl": "https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf"
-      },
-      {
-        "id": "tech-glossary-3",
-        "day": "Milestone 1 \ud83c\udfd7\ufe0f",
-        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 1: Core Setup & Schemas",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
-        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
-        "description": "First development milestone of the Django edition of Tech Glossary Hub, documenting initial architectural setup, data models, schema definitions, and project structure."
-      },
-      {
-        "id": "tech-glossary-4",
-        "day": "Milestone 2 \u2699\ufe0f",
-        "topic": "Tech Glossary Hub (Django) \u2022 Progress Update 2: Architecture & Models",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
-        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
-        "description": "Second milestone detailing database model relationships, view controllers, query optimizations, and template rendering integration in Django."
-      },
-      {
-        "id": "tech-glossary-5",
-        "day": "Platform Launch \ud83d\ude80",
-        "topic": "Tech Glossary Hub (Full-Stack Django Knowledge System)",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "liveUrl": "https://tech-glossary-hub.onrender.com/",
-        "githubUrl": "https://github.com/charanepuri/tech-glossary-hub",
-        "docUrl": "https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view",
-        "description": "Enterprise-grade full-stack glossary platform engineered with Django, Python, and dynamic relational models. Supports comprehensive database querying, category navigation, admin panel management, and production-ready server-side rendering."
       },
       {
         "id": "tech-glossary-6",

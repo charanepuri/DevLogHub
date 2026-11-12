@@ -869,6 +869,19 @@ if tgh_match:
         doc_url = doc_m.group(1).strip() if doc_m else ''
 
         if v_title == 'Django Version' and len(li_links) >= 3:
+            # Parse individual descriptions if present after each LinkedIn Post link
+            post_chunks = re.split(r'LinkedIn Post \d+ Link:\s*', v_full)
+            desc1 = 'First development milestone of the Django edition of Tech Glossary Hub, documenting initial architectural setup, data models, schema definitions, and project structure.'
+            desc2 = 'Second milestone detailing database model relationships, view controllers, query optimizations, and template rendering integration in Django.'
+            desc3 = custom_desc
+            if len(post_chunks) >= 4:
+                lines1 = [l.strip() for l in post_chunks[1].split('\n') if l.strip()]
+                if len(lines1) > 1: desc1 = ' '.join(lines1[1:])
+                lines2 = [l.strip() for l in post_chunks[2].split('\n') if l.strip()]
+                if len(lines2) > 1: desc2 = ' '.join(lines2[1:])
+                lines3 = [l.strip() for l in post_chunks[3].split('\n') if l.strip()]
+                if len(lines3) > 1: desc3 = ' '.join(lines3[1:])
+
             # Add the 3 milestone posts for Django Version to give full transparency
             # Post 1: Milestone 1 - Core Setup & Schemas
             tech_glossary_posts.append({
@@ -879,7 +892,7 @@ if tgh_match:
                 'liveUrl': live_url,
                 'githubUrl': gh_url,
                 'docUrl': doc_url,
-                'description': 'First development milestone of the Django edition of Tech Glossary Hub, documenting initial architectural setup, data models, schema definitions, and project structure.'
+                'description': desc1
             })
             # Post 2: Milestone 2 - Architecture & Models
             tech_glossary_posts.append({
@@ -890,7 +903,7 @@ if tgh_match:
                 'liveUrl': live_url,
                 'githubUrl': gh_url,
                 'docUrl': doc_url,
-                'description': 'Second milestone detailing database model relationships, view controllers, query optimizations, and template rendering integration in Django.'
+                'description': desc2
             })
             # Post 3: Official Platform Launch
             tech_glossary_posts.append({
@@ -901,7 +914,7 @@ if tgh_match:
                 'liveUrl': live_url,
                 'githubUrl': gh_url,
                 'docUrl': doc_url,
-                'description': custom_desc
+                'description': desc3
             })
         else:
             primary_url = li_links[0] if li_links else (live_url or gh_url or '')
