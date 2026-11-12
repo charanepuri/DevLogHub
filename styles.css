@@ -23,6 +23,7 @@
       --projects-color: #f97316;
       --advpy-color: #a3e635;
       --intern-color: #ec4899;
+      --visual-color: #f43f5e;
       --accent: #38bdf8;
       --accent-glow: rgba(56, 189, 248, 0.25);
       --card-radius: 16px;
@@ -54,6 +55,7 @@
       --projects-color: #ea580c;
       --advpy-color: #65a30d;
       --intern-color: #db2777;
+      --visual-color: #e11d48;
       --accent: #0284c7;
       --accent-glow: rgba(2, 132, 199, 0.15);
     }
@@ -319,6 +321,7 @@
     .stat-card.stat-projects::before { background: linear-gradient(90deg, var(--projects-color), transparent); }
     .stat-card.stat-advpy::before { background: linear-gradient(90deg, var(--advpy-color), transparent); }
     .stat-card.stat-intern::before { background: linear-gradient(90deg, var(--intern-color), transparent); }
+    .stat-card.stat-visual::before { background: linear-gradient(90deg, var(--visual-color), transparent); }
 
     .stat-number {
       font-size: 1.75rem;
@@ -779,6 +782,11 @@
       background: rgba(236, 72, 153, 0.12);
       color: var(--intern-color);
       border: 1px solid rgba(236, 72, 153, 0.25);
+    }
+    .card-visual-guides .day-pill {
+      background: rgba(244, 63, 94, 0.12);
+      color: var(--visual-color);
+      border: 1px solid rgba(244, 63, 94, 0.25);
     }
 
     /* Empty state */

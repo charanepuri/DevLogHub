@@ -37,6 +37,7 @@ const POSTS_DATA = window.DEVLOG_DATA || [];
     document.getElementById('totalPostsStat').innerHTML = `${allPosts.length}<small>posts</small>`;
     document.getElementById('countAll').textContent = allPosts.length;
     document.getElementById('countDocs').textContent = allPosts.filter(p => p.categoryId === 'tech-docs').length;
+    document.getElementById('countVisual').textContent = allPosts.filter(p => p.categoryId === 'visual-guides').length;
     document.getElementById('countPython').textContent = allPosts.filter(p => p.categoryId === 'python').length;
     document.getElementById('countDjango').textContent = allPosts.filter(p => p.categoryId === 'django').length;
     document.getElementById('countFlask').textContent = allPosts.filter(p => p.categoryId === 'flask').length;
@@ -173,7 +174,9 @@ const POSTS_DATA = window.DEVLOG_DATA || [];
       }
       switch (post.categoryId) {
         case 'tech-docs':
-          return `Comprehensive technical documentation and reference guide covering architectural paradigms, runtime execution models, and visual systems.`;
+          return `Comprehensive technical documentation and reference guide covering architectural paradigms, runtime execution models, and clean code principles.`;
+        case 'visual-guides':
+          return `Visual technical guide and engineering architecture infographic illustrating framework internals, system workflows, and core concepts.`;
         case 'python':
           return `Hands-on Python milestone covering core mechanics, data structures, OOP principles, and clean Pythonic logic.`;
         case 'django':

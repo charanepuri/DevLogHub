@@ -198,7 +198,13 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappa
 Other Documentation's
 
 C Console Projects Documentation
+
+Built a trio of modular C console applications—a Student Management System, an Advanced Calculator, and a Number Guessing Game—to apply core systems programming fundamentals. Practiced persistent file I/O, CRUD operations, custom structures, header-file modularization, and menu-driven program flow.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 Python Console Projects Documentation
+
+Built five standalone Python console applications—an Expense Tracker, Habit Tracker, Personal Password Manager, Banking Management System, and Quiz Application—to apply core backend fundamentals. Practiced Object-Oriented Programming (OOP), structured file persistence, exception handling, and modular CRUD workflows.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs

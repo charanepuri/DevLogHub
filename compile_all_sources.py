@@ -35,12 +35,23 @@ flask_known = {
 categories = [
     {
         'id': 'tech-docs',
-        'name': "Technical Documentation & Concept Guides",
+        'name': "Technical Documentation & Architecture Guides",
         'shortName': "Technical Docs",
-        'tagline': "Deep-dive Guides on JavaScript internals, Django Architecture, Infographics & Project Docs",
+        'tagline': "Deep-dive Engineering Documentation on JavaScript Internals, Django Architecture & Flask Systems",
         'badge': "Documentation",
         'accent': "#f59e0b",
         'icon': "📚",
+        'count': 0,
+        'posts': []
+    },
+    {
+        'id': 'visual-guides',
+        'name': "Visual Guides & Architecture Infographics",
+        'shortName': "Visual Guides",
+        'tagline': "Visual System Architecture, Framework Internals, Engineering Cheat Sheets & Social Infographics",
+        'badge': "Infographics",
+        'accent': "#f43f5e",
+        'icon': "🖼️",
         'count': 0,
         'posts': []
     },
@@ -311,20 +322,33 @@ for i, line in enumerate(doc_lines):
         clean_title = re.sub(r'[\u2013\u2014]', ' - ', clean_title)
         clean_title = re.sub(r'\s+', ' ', clean_title).strip()
 
-        # Build appropriate day label indicating it is an in-depth documentation guide
-        day_tag = f"Doc: {current_subdomain}"
-
-        post_obj = {
-            'id': f"doc-{len(cat_by_id['tech-docs']['posts'])+1}",
-            'day': day_tag,
-            'topic': clean_title,
-            'url': url,
-            'subdomain': current_subdomain
-        }
-        if desc:
-            post_obj['description'] = desc.strip()
-
-        cat_by_id['tech-docs']['posts'].append(post_obj)
+        # Separate Visual Guides (Photo's) into their own dedicated visual-guides category
+        if current_subdomain == "Visual Guides & AI":
+            target_cat = cat_by_id['visual-guides']
+            day_tag = "Infographic 🖼️"
+            post_obj = {
+                'id': f"visual-{len(target_cat['posts'])+1}",
+                'day': day_tag,
+                'topic': clean_title,
+                'url': url,
+                'subdomain': current_subdomain
+            }
+            if desc:
+                post_obj['description'] = desc.strip()
+            target_cat['posts'].append(post_obj)
+        else:
+            target_cat = cat_by_id['tech-docs']
+            day_tag = f"Doc: {current_subdomain}"
+            post_obj = {
+                'id': f"doc-{len(target_cat['posts'])+1}",
+                'day': day_tag,
+                'topic': clean_title,
+                'url': url,
+                'subdomain': current_subdomain
+            }
+            if desc:
+                post_obj['description'] = desc.strip()
+            target_cat['posts'].append(post_obj)
 
 # --- 3. Parse LinkedIn Posts Links.txt ---
 with open("LinkedIn Posts Links.txt", "r", encoding='utf-8', errors='ignore') as f:

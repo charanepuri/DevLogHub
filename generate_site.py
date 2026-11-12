@@ -70,8 +70,12 @@ html_template = '''<!DOCTYPE html>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
-        <div class="stat-number">38<small>guides</small></div>
+        <div class="stat-number">13<small>guides</small></div>
         <div class="stat-label">Technical Documentation</div>
+      </div>
+      <div class="stat-card stat-visual">
+        <div class="stat-number">25<small>infographics</small></div>
+        <div class="stat-label">Visual Guides &amp; Infographics</div>
       </div>
       <div class="stat-card stat-python">
         <div class="stat-number">51<small>days</small></div>
@@ -144,7 +148,11 @@ html_template = '''<!DOCTYPE html>
           </button>
           <button class="filter-tab" data-category="tech-docs">
             <span>📚 Technical Docs</span>
-            <span class="badge-count" id="countDocs">38</span>
+            <span class="badge-count" id="countDocs">13</span>
+          </button>
+          <button class="filter-tab" data-category="visual-guides">
+            <span>🖼️ Visual Guides</span>
+            <span class="badge-count" id="countVisual">25</span>
           </button>
           <button class="filter-tab" data-category="python">
             <span>🐍 Python 50D</span>

@@ -1,13 +1,13 @@
 [
   {
     "id": "tech-docs",
-    "name": "Technical Documentation & Concept Guides",
+    "name": "Technical Documentation & Architecture Guides",
     "shortName": "Technical Docs",
-    "tagline": "Deep-dive Guides on JavaScript internals, Django Architecture, Infographics & Project Docs",
+    "tagline": "Deep-dive Engineering Documentation on JavaScript Internals, Django Architecture & Flask Systems",
     "badge": "Documentation",
     "accent": "#f59e0b",
     "icon": "\ud83d\udcda",
-    "count": 38,
+    "count": 13,
     "posts": [
       {
         "id": "doc-1",
@@ -99,192 +99,206 @@
       },
       {
         "id": "doc-12",
-        "day": "Doc: Visual Guides & AI",
+        "day": "Doc: System Projects",
+        "topic": "C Console Projects Documentation",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "subdomain": "System Projects",
+        "description": "Built a trio of modular C console applications\u2014a Student Management System, an Advanced Calculator, and a Number Guessing Game\u2014to apply core systems programming fundamentals. Practiced persistent file I/O, CRUD operations, custom structures, header-file modularization, and menu-driven program flow."
+      },
+      {
+        "id": "doc-13",
+        "day": "Doc: System Projects",
+        "topic": "Python Console Projects Documentation",
+        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
+        "subdomain": "System Projects",
+        "description": "Built five standalone Python console applications\u2014an Expense Tracker, Habit Tracker, Personal Password Manager, Banking Management System, and Quiz Application\u2014to apply core backend fundamentals. Practiced Object-Oriented Programming (OOP), structured file persistence, exception handling, and modular CRUD workflows."
+      }
+    ]
+  },
+  {
+    "id": "visual-guides",
+    "name": "Visual Guides & Architecture Infographics",
+    "shortName": "Visual Guides",
+    "tagline": "Visual System Architecture, Framework Internals, Engineering Cheat Sheets & Social Infographics",
+    "badge": "Infographics",
+    "accent": "#f43f5e",
+    "icon": "\ud83d\uddbc\ufe0f",
+    "count": 25,
+    "posts": [
+      {
+        "id": "visual-1",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django Authentication System",
         "url": "https://lnkd.in/p/dGsgtvBk",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-13",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-2",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django Middleware",
         "url": "https://lnkd.in/p/ehqApqAm",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-14",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-3",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django MVT Architecture",
         "url": "https://lnkd.in/p/euxdix4S",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-15",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-4",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django Project Structure",
         "url": "https://lnkd.in/p/dFw3-jxQ",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-16",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-5",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django ORM",
         "url": "https://lnkd.in/p/dJyKE7Cm",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-17",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-6",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "React Router",
         "url": "https://lnkd.in/p/dKQ5aP-D",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-18",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-7",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Python Full-Stack Development and Training Program from September 2025 to March 2026",
         "url": "https://lnkd.in/p/dwuNsCZP",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-19",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-8",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "React Icon's",
         "url": "https://lnkd.in/p/dbPx5Y9G",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-20",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-9",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "React Hooks Explained",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_react-reactjs-reacthooks-activity-7503301327775772672-HXgv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-21",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-10",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "React Lifecycle",
         "url": "https://lnkd.in/p/dwtC7UM7",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-22",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-11",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "React Virtual DOM",
         "url": "https://lnkd.in/p/dWCQb6fb",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-23",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-12",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "How Internet Works",
         "url": "https://lnkd.in/p/dGvC7HUu",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-24",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-13",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "AI Agents Explained",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_aiagents-artificialintelligence-generativeai-activity-7496049633438289920-ZrLa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-25",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-14",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Chat GPT For Developers",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_chatgpt-ai-artificialintelligence-activity-7493871543559692288-KU5f?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-26",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-15",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "JS vs TS",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-typescript-webdevelopment-activity-7492203304618278912-WAsv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-27",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-16",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Express JS vs Node JS",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_nodejs-expressjs-javascript-activity-7490391105692278784-JNO8?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-28",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-17",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Snapchat Algorithm",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_snapchat-snapchatalgorithm-socialmedia-activity-7488077139230130176-ZzaI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-29",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-18",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Git vs GitHub",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7486638884647530497--9jL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-30",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-19",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Instagram Algorithm",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_instagram-instagramalgorithm-socialmedia-activity-7486253837285146624-sC3g?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-31",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-20",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Django vs Flask",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-django-flask-activity-7485891440158498816-xOEm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-32",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-21",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "LinkedIn Algorithm",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_linkedin-linkedintips-linkedinalgorithm-activity-7485166663726907392-wOJP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-33",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-22",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "JS vs RJS vs NJS",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-reactjs-nodejs-activity-7484804377531129856-lzjF?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-34",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-23",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Git & GitHub",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_git-github-versioncontrol-activity-7484241830558162944-6fRI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-35",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-24",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "Youtube Algorithm",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_youtube-youtubealgorithm-contentcreator-activity-7483585012274024448-ixc4?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
       },
       {
-        "id": "doc-36",
-        "day": "Doc: Visual Guides & AI",
+        "id": "visual-25",
+        "day": "Infographic \ud83d\uddbc\ufe0f",
         "topic": "WhatsApp Algorithm",
         "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_whatsapp-whatsapp-whatsappalgorithm-activity-7481765506312663040-70YI?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
         "subdomain": "Visual Guides & AI"
-      },
-      {
-        "id": "doc-37",
-        "day": "Doc: System Projects",
-        "topic": "C Console Projects Documentation",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_c-console-projects-learning-journey-activity-7488798110958276608-SIsf?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "subdomain": "System Projects"
-      },
-      {
-        "id": "doc-38",
-        "day": "Doc: System Projects",
-        "topic": "Python Console Projects Documentation",
-        "url": "https://www.linkedin.com/posts/charan-teja-972aa9231_python-console-projects-learning-journey-activity-7482278898395783169-HVWE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs",
-        "subdomain": "System Projects"
       }
     ]
   },
