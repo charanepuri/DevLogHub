@@ -66,7 +66,7 @@ html_template = '''<!DOCTYPE html>
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">272<small>posts</small></div>
+        <div class="stat-number" id="totalPostsStat">273<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
@@ -114,7 +114,7 @@ html_template = '''<!DOCTYPE html>
         <div class="stat-label">AI Integrated Apps</div>
       </div>
       <div class="stat-card stat-techglossary">
-        <div class="stat-number">7<small>editions</small></div>
+        <div class="stat-number">8<small>editions</small></div>
         <div class="stat-label">Tech Glossary Hub</div>
       </div>
       <div class="stat-card stat-devprod">
@@ -144,7 +144,7 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">272</span>
+            <span class="badge-count" id="countAll">273</span>
           </button>
           <button class="filter-tab" data-category="tech-docs">
             <span>📚 Technical Docs</span>
@@ -192,7 +192,7 @@ html_template = '''<!DOCTYPE html>
           </button>
           <button class="filter-tab" data-category="tech-glossary">
             <span>📖 Tech Glossary</span>
-            <span class="badge-count" id="countTechGlossary">7</span>
+            <span class="badge-count" id="countTechGlossary">8</span>
           </button>
           <button class="filter-tab" data-category="dev-productivity">
             <span>🛠️ Productivity Suite</span>

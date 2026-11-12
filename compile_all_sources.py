@@ -558,7 +558,7 @@ if len(blocks) > 20:
         'day': 'React SPA ⚡',
         'topic': 'Converter Hub (Unit, Currency & Media Converter Tool)',
         'description': b20[1],
-        'url': b20[2],
+        'url': b20[5] if len(b20) > 5 else b20[2],
         'liveUrl': b20[2],
         'githubUrl': b20[3],
         'docUrl': b20[4] if len(b20) > 4 else ''
@@ -610,7 +610,7 @@ if len(blocks) > 24:
         'day': 'Culinary Web App 🍲',
         'topic': 'The Ultimate Biryani Handbook (Culinary Guide & Recipe App)',
         'description': b24[1],
-        'url': b24[2],
+        'url': b24[5] if len(b24) > 5 else b24[2],
         'liveUrl': b24[2],
         'githubUrl': b24[3],
         'docUrl': b24[4] if len(b24) > 4 else ''
@@ -703,10 +703,11 @@ if django_idx != -1:
             'id': f"django-app-{len(django_app_posts)+1}",
             'day': 'Translation App 🌐',
             'topic': 'Translator Web Application (Django Multi-Language Engine)',
-            'url': b1[4] if len(b1) > 4 else b1[1],
-            'liveUrl': b1[1],
-            'githubUrl': b1[2] if len(b1) > 2 else '',
-            'docUrl': b1[3].replace('Documentation Link:', '').strip() if len(b1) > 3 else ''
+            'description': b1[1] if not b1[1].startswith('http') else '',
+            'url': b1[5] if len(b1) > 5 else (b1[4] if len(b1) > 4 else b1[1]),
+            'liveUrl': b1[2] if not b1[1].startswith('http') else b1[1],
+            'githubUrl': b1[3] if not b1[1].startswith('http') else (b1[2] if len(b1) > 2 else ''),
+            'docUrl': (b1[4] if not b1[1].startswith('http') else (b1[3] if len(b1) > 3 else '')).replace('Documentation Link:', '').strip()
         })
 
     # Block 2: Sambar Handbook
@@ -849,12 +850,19 @@ if tgh_match:
     for v_full, v_head in v_matches:
         v_title = v_head.strip()
         day_badge = version_badges_tgh.get(v_title, f'{v_title} 📖')
-        custom_desc = tgh_version_descriptions.get(v_title, 'Comprehensive multi-framework tech glossary and software engineering terminology knowledge platform.')
+
+        # Check if version has a custom description written directly in projects.txt
+        v_lines = [l.strip() for l in v_full.split('\n') if l.strip()]
+        desc_lines = [l for l in v_lines[1:] if not any(l.startswith(k) for k in ['Live Link:', 'GitHub Repository:', 'Documentation Link:', 'LinkedIn Post'])]
+        if desc_lines:
+            custom_desc = ' '.join(desc_lines)
+        else:
+            custom_desc = tgh_version_descriptions.get(v_title, 'Comprehensive multi-framework tech glossary and software engineering terminology knowledge platform.')
 
         live_m = re.search(r'Live Link:\s*(https://[^\s]+)', v_full)
         gh_m = re.search(r'GitHub Repository:\s*(https://[^\s]+)', v_full)
         doc_m = re.search(r'Documentation Link:\s*(https://[^\s]+)', v_full)
-        li_links = re.findall(r'LinkedIn Post Link:\s*(https://[^\s]+)', v_full)
+        li_links = re.findall(r'LinkedIn Post(?:\s+\d+)?\s+Link:\s*(https://[^\s]+)', v_full)
 
         live_url = live_m.group(1).strip() if live_m else ''
         gh_url = gh_m.group(1).strip() if gh_m else ''

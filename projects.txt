@@ -69,6 +69,7 @@ Converter Hub
 https://converter-hub.netlify.app/
 https://github.com/charanepuri/converter-hub-react
 https://converter-hub.netlify.app/Converter%20Hub%20Documentation.pdf
+https://lnkd.in/p/e4waTdAa
 
 MS Dhoni Dashboard
 **MS Dhoni Fan Dashboard** is a modern, interactive React + Vite web application designed to showcase MS Dhoni’s cricket career, achievements, statistics, milestones, and legacy. It features a premium glassmorphism interface with **India Blue and CSK Yellow themes**, responsive layouts, and smooth animations powered by Framer Motion. The project demonstrates **component-based React architecture, CSS design systems, responsive development, interactive dashboards, and modern UI/UX techniques**.
@@ -96,6 +97,7 @@ Ultimate Biryani Handbook
 https://ultimate-biryani-handbook.vercel.app/
 https://github.com/charanepuri/ultimate-biryani-handbook
 https://ultimate-biryani-handbook.vercel.app/The%20Ultimate%20Biryani%20Handbook.pdf
+https://lnkd.in/p/dV8FwyHi
 
 Smart Error Assistant 
 **Smart Error Assistant** is an interactive React.js application that transforms a traditional **404 Page Not Found** experience into a helpful navigation assistant. It enables users to search available pages, discover suggestions, revisit recently visited pages, and access popular sections through a user-friendly interface. The project demonstrates **React Router, state management, conditional rendering, Local Storage, reusable components, and responsive UI design**.
@@ -116,6 +118,7 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-
 https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 Translator Web Application 
+Built a full-stack multi-language Translator Web Application powered by Python and Django with external translation API integration. Delivered a clean, responsive frontend interface backed by Django URL routing, views, templates, and SQLite for seamless real-time text translation.
 https://translator-web-application-django.onrender.com/
 https://github.com/charanepuri/translator-web-application-django
 Documentation Link: https://translator-web-application-django.onrender.com/static/translator/TranslatorWebApplication.pdf
@@ -198,12 +201,14 @@ https://ai-interview-coach-react-groq-4uvsxxtk6.vercel.app/assets/documentation-
 Tech Glossary Hub
 
 HTML Version
+Built Tech Glossary Hub, an interactive developer knowledge hub with categorized technical terms, real-time search, and dynamic JavaScript rendering. Designed with a responsive layout and a distinctive Spider-Man-inspired visual theme using semantic HTML5, CSS3, and vanilla JS.
 Live Link: https://charanepuri.github.io/tech-glossary-hub-html/
 GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-html
 Documentation Link: https://charanepuri.github.io/tech-glossary-hub-html/assets/TECHGLOSSARYHUBHTML.pdf
 LinkedIn Post Link: https://lnkd.in/p/dYVY6fZC
 
 React Version 
+Rebuilt Tech Glossary Hub (v3) using React and Vite, evolving the platform from its Django and vanilla JS predecessors into a scalable, component-based architecture. Implemented reusable UI components, real-time concept search, and categorized browsing within a responsive, modern frontend structure.
 Live Link: https://tech-glossary-hub-react.vercel.app/
 GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-react
 Documentation Link: https://tech-glossary-hub-react.vercel.app/Tech_Glossary_Hub_React.pdf
@@ -213,21 +218,29 @@ Django Version
 Live Link: https://tech-glossary-hub.onrender.com/
 GitHub Repository: https://github.com/charanepuri/tech-glossary-hub
 Documentation Link: https://drive.google.com/file/d/1r-Ta72GE2tjw4qrWlLgztVnjFiAabhdE/view
-LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
-LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
-LinkedIn Post Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+LinkedIn Post 1 Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-1-activity-7482807386429100034-EJvP?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+LinkedIn Post 2 Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-progress-update-2-activity-7484464550013067264-lKgf?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
+LinkedIn Post 3 Link: https://www.linkedin.com/posts/charan-teja-972aa9231_tech-glossary-hub-is-now-live-activity-7485551744064749568-i__D?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 Angular Version
+Re-engineered Tech Glossary Hub (v4) using Angular and TypeScript, marking the fourth architectural evolution following Django, vanilla JS, and React. Built with modular components, dedicated services, structured routing, and reusable UI patterns for scalable, type-safe concept exploration.
 Live Link: https://tech-glossary-hub-angular.vercel.app/home
 GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-angular
 Documentation Link: https://tech-glossary-hub-angular.vercel.app/Tech_Glossary_Hub_Angular.pdf
+LinkedIn Post Link: https://lnkd.in/p/dtmMafWH
 
 Flask Version
+Rebuilt Tech Glossary Hub (v5) with Python, Flask, Jinja2, and SQLite, bringing the multi-stack glossary back into the Python ecosystem with a lightweight, modular backend. Delivered categorized concept search, reusable templates, and dynamic content rendering in a responsive UI.
+Live Link: https://tech-glossary-hub-flask.onrender.com/
 GitHub Repository: https://github.com/charanepuri/tech-glossary-hub-flask
-
+Documentation Link: https://tech-glossary-hub-flask.onrender.com/static/documentation/Tech_Glossary_Hub_Flask.pdf
+LinkedIn Post Link: https://lnkd.in/p/ea2nWEbQ
 
 Full Stack Version
-
+Live Link: 
+GitHub Repository: 
+Documentation Link: 
+LinkedIn Post Link: 
 
 
 Developer Productivity Suite
