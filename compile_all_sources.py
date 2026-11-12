@@ -20,7 +20,16 @@ flask_known = {
     'Day 29': 'Flask Caching & Performance Optimization',
     'Day 30': 'Unit Testing Flask Apps with Pytest',
     'Day 31': 'Gunicorn & Nginx Production Deployment',
-    'Day 33': 'Full-Stack Flask Architecture & WebSockets'
+    'Day 33': 'Full-Stack Flask Architecture & WebSockets',
+    'Day 34': 'Permission-Based Access Control & RBAC in Flask',
+    'Day 35': 'Scalable REST API Architecture & Best Practices',
+    'Day 36': 'API Documentation with Swagger / OpenAPI in Flask',
+    'Day 37': 'API Rate Limiting & Request Throttling',
+    'Day 38': 'Caching Strategies for High-Performance Flask APIs',
+    'Day 39': 'Asynchronous & Background Task Processing in Flask',
+    'Day 40': 'Real-Time Communication with Flask & WebSockets',
+    '40-Day Flask Learning Journey — Completed': '40 Days of Flask: Complete Learning Journey & Retrospective',
+    'Introducing DevFlow – Flask Developer Productivity Platform': 'Introducing DevFlow – Full-Stack Flask Developer Productivity Platform'
 }
 
 categories = [
@@ -61,8 +70,8 @@ categories = [
         'id': 'flask',
         'name': 'Flask Daily Learning Series',
         'shortName': 'Flask Mastery',
-        'tagline': 'Lightweight Microservices, Dynamic Templating, DB Integration & APIs',
-        'badge': '33 Days',
+        'tagline': 'Lightweight Microservices, Dynamic Templating, DB Integration, REST APIs & Production Platforms',
+        'badge': '40 Days',
         'accent': '#c084fc',
         'icon': '🧪',
         'count': 0,
@@ -218,7 +227,17 @@ for idx, sec in enumerate(pdf_sections):
             if '50Days' in line or '50days' in line:
                 day_label = 'Grand Finale 🎉'
                 topic = '50 Days of Consistent Python Learning Completed'
-            elif '40-day' in (curr_day or '') or 'Lessons Beyond Code' in topic:
+            elif '40-day' in (curr_day or '').lower() or 'completed' in (curr_day or '').lower():
+                if cat['id'] == 'flask':
+                    day_label = 'Series Finale 🏆'
+                    topic = flask_known.get(curr_day, '40-Day Flask Learning Journey — Completed')
+                else:
+                    day_label = 'Series Wrap-up 🚀'
+                    topic = '40 Days of Django: Lessons Beyond Code & Retrospective'
+            elif 'devflow' in (curr_day or '').lower():
+                day_label = 'Capstone 🚀'
+                topic = flask_known.get(curr_day, 'Introducing DevFlow – Flask Developer Productivity Platform')
+            elif 'Lessons Beyond Code' in topic:
                 day_label = 'Series Wrap-up 🚀'
                 topic = '40 Days of Django: Lessons Beyond Code & Retrospective'
             
@@ -241,25 +260,52 @@ current_subdomain = "JavaScript"
 
 for i, line in enumerate(doc_lines):
     if not line: continue
-    if "JavaScript" in line and not line.startswith("http") and len(line) < 20:
+    if line == "JavaScript":
         current_subdomain = "JavaScript"
         continue
-    elif "Django" in line and "🐍" in line:
+    elif "Django" in line and "\U0001f40d" in line:
         current_subdomain = "Django"
         continue
-    elif "Photo's" in line:
+    elif "Flask" in line and "\U0001f336" in line:
+        current_subdomain = "Flask"
+        continue
+    elif "React" in line and "\u269b" in line:
+        current_subdomain = "React"
+        continue
+    elif "Angular" in line and "\U0001f170" in line:
+        current_subdomain = "Angular"
+        continue
+    elif "Node.js" in line and "\U0001f7e2" in line:
+        current_subdomain = "Node.js"
+        continue
+    elif "Express.js" in line and "\U0001f682" in line:
+        current_subdomain = "Express.js"
+        continue
+    elif line.startswith("Photo"):
         current_subdomain = "Visual Guides & AI"
         continue
-    elif "Other Documentation's" in line:
+    elif line.startswith("Other"):
         current_subdomain = "System Projects"
         continue
 
     if line.startswith('http'):
-        title = "Documentation Guide"
+        url = line
+        texts = []
         for p in range(i-1, -1, -1):
-            if doc_lines[p]:
-                title = doc_lines[p]
+            s = doc_lines[p].strip()
+            if not s: continue
+            if s.startswith('http') or s.startswith('---'): break
+            if s == 'JavaScript' or s.startswith('Photo') or s.startswith('Other') or any(s.startswith(x) for x in ['\U0001f40d', '\U0001f336', '\u269b', '\U0001f170', '\U0001f7e2', '\U0001f682']):
                 break
+            texts.append(s)
+
+        desc = ""
+        title = "Documentation Guide"
+        if len(texts) >= 2:
+            desc = texts[0]
+            title = texts[1]
+        elif len(texts) == 1:
+            title = texts[0]
 
         clean_title = title.strip()
         clean_title = re.sub(r'[\u2013\u2014]', ' - ', clean_title)
@@ -268,13 +314,17 @@ for i, line in enumerate(doc_lines):
         # Build appropriate day label indicating it is an in-depth documentation guide
         day_tag = f"Doc: {current_subdomain}"
 
-        cat_by_id['tech-docs']['posts'].append({
+        post_obj = {
             'id': f"doc-{len(cat_by_id['tech-docs']['posts'])+1}",
             'day': day_tag,
             'topic': clean_title,
-            'url': line,
+            'url': url,
             'subdomain': current_subdomain
-        })
+        }
+        if desc:
+            post_obj['description'] = desc.strip()
+
+        cat_by_id['tech-docs']['posts'].append(post_obj)
 
 # --- 3. Parse LinkedIn Posts Links.txt ---
 with open("LinkedIn Posts Links.txt", "r", encoding='utf-8', errors='ignore') as f:

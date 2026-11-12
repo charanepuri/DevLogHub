@@ -1,18 +1,33 @@
 JavaScript 
 
 JavaScript vs TypeScript
+
+Explored the core differences between JavaScript and TypeScript, comparing dynamic vs. static typing, compile-time safety, and scalability. Documented a practical learning roadmap showing why mastering foundational JavaScript first streamlines the transition to TypeScript for enterprise-ready applications.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-vs-typescript-complete-comparison-activity-7480104567439777792-uM6D?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 JavaScript Execution Context & Call Stack – Build a strong foundation.
+
+Explored how JavaScript executes code under the hood by breaking down Execution Contexts, creation vs. execution phases, hoisting, and lexical environments. Visualized how the LIFO Call Stack manages function execution, recursion, and stack overflow errors.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-execution-context-call-stack-activity-7494596493664796672-ECNy?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 JavaScript Event Loop (Async/Await, Promises & Callbacks) – Explain asynchronous behavior.
+
+Explored how JavaScript coordinates asynchronous execution through the Event Loop, Call Stack, Host APIs, and the priority between Microtask and Task Queues. Compared Callbacks, Promises, and Async/Await across readability, error handling, and execution order.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-event-loop-promises-asyncawait-activity-7497136792152977408-zwFW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 JavaScript DOM Manipulation – Complete Guide – Show practical browser-side skills.
+
+Explored how JavaScript transforms static HTML into interactive interfaces by traversing, creating, and modifying the Document Object Model (DOM). Covered element selection, dynamic styling, form handling, and event-driven patterns including bubbling and delegation.
+
 https://lnkd.in/p/dXncZU3c
 
 JavaScript ES6+ Features (Modern JavaScript) – Cover the language features used in everyday development.
+
+Explored modern ES6+ JavaScript features—from block scoping, destructuring, and spread/rest operators to ES modules, array methods, optional chaining, and nullish coalescing. Demonstrated how combining these patterns improves code readability, safety, and readiness for React, Node.js, and TypeScript.
+
 https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-modern-javascript-activity-7502206532265213952-AMCd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 
@@ -20,29 +35,52 @@ https://www.linkedin.com/posts/charan-teja-972aa9231_javascript-es6-features-mod
 🐍 Django
 
 MVT Architecture & Request-Response Cycle
+
+Explored Django’s Model–View–Template (MVT) architecture and traced the end-to-end HTTP request-response lifecycle through middleware, URL routing, ORM queries, and template rendering. Built a practical Product List workflow to connect data models, views, and templates into a cohesive backend flow.
+
 https://lnkd.in/p/dNTmFjUm
 
 Models, ORM & Database Relationships
+
+Explored Django Models, ORM querying, and relational database design across One-to-One, ForeignKey, and Many-to-Many relationships using an e-commerce schema. Covered query optimization (select_related, prefetch_related, resolving N+1 issues) alongside migrations and atomic transactions for data integrity.
+
 https://lnkd.in/p/d55qTseQ
 
 Forms, Validation & CSRF
+
+Explored how Django manages user input securely through Form and ModelForm, server-side field validation (clean() and custom validators), and file upload safeguards. Covered Cross-Site Request Forgery (CSRF) defense across standard HTML forms and AJAX/Fetch requests.
+
 https://lnkd.in/p/djPdypJy
 
 Authentication & Authorization
 
+Explored how Django manages user identity and access control through password hashing, session management, custom user models, and role-based permissions. Covered server-side route protection using @login_required, PermissionRequiredMixin, groups, and production security best practices.
+
+https://lnkd.in/p/dyF2-y95
 
 Django REST Framework & REST APIs
 
+Explored building RESTful web APIs with Django REST Framework (DRF), covering ModelSerializer validation, APIView, ModelViewSet, and DefaultRouter architectures. Mapped the end-to-end API request lifecycle alongside authentication, object-level permissions, pagination, filtering, and throttling.
+
+https://lnkd.in/p/d25zTYFx
 
 
 
 🌶️ Flask
 
-Flask #1 → Architecture, Routing & Request-Response Cycle
-Flask #2 → Jinja2 Templates & Static Files
-Flask #3 → Forms, Sessions & Authentication
-Flask #4 → REST APIs & JSON
-Flask #5 → Application Factory & Blueprints
+Architecture, Routing & Request-Response Cycle
+
+Explored Flask’s lightweight architecture and HTTP request-response lifecycle across WSGI servers, URL routing with dynamic converters, and view functions. Covered request/response payload parsing, Jinja templates, error handling, and modular scaling with Flask Blueprints and the Application Factory pattern.
+
+https://lnkd.in/p/diRpZxKB
+
+Jinja2 Templates & Static Files
+
+Forms, Sessions & Authentication
+
+REST APIs & JSON
+
+Application Factory & Blueprints
 
 ⚛️ React
 
@@ -81,7 +119,32 @@ Express #5 → Error Handling, Validation & Production Architecture
 
 Photo's
 
+Django Authentication System
+https://lnkd.in/p/dGsgtvBk
+
+Django Middleware
+https://lnkd.in/p/ehqApqAm
+
+Django MVT Architecture
+https://lnkd.in/p/euxdix4S
+
+Django Project Structure
+https://lnkd.in/p/dFw3-jxQ
+
+Django ORM
+https://lnkd.in/p/dJyKE7Cm
+
+React Router
+https://lnkd.in/p/dKQ5aP-D
+
+Python Full-Stack Development and Training Program from September 2025 to March 2026
+https://lnkd.in/p/dwuNsCZP
+
+React Icon's
+https://lnkd.in/p/dbPx5Y9G
+
 React Hooks Explained
+https://www.linkedin.com/posts/charan-teja-972aa9231_react-reactjs-reacthooks-activity-7503301327775772672-HXgv?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADoBNCYBh01V0moRjH4J7yxRxtf-MNb6vQs
 
 React Lifecycle
 https://lnkd.in/p/dwtC7UM7

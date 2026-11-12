@@ -1116,3 +1116,190 @@
         font-size: 1.95rem;
       }
     }
+
+    /* ==========================================================================
+       Dedicated Projects & Technical Docs Exploration Styles
+       ========================================================================== */
+    .explore-view-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2.25rem;
+      margin-bottom: 2rem;
+      animation: fadeIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .explore-section-header {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--card-radius);
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      backdrop-filter: blur(12px);
+    }
+
+    .explore-header-left {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .explore-header-icon {
+      font-size: 1.8rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+
+    .explore-header-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--text-main);
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+
+    .explore-header-desc {
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      margin-top: 0.2rem;
+    }
+
+    .btn-back-nav {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.84rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .btn-back-nav:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateX(-2px);
+    }
+
+    .explore-block-heading {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1.1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .explore-block-heading span.badge-pill {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .subnav-buttons-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .subnav-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 0.55rem 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.86rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .subnav-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    .subnav-btn.active {
+      background: var(--accent);
+      color: #090d16;
+      border-color: var(--accent);
+      font-weight: 700;
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    [data-theme="light"] .subnav-btn.active {
+      color: #ffffff;
+    }
+
+    .subnav-btn .subnav-count {
+      background: rgba(0, 0, 0, 0.18);
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .subnav-btn.active .subnav-count {
+      background: rgba(0, 0, 0, 0.25);
+      color: inherit;
+    }
+
+    .featured-badge-star {
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #ffffff;
+      padding: 0.22rem 0.55rem;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      box-shadow: 0 2px 8px rgba(245, 158, 11, 0.35);
+    }
+
+    .post-card.card-featured {
+      border-color: rgba(245, 158, 11, 0.35);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.04) 0%, rgba(17, 24, 39, 0.8) 100%);
+    }
+
+    .post-card.card-featured:hover {
+      border-color: #f59e0b;
+      box-shadow: 0 14px 32px rgba(245, 158, 11, 0.15);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+

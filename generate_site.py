@@ -11,7 +11,7 @@ html_template = '''<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DevLog Hub | Charan Teja's Engineering & Learning Portfolio</title>
-  <meta name="description" content="Explore Charan Teja's 200+ milestone engineering archive covering Technical Documentation, Python 50D, Django 40D, Flask Mastery, SQL, Projects, and Career Milestones.">
+  <meta name="description" content="Explore Charan Teja's 270+ milestone engineering archive covering Technical Documentation, Python 50D, Django 40D, Flask Mastery, SQL, Projects, and Career Milestones.">
   <link rel="icon" type="image/png" href="DevLog%20Hub.png">
   <link rel="apple-touch-icon" href="DevLog%20Hub.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -53,24 +53,24 @@ html_template = '''<!DOCTYPE html>
   <section class="hero">
     <div class="hero-badge">
       <span class="pulse"></span>
-      251+ Verified Technical Milestones
+      272+ Verified Technical Milestones
     </div>
     <h1 class="hero-title">
       Full-Stack Engineering, Data &amp; <br>
       <span class="grad">Professional Learning Portfolio</span>
     </h1>
     <p class="hero-desc">
-      A unified, interactive knowledge hub indexing 251+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, Flask Microservices, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Django Systems, Flask Applications, AI Integrated Apps, Tech Glossary Hub, Developer Productivity Suite, Projects &amp; AI, and Career Milestones.
+      A unified, interactive knowledge hub indexing 272+ technical milestones authored by Charan Teja &mdash; featuring in-depth Technical Documentation Guides, 50 Days of Python, 40 Days of Django, 40 Days of Flask &amp; DevFlow Platform, SQL &amp; MySQL, HTML/CSS/JS Web Applications, React SPAs, Django Systems, Flask Applications, AI Integrated Apps, Tech Glossary Hub, Developer Productivity Suite, Projects &amp; AI, and Career Milestones.
     </p>
 
     <!-- Stats Ribbon -->
     <div class="stats-ribbon">
       <div class="stat-card stat-total">
-        <div class="stat-number" id="totalPostsStat">251<small>posts</small></div>
+        <div class="stat-number" id="totalPostsStat">272<small>posts</small></div>
         <div class="stat-label">Total Engineering Posts</div>
       </div>
       <div class="stat-card stat-docs">
-        <div class="stat-number">26<small>guides</small></div>
+        <div class="stat-number">38<small>guides</small></div>
         <div class="stat-label">Technical Documentation</div>
       </div>
       <div class="stat-card stat-python">
@@ -82,7 +82,7 @@ html_template = '''<!DOCTYPE html>
         <div class="stat-label">Django 40D Series</div>
       </div>
       <div class="stat-card stat-flask">
-        <div class="stat-number">33<small>days</small></div>
+        <div class="stat-number">42<small>days</small></div>
         <div class="stat-label">Flask Microservices</div>
       </div>
       <div class="stat-card stat-sql">
@@ -140,11 +140,11 @@ html_template = '''<!DOCTYPE html>
         <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-category="all">
             <span>🌟 All Tracks</span>
-            <span class="badge-count" id="countAll">228</span>
+            <span class="badge-count" id="countAll">272</span>
           </button>
           <button class="filter-tab" data-category="tech-docs">
             <span>📚 Technical Docs</span>
-            <span class="badge-count" id="countDocs">26</span>
+            <span class="badge-count" id="countDocs">38</span>
           </button>
           <button class="filter-tab" data-category="python">
             <span>🐍 Python 50D</span>
@@ -156,7 +156,7 @@ html_template = '''<!DOCTYPE html>
           </button>
           <button class="filter-tab" data-category="flask">
             <span>🧪 Flask</span>
-            <span class="badge-count" id="countFlask">33</span>
+            <span class="badge-count" id="countFlask">42</span>
           </button>
           <button class="filter-tab" data-category="sql-mysql">
             <span>🗄️ SQL &amp; MySQL</span>
